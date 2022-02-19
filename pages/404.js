@@ -20,7 +20,7 @@ export default function Custom404() {
           oops
         </h1>
         <p className="text-slate-500 font-open text-xl text-center">
-          We couldn't find the page you're looking for.
+          {" We couldn't find the page you're looking for."}
         </p>
         <Link href="/">
           <a>
