@@ -11,9 +11,9 @@
 
 @layer components {
   .btn-primary {
-    @apply bg-primary hover:bg-pink-600 transition ease-linear text-white text-lg font-normal capitalize rounded-b-sm block;
+    @apply bg-primary hover:bg-pink-600 transition ease-linear text-white text-lg font-normal capitalize rounded-b-sm block font-open;
   }
   .btn-secondary {
-    @apply bg-tertiary hover:bg-slate-800 transition ease-linear text-white text-lg font-normal capitalize rounded-sm block;
+    @apply bg-tertiary hover:bg-slate-800 transition ease-linear text-white text-lg font-normal capitalize rounded-sm block font-open;
   }
 }

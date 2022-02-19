@@ -1,0 +1,117 @@
+import Image from "next/image";
+import Link from "next/link";
+import { CodeIcon, CogIcon } from "@heroicons/react/outline";
+import { BsFacebook, BsTwitter, BsInstagram, BsLinkedin } from "react-icons/bs";
+
+export const Footer = () => {
+  return (
+    <div className="w-[90%] lg:w-[58%] mx-auto">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  py-10 px-8 font-open mb-5 gap-y-8">
+        <div className="justify-self-start lg:justify-self-start">
+          <h1 className="capitalize text-lg font-medium mb-2 text-secondary">
+            company
+          </h1>
+          <div className="space-y-2 font-normal text-sm capitalize tracking-wide">
+            <div>
+              <div className="hover:text-primary transition ease-linear text-slate-600">
+                <Link href="/about">
+                  <a>about us</a>
+                </Link>
+              </div>
+              <div className="hover:text-primary transition ease-linear text-slate-600">
+                <Link href="/learn">
+                  <a>learn</a>
+                </Link>
+              </div>
+              <div className="hover:text-primary transition ease-linear text-slate-600">
+                <Link href="/contact">
+                  <a>terms & conditions</a>
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="justify-self-start lg:justify-self-center">
+          <h1 className="capitalize text-lg font-medium mb-2 text-secondary">
+            join pink codrs
+          </h1>
+          <div className="space-y-2  font-normal text-sm capitalize tracking-wide">
+            <div className="hover:text-primary transition ease-linear text-slate-600">
+              <Link href="/coming-soon">
+                <a className="flex items-center space-x-2">
+                  <CogIcon className="h-4" /> <span>for engineers</span>
+                </a>
+              </Link>
+            </div>
+            <div className="hover:text-primary transition ease-linear text-slate-600">
+              <Link href="/coming-soon">
+                <a className="flex items-center space-x-2">
+                  <CodeIcon className="h-4" />
+                  <span> for developers</span>
+                </a>
+              </Link>
+            </div>
+          </div>
+        </div>
+        <div className="justify-self-start lg:justify-self-end">
+          <h1 className="capitalize text-lg font-medium mb-2 text-secondary">
+            resources
+          </h1>
+          <div className="space-y-2  font-normal text-sm capitalize tracking-wide">
+            <div>
+              <div className="hover:text-primary transition ease-linear text-slate-600">
+                <Link href="/about">
+                  <a>privacy & policy</a>
+                </Link>
+              </div>
+              <div className="hover:text-primary transition ease-linear text-slate-600">
+                <Link href="/learn">
+                  <a>contact us</a>
+                </Link>
+              </div>
+              <div className="hover:text-primary transition ease-linear text-slate-600">
+                <Link href="/contact">
+                  <a>Help</a>
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <div className="text-slate-600 text-sm py-5 flex flex-wrap space-y-5 items-center justify-between">
+        <h1>&copy; Pink-Codrs.com. All rights reserved.</h1>
+        <div className="flex items-center space-x-5">
+          <div>
+            <Link href="/">
+              <a>
+                <BsTwitter className="text-xl text-primary" />
+              </a>
+            </Link>
+          </div>
+          <div>
+            <Link href="/">
+              <a>
+                <BsLinkedin className="text-xl text-primary" />
+              </a>
+            </Link>
+          </div>
+          <div>
+            <Link href="/">
+              <a>
+                <BsInstagram className="text-xl text-primary" />
+              </a>
+            </Link>
+          </div>
+          <div>
+            <Link href="/">
+              <a>
+                <BsFacebook className="text-xl text-primary" />
+              </a>
+            </Link>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};

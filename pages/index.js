@@ -4,6 +4,7 @@ import styles from "../styles/Home.module.css";
 import { Navigation } from "../components/navigation/Navigation";
 import React, { useState, useRef } from "react";
 import { PlayIcon } from "@heroicons/react/solid";
+import { Footer } from "../components/footer/Footer";
 
 export default function Home() {
   const [isPlaying, setIsPlaying] = useState(false);
@@ -65,6 +66,10 @@ export default function Home() {
           </div>
         </div>
       </header>
+
+      <footer className="bg-white">
+        <Footer />
+      </footer>
     </>
   );
 }
