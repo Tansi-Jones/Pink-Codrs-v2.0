@@ -67,8 +67,8 @@ export default function Home() {
         </div>
       </header>
 
-      <main className="relative">
-        <section className="grid grid-cols-1 md:grid-cols-2 gap-10 my-20  w-[90%] lg:w-[58%] mx-auto h-[60vh]">
+      <main className="relative ">
+        <section className="grid grid-cols-1 md:grid-cols-2 gap-10 my-20 w-[90%] lg:w-[58%] mx-auto">
           <div className="max-w-sm">
             <div className="relative w-[60px] h-[60px] rounded-full bg-pink-600 flex items-center justify-center">
               <Image
@@ -145,7 +145,7 @@ export default function Home() {
 
         <hr />
 
-        <section className="my-20  w-[90%] lg:w-[58%] mx-auto h-[60vh]">
+        <section className="my-20 w-[90%] lg:w-[58%] mx-auto">
           <h1 className="text-secondary font-bold text-5xl font-noto capitalize my-3 text-center py-10">
             our vision & mission
           </h1>
@@ -226,6 +226,119 @@ export default function Home() {
               </div>
             </div>
           </div>
+        </section>
+
+        <section>
+          <div className={`bg-secondary h-[40rem] ${styles.header}`}>
+            <h1 className="text-white font-bold text-5xl font-noto capitalize my-3 text-center py-20">
+              our most exciting events
+            </h1>
+          </div>
+          <div className="w-[90%] lg:w-[58%] mx-auto grid grid-cols-1 lg:grid-cols-3 transform -translate-y-80 gap-x-20 gap-y-52">
+            <article className="relative min-w-[325px] max-w-[325px] h-[23rem] space-y-3 text-gray-700">
+              <div className="relative w-full h-full z-50 rounded-sm overflow-auto">
+                <Image
+                  src="/assets/img/img-4.jpg"
+                  layout="fill"
+                  objectFit="cover"
+                  alt="pink codrs africa logo"
+                />
+              </div>
+
+              <div className="bg-primary w-16 h-16 absolute -top-12 left-[40px] z-50 flex items-center justify-center rounded-full">
+                <Image
+                  src="/assets/svg/1.svg"
+                  width={30}
+                  height={30}
+                  objectFit="contain"
+                  alt="pink codrs africa logo"
+                />
+              </div>
+              <div className="relative w-full h-full border-2 border-tertiary transform -translate-y-[400px] translate-x-[16px] -z-50 rounded-sm"></div>
+              <div>
+                <div className="text-slate-600 transform -translate-y-[370px]">
+                  <h1 className="font-noto text-secondary text-3xl font-semibold">
+                    career guide
+                  </h1>
+                  <p className="text-lg font-normal py-2">
+                    Get your blood tests delivered at home collect a sample from
+                    the your blood tests.
+                  </p>
+                </div>
+              </div>
+            </article>
+            <article className="relative min-w-[325px] max-w-[325px] h-[23rem] space-y-3 text-gray-700">
+              <div className="relative w-full h-full z-50 rounded-sm overflow-auto">
+                <Image
+                  src="/assets/img/img-3.jpg"
+                  layout="fill"
+                  objectFit="cover"
+                  alt="pink codrs africa logo"
+                />
+              </div>
+
+              <div className="bg-primary w-16 h-16 absolute -top-12 left-[40px] z-50 flex items-center justify-center rounded-full">
+                <Image
+                  src="/assets/svg/2.svg"
+                  width={30}
+                  height={30}
+                  objectFit="contain"
+                  alt="pink codrs africa logo"
+                />
+              </div>
+              <div className="relative w-full h-full border-2 border-tertiary transform -translate-y-[400px] translate-x-[16px] -z-50 rounded-sm"></div>
+              <div>
+                <div className="text-slate-600 transform -translate-y-[370px]">
+                  <h1 className="font-noto text-secondary text-3xl font-semibold">
+                    career guide
+                  </h1>
+                  <p className="text-lg font-normal py-2">
+                    Get your blood tests delivered at home collect a sample from
+                    the your blood tests.
+                  </p>
+                </div>
+              </div>
+            </article>
+            <article className="relative min-w-[325px] max-w-[325px] h-[23rem] space-y-3 text-gray-700">
+              <div className="relative w-full h-full z-50 rounded-sm overflow-auto">
+                <Image
+                  src="/assets/img/img-2.jpg"
+                  layout="fill"
+                  objectFit="cover"
+                  alt="pink codrs africa logo"
+                />
+              </div>
+
+              <div className="bg-primary w-16 h-16 absolute -top-12 left-[40px] z-50 flex items-center justify-center rounded-full">
+                <Image
+                  src="/assets/svg/3.svg"
+                  width={30}
+                  height={30}
+                  objectFit="contain"
+                  alt="pink codrs africa logo"
+                />
+              </div>
+              <div className="relative w-full h-full border-2 border-tertiary transform -translate-y-[400px] translate-x-[16px] -z-50 rounded-sm"></div>
+              <div>
+                <div className="text-slate-600 transform -translate-y-[370px]">
+                  <h1 className="font-noto text-secondary text-3xl font-semibold">
+                    career guide
+                  </h1>
+                  <p className="text-lg font-normal py-2">
+                    Get your blood tests delivered at home collect a sample from
+                    the your blood tests.
+                  </p>
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <hr />
+        <section>
+          <h1 className="text-secondary font-bold text-5xl font-noto capitalize my-3 text-center py-10">
+            what people say about us
+          </h1>
         </section>
       </main>
 
