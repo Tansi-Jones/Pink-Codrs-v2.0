@@ -1,0 +1,29 @@
+.menuBar {
+  background-color: #fff;
+  width: 30px;
+  height: 2px;
+  margin-bottom: 6px;
+  border-radius: 50;
+  transition: 0.4s ease-in-out;
+}
+
+.menu :first-child {
+  transform: rotate(45deg);
+}
+.menu :last-child {
+  transform: rotate(-45deg);
+}
+
+.menuSlideIn {
+  transition: 0.4s ease-in-out;
+  animation: slideIn 0.4s;
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateY(-5%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
