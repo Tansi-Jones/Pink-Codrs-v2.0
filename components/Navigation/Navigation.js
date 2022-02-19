@@ -3,6 +3,7 @@ import Link from "next/link";
 import React, { useState } from "react";
 import menuLinks from "./menuLinks";
 import styles from "./Navigation.module.css";
+import { CodeIcon, CogIcon } from "@heroicons/react/outline";
 
 export const Navigation = () => {
   const [isMenuClicked, setIsMenuClicked] = useState(false);
@@ -38,12 +39,17 @@ export const Navigation = () => {
         <menu className="hidden lg:flex items-center space-x-10 text-slate-400 font-medium text-base capitalize font-open tracking-wide">
           <div className="hover:text-primary transition ease-linear">
             <Link href="/coming-soon">
-              <a> for engineers</a>
+              <a className="flex items-center space-x-2">
+                <CogIcon className="h-5" /> <span>for engineers</span>
+              </a>
             </Link>
           </div>
           <div className="hover:text-primary transition ease-linear">
             <Link href="/coming-soon">
-              <a> for developers</a>
+              <a className="flex items-center space-x-2">
+                <CodeIcon className="h-5" />
+                <span> for developers</span>
+              </a>
             </Link>
           </div>
         </menu>
@@ -65,7 +71,7 @@ export const Navigation = () => {
         } ${isMenuClicked && styles.menuSlideIn}`}
       >
         <div className="w-[90%] lg:w-[58%] mx-auto">
-          <div className=" lg:hidden items-center justify-around space-y-5 mb-5 text-secondary font-medium text-base capitalize font-open tracking-wide">
+          <div className=" lg:hidden items-center justify-around space-y-5 mb-8 text-secondary font-medium text-base capitalize font-open tracking-wide">
             {menuLinks.map(({ id, name, href }) => (
               <div
                 key={id}
@@ -80,12 +86,17 @@ export const Navigation = () => {
           <div className="block lg:hidden items-center space-y-5 text-secondary font-medium text-base capitalize font-open tracking-wide">
             <div className="hover:text-primary transition ease-linear">
               <Link href="/coming-soon">
-                <a> for engineers</a>
+                <a className="flex items-center space-x-2">
+                  <CogIcon className="h-5" /> <span>for engineers</span>
+                </a>
               </Link>
             </div>
             <div className="hover:text-primary transition ease-linear">
               <Link href="/coming-soon">
-                <a> for developers</a>
+                <a className="flex items-center space-x-2">
+                  <CodeIcon className="h-5" />
+                  <span> for developers</span>
+                </a>
               </Link>
             </div>
           </div>

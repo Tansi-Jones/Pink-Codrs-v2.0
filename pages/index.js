@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <>
       <Meta />
-      <header className="">
+      <header>
         <nav>
           <Navigation />
         </nav>
