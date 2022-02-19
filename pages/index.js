@@ -67,8 +67,8 @@ export default function Home() {
         </div>
       </header>
 
-      <main className="relative w-[90%] lg:w-[58%] mx-auto h-[60vh]">
-        <section className="grid grid-cols-1 md:grid-cols-2 gap-10 my-20">
+      <main className="relative">
+        <section className="grid grid-cols-1 md:grid-cols-2 gap-10 my-20  w-[90%] lg:w-[58%] mx-auto h-[60vh]">
           <div className="max-w-sm">
             <div className="relative w-[60px] h-[60px] rounded-full bg-pink-600 flex items-center justify-center">
               <Image
@@ -76,7 +76,7 @@ export default function Home() {
                 width={30}
                 height={30}
                 objectFit="fill"
-                alt="pink codrs africa logo"
+                alt="pink codrs africa cloud computing icon"
               />
             </div>
             <h1 className="text-secondary font-bold text-3xl font-noto capitalize my-3">
@@ -94,7 +94,7 @@ export default function Home() {
                 width={30}
                 height={30}
                 objectFit="fill"
-                alt="pink codrs africa logo"
+                alt="pink codrs africa machine learning icon"
               />
             </div>
             <h1 className="text-secondary font-bold text-3xl font-noto capitalize my-3">
@@ -112,7 +112,7 @@ export default function Home() {
                 width={30}
                 height={30}
                 objectFit="fill"
-                alt="pink codrs africa logo"
+                alt="pink codrs africa software deve icon"
               />
             </div>
             <h1 className="text-secondary font-bold text-3xl font-noto capitalize my-3">
@@ -130,7 +130,7 @@ export default function Home() {
                 width={30}
                 height={30}
                 objectFit="fill"
-                alt="pink codrs africa logo"
+                alt="pink codrs africa data science icon"
               />
             </div>
             <h1 className="text-secondary font-bold text-3xl font-noto capitalize my-3 ">
@@ -140,6 +140,91 @@ export default function Home() {
               Duis aute irure dolor in reprehenderit in voluptate velit esse
               cillum dolore eu fugiat nulla pariatur.
             </p>
+          </div>
+        </section>
+
+        <hr />
+
+        <section className="my-20  w-[90%] lg:w-[58%] mx-auto h-[60vh]">
+          <h1 className="text-secondary font-bold text-5xl font-noto capitalize my-3 text-center py-10">
+            our vision & mission
+          </h1>
+          <div className=" grid grid-cols-1 lg:grid-cols-2 gap-10">
+            <div className="relative space-y-10 my-28">
+              <div className="space-y-5">
+                <div className="flex space-x-2">
+                  <div className="relative mt-1">
+                    <Image
+                      src="/assets/svg/green.svg"
+                      width={20}
+                      height={20}
+                      objectFit="fill"
+                      alt="pink codrs africa data science icon"
+                    />
+                  </div>
+                  <h1 className="font-noto text-secondary text-5xl font-semibold">
+                    500+
+                  </h1>
+                </div>
+
+                <p className="text-lg text-slate-500 font-normal font-open">
+                  Duis aute irure dolor in reprehenderit in voluptate velit esse
+                  cillum dolore eu fugiat nulla pariatur.
+                </p>
+              </div>
+              <div className="space-y-5">
+                <div className="flex space-x-2">
+                  <div className="relative mt-1">
+                    <Image
+                      src="/assets/svg/pink.svg"
+                      width={20}
+                      height={20}
+                      objectFit="fill"
+                      alt="pink codrs africa data science icon"
+                    />
+                  </div>
+                  <h1 className="font-noto text-secondary text-5xl font-semibold">
+                    80%
+                  </h1>
+                </div>
+
+                <p className="text-lg text-slate-500 font-normal font-open">
+                  Duis aute irure dolor in reprehenderit in voluptate velit esse
+                  cillum dolore eu fugiat nulla pariatur.
+                </p>
+              </div>
+              <div className="space-y-5">
+                <div className="flex space-x-2">
+                  <div className="relative mt-1">
+                    <Image
+                      src="/assets/svg/yellow.svg"
+                      width={20}
+                      height={20}
+                      objectFit="fill"
+                      alt="pink codrs africa data science icon"
+                    />
+                  </div>
+                  <h1 className="font-noto text-secondary text-5xl font-semibold">
+                    90%
+                  </h1>
+                </div>
+
+                <p className="text-lg text-slate-500 font-normal font-open">
+                  Duis aute irure dolor in reprehenderit in voluptate velit esse
+                  cillum dolore eu fugiat nulla pariatur.
+                </p>
+              </div>
+            </div>
+            <div>
+              <div className="-mt-52 lg:-mt-0 relative w-[20rem] h-[35rem] lg:h-[40rem] lg:w-[30rem]">
+                <Image
+                  src="/assets/svg/work.svg"
+                  layout="fill"
+                  objectFit="contain"
+                  alt="pink codrs africa logo"
+                />
+              </div>
+            </div>
           </div>
         </section>
       </main>
