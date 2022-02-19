@@ -1,27 +1,30 @@
 import Image from "next/image";
 import Link from "next/link";
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import menuLinks from "./menuLinks";
 import styles from "./Navigation.module.css";
 import { CodeIcon, CogIcon } from "@heroicons/react/outline";
 
-export const Navigation = () => {
+export const Navigation = ({ textColor, logoSrc }) => {
   const [isMenuClicked, setIsMenuClicked] = useState(false);
+
   return (
     <>
-      <div className="flex items-center justify-between py-3 w-[90%] lg:w-[58%] mx-auto">
+      <div
+        className={`flex items-center justify-between py-3 w-[90%] lg:w-[58%] mx-auto ${textColor}`}
+      >
         {/* left side */}
         <menu className="flex items-center space-x-10">
           <div className="relative">
             <Image
-              src="/pink-codrs.svg"
+              src={`${logoSrc}`}
               width={60}
               height={60}
               objectFit="fill"
               alt="pink codrs africa logo"
             />
           </div>
-          <div className="hidden lg:flex items-center justify-around space-x-10 text-slate-400 font-medium text-base capitalize font-open tracking-wide">
+          <div className="hidden lg:flex items-center justify-around space-x-10  font-medium text-base capitalize font-open tracking-wide">
             {menuLinks.map(({ id, name, href }) => (
               <div
                 key={id}
@@ -36,7 +39,7 @@ export const Navigation = () => {
         </menu>
 
         {/* right side */}
-        <menu className="hidden lg:flex items-center space-x-10 text-slate-400 font-medium text-base capitalize font-open tracking-wide">
+        <menu className="hidden lg:flex items-center space-x-10  font-medium text-base capitalize font-open tracking-wide">
           <div className="hover:text-primary transition ease-linear">
             <Link href="/coming-soon">
               <a className="flex items-center space-x-2">

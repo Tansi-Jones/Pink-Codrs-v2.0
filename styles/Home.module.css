@@ -1,0 +1,9 @@
+.header {
+  clip-path: polygon(0 0, 700% 0, 0 100%, 0 0);
+}
+
+@media screen and (max-width: 600px) {
+  .header {
+    clip-path: polygon(0 0, 2000% 0, 0 100%, 0 0);
+  }
+}
