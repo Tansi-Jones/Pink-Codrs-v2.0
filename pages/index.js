@@ -7,8 +7,8 @@ export default function Home() {
   return (
     <>
       <Meta />
-      <header className="bg-secondary h-[80vh] ">
-        <nav className="">
+      <header className="">
+        <nav>
           <Navigation />
         </nav>
       </header>
