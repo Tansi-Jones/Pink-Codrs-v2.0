@@ -67,9 +67,86 @@ export default function Home() {
         </div>
       </header>
 
-      <footer className="bg-white">
+      <main className="relative w-[90%] lg:w-[58%] mx-auto h-[60vh]">
+        <section className="grid grid-cols-1 md:grid-cols-2 gap-10 my-20">
+          <div className="max-w-sm">
+            <div className="relative w-[60px] h-[60px] rounded-full bg-pink-600 flex items-center justify-center">
+              <Image
+                src="/assets/svg/cloud.svg"
+                width={30}
+                height={30}
+                objectFit="fill"
+                alt="pink codrs africa logo"
+              />
+            </div>
+            <h1 className="text-secondary font-bold text-3xl font-noto capitalize my-3">
+              cloud computing
+            </h1>
+            <p className="text-lg text-slate-500 font-normal font-open">
+              Duis aute irure dolor in reprehenderit in voluptate velit esse
+              cillum dolore eu fugiat nulla pariatur.
+            </p>
+          </div>
+          <div className="max-w-sm justify-self-start lg:justify-self-end">
+            <div className="relative w-[60px] h-[60px] rounded-full bg-pink-600 flex items-center justify-center">
+              <Image
+                src="/assets/svg/ml.svg"
+                width={30}
+                height={30}
+                objectFit="fill"
+                alt="pink codrs africa logo"
+              />
+            </div>
+            <h1 className="text-secondary font-bold text-3xl font-noto capitalize my-3">
+              machine learning
+            </h1>
+            <p className="text-lg text-slate-500 font-normal font-open">
+              Duis aute irure dolor in reprehenderit in voluptate velit esse
+              cillum dolore eu fugiat nulla pariatur.
+            </p>
+          </div>
+          <div className="max-w-sm">
+            <div className="relative w-[60px] h-[60px] rounded-full bg-pink-600 flex items-center justify-center">
+              <Image
+                src="/assets/svg/dev.svg"
+                width={30}
+                height={30}
+                objectFit="fill"
+                alt="pink codrs africa logo"
+              />
+            </div>
+            <h1 className="text-secondary font-bold text-3xl font-noto capitalize my-3">
+              software development
+            </h1>
+            <p className="text-lg text-slate-500 font-normal font-open">
+              Duis aute irure dolor in reprehenderit in voluptate velit esse
+              cillum dolore eu fugiat nulla pariatur.
+            </p>
+          </div>
+          <div className="max-w-sm justify-self-start lg:justify-self-end">
+            <div className="relative w-[60px] h-[60px] rounded-full bg-pink-600 flex items-center justify-center">
+              <Image
+                src="/assets/svg/db.svg"
+                width={30}
+                height={30}
+                objectFit="fill"
+                alt="pink codrs africa logo"
+              />
+            </div>
+            <h1 className="text-secondary font-bold text-3xl font-noto capitalize my-3 ">
+              data science
+            </h1>
+            <p className="text-lg text-slate-500 font-normal font-open">
+              Duis aute irure dolor in reprehenderit in voluptate velit esse
+              cillum dolore eu fugiat nulla pariatur.
+            </p>
+          </div>
+        </section>
+      </main>
+
+      {/* <footer className="bg-white">
         <Footer />
-      </footer>
+      </footer> */}
     </>
   );
 }
