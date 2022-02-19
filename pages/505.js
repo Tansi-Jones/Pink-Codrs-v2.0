@@ -4,10 +4,10 @@ import { Footer } from "../components/footer/Footer";
 import Link from "next/link";
 import styles from "../styles/Others.module.css";
 
-export default function Custom404() {
+export default function Custom505() {
   return (
     <>
-      <Meta title="404 Client Error" />
+      <Meta title="505 Server Error" />
 
       <nav>
         <Navigation textColor="text-secondary" logoSrc="/pink-codrs-2.svg" />
@@ -17,10 +17,10 @@ export default function Custom404() {
         <h1
           className={`${styles.mainText} font-noto text-7xl font-bold capitalize text-secondary text-center`}
         >
-          oops
+          oh no
         </h1>
         <p className="text-slate-500 font-open text-xl text-center">
-          {" We couldn't find the page you're looking for."}
+          {" Looks like the server went down. Please refresh the page"}
         </p>
         <Link href="/">
           <a>
