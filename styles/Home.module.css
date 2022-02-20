@@ -4,7 +4,7 @@
 
 @media screen and (max-width: 600px) {
   .header {
-    clip-path: polygon(0 0, 2000% 0, 0 100%, 0 0);
+    clip-path: polygon(0 0, 4000% 0, 0 100%, 0 0);
   }
 }
 .paleBlueBg {

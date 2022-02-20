@@ -20,7 +20,9 @@ export default function Home() {
   return (
     <>
       <Meta />
-      <header className={`bg-secondary h-[100vh] lg:h-[80vh] ${styles.header}`}>
+      <header
+        className={`bg-secondary h-[100vh] md:h-[100vh] lg:h-[80vh] ${styles.header}`}
+      >
         <nav>
           <Navigation textColor="text-slate-400" logoSrc="/pink-codrs.svg" />
         </nav>
@@ -228,13 +230,14 @@ export default function Home() {
           </div>
         </section>
 
+        {/* Our events */}
         <section>
           <div className={`bg-secondary h-[40rem] ${styles.header}`}>
             <h1 className="text-white font-bold text-5xl font-noto capitalize my-3 text-center py-20">
               our most exciting events
             </h1>
           </div>
-          <div className="w-[90%] lg:w-[58%] mx-auto grid grid-cols-1 lg:grid-cols-3 transform -translate-y-80 gap-x-20 gap-y-52">
+          <div className="w-[90%] lg:w-[58%] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 transform -translate-y-80 gap-x-20 gap-y-52">
             <article className="relative min-w-[325px] max-w-[325px] h-[23rem] space-y-3 text-gray-700  justify-self-center">
               <div className="relative w-full h-full z-50 rounded-sm overflow-auto">
                 <Image
@@ -477,9 +480,9 @@ export default function Home() {
         </section>
       </main>
 
-      {/* <footer className="bg-white">
+      <footer className="bg-white">
         <Footer />
-      </footer> */}
+      </footer>
     </>
   );
 }
