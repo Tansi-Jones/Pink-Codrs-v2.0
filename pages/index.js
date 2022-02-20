@@ -487,7 +487,7 @@ export default function Home() {
           <h1
             className={`${styles.mainText} font-noto text-5xl font-bold capitalize text-secondary text-center`}
           >
-            want to be part of the{" "}
+            want to be part of the
             <span className="text-green-500"> journey?</span>
           </h1>
 

@@ -10,9 +10,10 @@ export default function about() {
 
       <header className="relative h-[50vh] w-full bg-secondary ">
         <Image
-          src="/assets/img/img-2.jpg"
+          src="/assets/img/img-1.jpg"
           layout="fill"
           objectFit="cover"
+          objectPosition="bottom"
           alt="header image"
           className="opacity-20 grayscale"
         />
@@ -20,7 +21,7 @@ export default function about() {
         <nav className="z-50 sticky">
           <Navigation textColor="text-slate-400" logoSrc="/pink-codrs.svg" />
         </nav>
-        <div className="w-[90%] lg:w-[58%] mx-auto sticky my-20">
+        <div className="container sticky my-20">
           <h1 className="font-noto text-5xl lg:text-6xl font-semibold tracking-wide  leading-tight text-center">
             {"We're building & training new talents"}
           </h1>
@@ -28,7 +29,7 @@ export default function about() {
       </header>
 
       {/* about us */}
-      <section className="w-[90%] lg:w-[58%] mx-auto transform -translate-y-32">
+      <section className="container transform -translate-y-32">
         <div className="relative w-full h-[38rem]">
           <Image
             src="/assets/img/img-3.jpg"
@@ -93,13 +94,13 @@ export default function about() {
 
       {/* galery */}
       <section className={`${styles.paleBlueBg} py-20 space-y-10 `}>
-        <div className="w-[90%] lg:w-[58%] mx-auto ">
-          <h1 className="font-noto text-5xl font-bold capitalize text-secondary text-center w-[75%] mx-auto">
+        <div className="container">
+          <h1 className="font-noto text-5xl font-bold capitalize text-secondary text-center lg:w-[75%] mx-auto pb-5">
             slight peek at some of our past events
           </h1>
         </div>
-        <div className="relative grid grid-cols-3 gap-x-16 items-center ">
-          <div className="h-[27rem] w-[40rem]">
+        <div className="relative grid grid-cols-3 gap-x-5 items-center ">
+          <div className="h-[27rem] w-full">
             <div className="relative h-full w-full">
               <Image
                 src="/assets/img/img-3.jpg"
@@ -109,7 +110,7 @@ export default function about() {
               />
             </div>
           </div>
-          <div className="h-[27rem] w-[40rem]">
+          <div className="h-[27rem] w-full">
             <div className="relative h-full w-full">
               <Image
                 src="/assets/img/img-3.jpg"
@@ -119,7 +120,7 @@ export default function about() {
               />
             </div>
           </div>
-          <div className="h-[27rem] w-[40rem]">
+          <div className="h-[27rem] w-full">
             <div className="relative h-full w-full">
               <Image
                 src="/assets/img/img-3.jpg"
@@ -131,6 +132,79 @@ export default function about() {
           </div>
         </div>
       </section>
+
+      {/* teams */}
+      <section className="container my-20">
+        <h1 className="font-noto text-5xl font-bold capitalize text-secondary text-center ">
+          our amazing team
+        </h1>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-10 items-center py-16">
+          {teamMembers.map(({ id, name, position, img }) => (
+            <div key={id} className="flex flex-col items-center space-y-1">
+              <div className="relative rounded-full overflow-auto h-32 w-32 bg-pink-300 ">
+                <Image src={img} layout="fill" objectFit="cover" alt={name} />
+              </div>
+              <h1 className="font-noto text-secondary text-xl font-bold text-center pt-3">
+                {name}
+              </h1>
+              <p className="font-open text-primary text-base font-semibold text-center">
+                {position}
+              </p>
+            </div>
+          ))}
+        </div>
+      </section>
     </>
   );
 }
+
+export const teamMembers = [
+  {
+    id: 1,
+    name: "Mbali Hlongwane",
+    position: "CEO, Founder",
+    img: "/assets/img/team-8.jpg",
+  },
+  {
+    id: 2,
+    name: "Elisa Nguyen",
+    position: "Co-Founder, Lead Engineer",
+    img: "/assets/img/team-2.jpg",
+  },
+  {
+    id: 3,
+    name: "Travis Stephens",
+    position: "Senior Software Engineer",
+    img: "/assets/img/team-1.jpg",
+  },
+  {
+    id: 4,
+    name: "Cameron Mckay",
+    position: "Senior UX/UI Designer",
+    img: "/assets/img/team-7.jpg",
+  },
+  {
+    id: 5,
+    name: "Patricia Curnock",
+    position: "Software Engineer",
+    img: "/assets/img/team-6.jpg",
+  },
+  {
+    id: 6,
+    name: "Amanda Danish",
+    position: "Senior Data Scientist",
+    img: "/assets/img/team-4.jpg",
+  },
+  {
+    id: 7,
+    name: "zoltan Jackson",
+    position: "Marketing Manager",
+    img: "/assets/img/team-5.jpg",
+  },
+  {
+    id: 8,
+    name: "George Tolinski",
+    position: "Community Manager",
+    img: "/assets/img/team-3.jpg",
+  },
+];
