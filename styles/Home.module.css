@@ -7,3 +7,6 @@
     clip-path: polygon(0 0, 2000% 0, 0 100%, 0 0);
   }
 }
+.paleBlueBg {
+  background-color: #f1f5f9;
+}
