@@ -157,6 +157,29 @@ export default function about() {
         </div>
       </section>
 
+      {/* partners */}
+      <section className="bg-secondary py-20 space-y-10">
+        <div className="container">
+          <h1 className="font-noto text-5xl font-bold capitalize text-center lg:w-[80%] mx-auto pb-5">
+            {"We're fortunate to have incredible partners."}
+          </h1>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3 items-center py-16 container">
+          {ourPartners.map(({ id, img }) => (
+            <div key={id} className="border border-slate-700 py-7 px-10">
+              <Image
+                src={img}
+                objectFit="contain"
+                alt={img}
+                width={300}
+                height={90}
+                className=" brightness-200 grayscale"
+              />
+            </div>
+          ))}
+        </div>
+      </section>
+
       {/* join pink codrs */}
       <section
         className={`${styles.paleBlueBg} py-20 flex flex-col items-center space-y-10`}
@@ -236,5 +259,48 @@ export const teamMembers = [
     name: "George Tolinski",
     position: "Community Manager",
     img: "/assets/img/team-3.jpg",
+  },
+];
+
+export const ourPartners = [
+  {
+    id: 1,
+    img: "/assets/img/microsoft.png",
+  },
+  {
+    id: 2,
+    img: "/assets/img/kaizer-chiefs.png",
+  },
+  {
+    id: 3,
+    img: "/assets/img/orange-corners.png",
+  },
+  {
+    id: 4,
+    img: "/assets/img/sap.png",
+  },
+  {
+    id: 5,
+    img: "/assets/img/snake nation.png",
+  },
+  {
+    id: 6,
+    img: "/assets/img/liquid-telecom.png",
+  },
+  {
+    id: 7,
+    img: "/assets/img/22onsloane-2.png",
+  },
+  {
+    id: 8,
+    img: "/assets/img/adrica-talking.png",
+  },
+  {
+    id: 9,
+    img: "/assets/img/innovate-durban.png",
+  },
+  {
+    id: 10,
+    img: "/assets/img/jozihub.png",
   },
 ];

@@ -80,7 +80,7 @@ export const Footer = () => {
       </div>
       <hr />
       <div className="text-slate-600 text-sm py-5 flex flex-wrap space-y-5 items-center justify-between">
-        <h1>&copy; Pink-Codrs.com. All rights reserved.</h1>
+        <p>&copy; Pink-Codrs.com. All rights reserved.</p>
         <div className="flex items-center space-x-5">
           <div>
             <Link href="/">
