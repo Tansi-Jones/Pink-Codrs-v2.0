@@ -10,3 +10,9 @@
 .paleBlueBg {
   background-color: #f1f5f9;
 }
+
+.mainText::after {
+  content: url(../public/assets/svg/path-1.svg);
+  transform: translate(-20%, -70%);
+  display: inline-block;
+}

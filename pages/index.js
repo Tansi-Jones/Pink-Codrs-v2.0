@@ -5,6 +5,7 @@ import { Navigation } from "../components/navigation/Navigation";
 import React, { useState, useRef } from "react";
 import { PlayIcon } from "@heroicons/react/solid";
 import { Footer } from "../components/footer/Footer";
+import Link from "next/link";
 
 export default function Home() {
   const [isPlaying, setIsPlaying] = useState(false);
@@ -72,7 +73,7 @@ export default function Home() {
       <main className="relative ">
         <section className="grid grid-cols-1 md:grid-cols-2 gap-10 my-20 w-[90%] lg:w-[58%] mx-auto">
           <div className="max-w-sm">
-            <div className="relative w-[60px] h-[60px] rounded-full bg-pink-600 flex items-center justify-center">
+            <div className="relative w-[60px] h-[60px] rounded-full bg-primary flex items-center justify-center">
               <Image
                 src="/assets/svg/cloud.svg"
                 width={30}
@@ -90,7 +91,7 @@ export default function Home() {
             </p>
           </div>
           <div className="max-w-sm justify-self-start lg:justify-self-end">
-            <div className="relative w-[60px] h-[60px] rounded-full bg-pink-600 flex items-center justify-center">
+            <div className="relative w-[60px] h-[60px] rounded-full bg-primary flex items-center justify-center">
               <Image
                 src="/assets/svg/ml.svg"
                 width={30}
@@ -108,7 +109,7 @@ export default function Home() {
             </p>
           </div>
           <div className="max-w-sm">
-            <div className="relative w-[60px] h-[60px] rounded-full bg-pink-600 flex items-center justify-center">
+            <div className="relative w-[60px] h-[60px] rounded-full bg-primary flex items-center justify-center">
               <Image
                 src="/assets/svg/dev.svg"
                 width={30}
@@ -126,7 +127,7 @@ export default function Home() {
             </p>
           </div>
           <div className="max-w-sm justify-self-start lg:justify-self-end">
-            <div className="relative w-[60px] h-[60px] rounded-full bg-pink-600 flex items-center justify-center">
+            <div className="relative w-[60px] h-[60px] rounded-full bg-primary flex items-center justify-center">
               <Image
                 src="/assets/svg/db.svg"
                 width={30}
@@ -337,9 +338,10 @@ export default function Home() {
           </div>
         </section>
 
-        <section className={`${styles.paleBlueBg} py-20`}>
+        <section className={`py-10`}>
           <div className=" w-[90%] lg:w-[58%] mx-auto">
-            <h1 className="text-secondary font-bold text-5xl font-noto capitalize my-3 text-center py-10">
+            <hr />
+            <h1 className="text-secondary font-bold text-5xl font-noto capitalize my-3 text-center py-10 mt-10">
               what people say about us
             </h1>
             <div>
@@ -477,6 +479,29 @@ export default function Home() {
               </div>
             </div>
           </div>
+        </section>
+
+        <section
+          className={`${styles.paleBlueBg} py-20 flex flex-col items-center space-y-10 my-20`}
+        >
+          <h1
+            className={`${styles.mainText} font-noto text-5xl font-bold capitalize text-secondary text-center`}
+          >
+            want to be part of the{" "}
+            <span className="text-green-500"> journey?</span>
+          </h1>
+
+          <p className="text-slate-500 font-open text-xl text-center max-w-4xl mx-auto">
+            We are always open to talk to great people who want to help us shape
+            the future of work, and we have job openings all over the world.
+          </p>
+          <Link href="/">
+            <a>
+              <button className="btn-secondary py-3 px-6 w-full lg:w-auto ">
+                join pink codrs
+              </button>
+            </a>
+          </Link>
         </section>
       </main>
 
