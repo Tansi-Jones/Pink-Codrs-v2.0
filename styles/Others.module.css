@@ -1,5 +1,19 @@
+/* Home page */
+
 .mainText::after {
   content: url(../public/assets/svg/path-1.svg);
   transform: translate(-20%, -70%);
   display: inline-block;
+}
+
+/* About page */
+.spliter:first-child::after {
+  content: "";
+  width: 10px;
+  height: 100px;
+  background-color: rgb(249 168 212);
+  display: inline-block;
+}
+.paleBlueBg {
+  background-color: #f1f5f9;
 }

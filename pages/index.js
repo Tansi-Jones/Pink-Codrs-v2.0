@@ -30,7 +30,7 @@ export default function Home() {
 
         <div className="py-16 grid grid-cols-1 lg:grid-cols-2 w-[90%] lg:w-[58%] mx-auto h-[60vh]">
           <div className="lg:my-5">
-            <h1 className="text-white font-noto text-5xl lg:text-6xl font-semibold tracking-wide text-left leading-tight">
+            <h1 className="font-noto text-5xl lg:text-6xl font-semibold tracking-wide text-left leading-tight">
               Building Female Developers Across Africa
             </h1>
             <div className="block md:flex gap-5 space-y-5 md:space-y-0 my-10">
@@ -234,7 +234,7 @@ export default function Home() {
         {/* Our events */}
         <section>
           <div className={`bg-secondary h-[40rem] ${styles.header}`}>
-            <h1 className="text-white font-bold text-5xl font-noto capitalize my-3 text-center py-20">
+            <h1 className="font-bold text-5xl font-noto capitalize my-3 text-center py-20">
               our most exciting events
             </h1>
           </div>
@@ -505,7 +505,7 @@ export default function Home() {
         </section>
       </main>
 
-      <footer className="bg-white">
+      <footer>
         <Footer />
       </footer>
     </>

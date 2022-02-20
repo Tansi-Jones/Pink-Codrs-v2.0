@@ -11,7 +11,7 @@ export const Navigation = ({ textColor, logoSrc }) => {
   return (
     <>
       <div
-        className={`flex items-center justify-between py-3 w-[90%] lg:w-[58%] mx-auto ${textColor}`}
+        className={`flex items-center justify-between py-3 w-[90%] lg:w-[58%] mx-auto ${textColor} `}
       >
         {/* left side */}
         <menu className="flex items-center space-x-10">
