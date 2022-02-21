@@ -1,8 +1,6 @@
 import Image from "next/image";
 import { Meta } from "../components/meta/Meta";
 import { Navigation } from "../components/navigation/Navigation";
-import styles from "../styles/Others.module.css";
-import Link from "next/link";
 import { Footer } from "../components/footer/Footer";
 import { JoinUs } from "../components/join us/JoinUs";
 
@@ -25,8 +23,8 @@ export default function about() {
         <nav className="z-50 sticky">
           <Navigation textColor="text-slate-400" logoSrc="/pink-codrs.svg" />
         </nav>
-        <div className="container sticky my-20">
-          <h1 className="font-noto text-3xl md:text-5xl lg:text-6xl font-semibold tracking-wide leading-loose text-center">
+        <div className="container sticky my-8 lg:my-20">
+          <h1 className="lg:w-[75%] mx-auto font-noto text-3xl md:text-5xl lg:text-6xl font-semibold tracking-wide leading-loose text-center">
             {"We're building & training new talents"}
           </h1>
         </div>
@@ -42,7 +40,7 @@ export default function about() {
             alt="about image"
           />
         </div>
-        <div className=" lg:w-[75%] mx-auto h-40 bg-primary transform -translate-y-20 shadow-lg grid grid-cols-3 items-center">
+        <div className="lg:w-[75%] mx-auto h-40 bg-primary transform -translate-y-20 shadow-lg grid grid-cols-3 items-center">
           <div className="text-center lg:border-r-2 border-pink-400 space-y-3">
             <h1 className="font-noto text-2xl md:text-5xl font-semibold text-white">
               150+

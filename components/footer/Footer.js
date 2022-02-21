@@ -71,7 +71,7 @@ export const Footer = () => {
               </div>
               <div className="hover:text-primary transition ease-linear text-slate-600">
                 <Link href="/coming-soon">
-                  <a>Help</a>
+                  <a>FAQ</a>
                 </Link>
               </div>
             </div>
