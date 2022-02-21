@@ -3,11 +3,12 @@ import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import { Navigation } from "../components/navigation/Navigation";
 import React, { useState, useRef } from "react";
-import { PlayIcon } from "@heroicons/react/solid";
+import { RiDoubleQuotesL } from "react-icons/ri";
 import { Footer } from "../components/footer/Footer";
 import Link from "next/link";
 import { BsPlayFill, BsPauseFill } from "react-icons/bs";
 import { JoinUs } from "../components/join us/JoinUs";
+import Process from "../components/Process";
 
 export default function Home() {
   const [isPlaying, setIsPlaying] = useState(false);
@@ -296,7 +297,7 @@ export default function Home() {
               </div>
               <div className={styles.cardDesign}></div>
               <div>
-                <div className="text-slate-600 transform -translate-y-[370px]">
+                <div className="text-slate-500 transform -translate-y-[370px]">
                   <h1 className="font-noto text-secondary text-3xl font-semibold">
                     career guide
                   </h1>
@@ -330,7 +331,7 @@ export default function Home() {
               </div>
               <div className={styles.cardDesign}></div>
               <div>
-                <div className="text-slate-600 transform -translate-y-[370px]">
+                <div className="text-slate-500 transform -translate-y-[370px]">
                   <h1 className="font-noto text-secondary text-3xl font-semibold">
                     career guide
                   </h1>
@@ -364,7 +365,7 @@ export default function Home() {
               </div>
               <div className={styles.cardDesign}></div>
               <div>
-                <div className="text-slate-600 transform -translate-y-[370px]">
+                <div className="text-slate-500 transform -translate-y-[370px]">
                   <h1 className="font-noto text-secondary text-3xl font-semibold">
                     career guide
                   </h1>
@@ -378,101 +379,62 @@ export default function Home() {
           </div>
         </section>
 
-        <section>
-          <div className=" w-[90%] lg:w-[58%] mx-auto 9b-16">
+        <section className="pb-16">
+          <div className=" container ">
             <hr />
             <h1 className="text-secondary font-bold text-3xl md:text-5xl font-noto capitalize my-3 text-center py-10 mt-10">
               our process
             </h1>
-            {/* <!-- component --> */}
-            <div className="container">
-              <div className="flex flex-col md:grid grid-cols-9 mx-auto p-2 text-blue-50">
-                {/* <!-- left --> */}
-                <div className="flex flex-row-reverse md:contents">
-                  <div className="bg-blue-500 col-start-1 col-end-5 p-4 rounded-xl my-4 ml-auto shadow-md">
-                    <h3 className="font-semibold text-lg mb-1">Lorem ipsum</h3>
-                    <p className="leading-tight text-justify">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Modi, quaerat?
-                    </p>
-                  </div>
-                  <div className="col-start-5 col-end-6 md:mx-auto relative mr-10">
-                    <div className="h-full w-6 flex items-center justify-center">
-                      <div className="h-full w-1 bg-blue-800 pointer-events-none"></div>
-                    </div>
-                    <div className="w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-blue-500 shadow"></div>
-                  </div>
-                </div>
-                {/* <!-- right --> */}
-                <div className="flex md:contents">
-                  <div className="col-start-5 col-end-6 mr-10 md:mx-auto relative">
-                    <div className="h-full w-6 flex items-center justify-center">
-                      <div className="h-full w-1 bg-blue-800 pointer-events-none"></div>
-                    </div>
-                    <div className="w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-blue-500 shadow"></div>
-                  </div>
-                  <div className="bg-blue-500 col-start-6 col-end-10 p-4 rounded-xl my-4 mr-auto shadow-md">
-                    <h3 className="font-semibold text-lg mb-1">Lorem ipsum</h3>
-                    <p className="leading-tight text-justify">
-                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                      Vitae, facilis.
-                    </p>
-                  </div>
-                </div>
-                {/* <!-- left --> */}
-                <div className="flex flex-row-reverse md:contents">
-                  <div className="bg-blue-500 col-start-1 col-end-5 p-4 rounded-xl my-4 ml-auto shadow-md">
-                    <h3 className="font-semibold text-lg mb-1">Lorem ipsum</h3>
-                    <p className="leading-tight text-justify">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Modi, quaerat?
-                    </p>
-                  </div>
-                  <div className="col-start-5 col-end-6 md:mx-auto relative mr-10">
-                    <div className="h-full w-6 flex items-center justify-center">
-                      <div className="h-full w-1 bg-blue-800 pointer-events-none"></div>
-                    </div>
-                    <div className="w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-blue-500 shadow"></div>
-                  </div>
-                </div>
-                {/* <!-- left --> */}
-                <div className="flex flex-row-reverse md:contents">
-                  <div className="bg-blue-500 col-start-1 col-end-5 p-4 rounded-xl my-4 ml-auto shadow-md">
-                    <h3 className="font-semibold text-lg mb-1">Lorem ipsum</h3>
-                    <p className="leading-tight text-justify">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Modi, quaerat?
-                    </p>
-                  </div>
-                  <div className="col-start-5 col-end-6 md:mx-auto relative mr-10">
-                    <div className="h-full w-6 flex items-center justify-center">
-                      <div className="h-full w-1 bg-blue-800 pointer-events-none"></div>
-                    </div>
-                    <div className="w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-blue-500 shadow"></div>
-                  </div>
-                </div>
-                {/* <!-- right --> */}
-                <div className="flex md:contents">
-                  <div className="col-start-5 col-end-6 mr-10 md:mx-auto relative">
-                    <div className="h-full w-6 flex items-center justify-center">
-                      <div className="h-full w-1 bg-blue-800 pointer-events-none"></div>
-                    </div>
-                    <div className="w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-blue-500 shadow"></div>
-                  </div>
-                  <div className="bg-blue-500 col-start-6 col-end-10 p-4 rounded-xl my-4 mr-auto shadow-md">
-                    <h3 className="font-semibold text-lg mb-1">Lorem ipsum</h3>
-                    <p className="leading-tight text-justify">
-                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                      Vitae, facilis.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
           </div>
+          <Process />
         </section>
 
-        <section className={styles.paleBlueBg}></section>
+        <section
+          className={`${styles.paleBlueBg} pb-20 pt-5 flex flex-col items-center`}
+        >
+          <h1 className="text-secondary font-bold text-3xl md:text-5xl font-noto capitalize my-3 text-center py-10 mt-10">
+            what people say about us
+          </h1>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 container">
+            {testimonials.map(
+              ({ id, name, position, img, company, details }) => (
+                <div
+                  key={id}
+                  className="max-w-xl shadow-xl bg-white p-6 space-y-3"
+                >
+                  <div className="relative flex items-center space-x-3">
+                    <div className="relative h-[50px] w-[50px] rounded-full overflow-auto">
+                      <Image
+                        src={img}
+                        layout="fill"
+                        objectFit="cover"
+                        alt={name}
+                      />
+                    </div>
+                    <div className="absolute -top-2 left-5">
+                      <RiDoubleQuotesL className="text-primary text-3xl" />
+                    </div>
+                    <h1 className="text-secondary font-greatVibes text-2xl font-medium capitalize">
+                      {company}
+                    </h1>
+                  </div>
+                  <p className="text-slate-500 text-base font-normal italic">
+                    {details}
+                  </p>
+                  <p className="text-base font-medium space-x-3">
+                    <span className=" text-slate-600 ">{name}</span>
+                    <span className="text-slate-500 ">{position}</span>
+                  </p>
+                </div>
+              )
+            )}
+          </div>
+          <div className="pt-20">
+            <button className="btn-primary py-3 px-6 w-full lg:w-auto">
+              see all testimonials
+            </button>
+          </div>
+        </section>
 
         <section className="bg-secondary">
           <JoinUs textColor="text-white" btnBackground="btn-primary" />
@@ -485,3 +447,60 @@ export default function Home() {
     </>
   );
 }
+
+export const testimonials = [
+  {
+    id: 1,
+    name: "Mbali Hlongwane",
+    position: "CEO, Founder",
+    img: "/assets/img/team-8.jpg",
+    company: "pink codrs",
+    details:
+      "Tidy has been the system to drive change in collaboration on content for our organisation.",
+  },
+  {
+    id: 2,
+    name: "Mbali Hlongwane",
+    position: "CEO, Founder",
+    img: "/assets/img/team-4.jpg",
+    company: "pink codrs",
+    details:
+      "Tidy has been the system to drive change in collaboration on content for our organisation.",
+  },
+  {
+    id: 3,
+    name: "Mbali Hlongwane",
+    position: "CEO, Founder",
+    img: "/assets/img/team-6.jpg",
+    company: "pink codrs",
+    details:
+      "Tidy has been the system to drive change in collaboration on content for our organisation.",
+  },
+  {
+    id: 4,
+    name: "Mbali Hlongwane",
+    position: "CEO, Founder",
+    img: "/assets/img/team-3.jpg",
+    company: "pink codrs",
+    details:
+      "Tidy has been the system to drive change in collaboration on content for our organisation.",
+  },
+  {
+    id: 5,
+    name: "Mbali Hlongwane",
+    position: "CEO, Founder",
+    img: "/assets/img/team-1.jpg",
+    company: "pink codrs",
+    details:
+      "Tidy has been the system to drive change in collaboration on content for our organisation.",
+  },
+  {
+    id: 6,
+    name: "Mbali Hlongwane",
+    position: "CEO, Founder",
+    img: "/assets/img/team-2.jpg",
+    company: "pink codrs",
+    details:
+      "Tidy has been the system to drive change in collaboration on content for our organisation.",
+  },
+];

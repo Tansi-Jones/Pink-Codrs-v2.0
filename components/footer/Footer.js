@@ -13,17 +13,17 @@ export const Footer = () => {
           </h1>
           <div className="space-y-2 font-normal text-md capitalize tracking-wide">
             <div>
-              <div className="hover:text-primary transition ease-linear text-slate-600">
+              <div className="hover:text-primary transition ease-linear text-slate-500">
                 <Link href="/about">
                   <a>about us</a>
                 </Link>
               </div>
-              <div className="hover:text-primary transition ease-linear text-slate-600">
+              <div className="hover:text-primary transition ease-linear text-slate-500">
                 <Link href="/learn">
                   <a>learn</a>
                 </Link>
               </div>
-              <div className="hover:text-primary transition ease-linear text-slate-600">
+              <div className="hover:text-primary transition ease-linear text-slate-500">
                 <Link href="/coming-soon">
                   <a>terms & conditions</a>
                 </Link>
@@ -36,14 +36,14 @@ export const Footer = () => {
             join pink codrs
           </h1>
           <div className="space-y-2  font-normal text-md capitalize tracking-wide">
-            <div className="hover:text-primary transition ease-linear text-slate-600">
+            <div className="hover:text-primary transition ease-linear text-slate-500">
               <Link href="/coming-soon">
                 <a className="flex items-center space-x-2">
                   <CogIcon className="h-4" /> <span>for engineers</span>
                 </a>
               </Link>
             </div>
-            <div className="hover:text-primary transition ease-linear text-slate-600">
+            <div className="hover:text-primary transition ease-linear text-slate-500">
               <Link href="/coming-soon">
                 <a className="flex items-center space-x-2">
                   <CodeIcon className="h-4" />
@@ -59,17 +59,17 @@ export const Footer = () => {
           </h1>
           <div className="space-y-2  font-normal text-md capitalize tracking-wide">
             <div>
-              <div className="hover:text-primary transition ease-linear text-slate-600">
+              <div className="hover:text-primary transition ease-linear text-slate-500">
                 <Link href="/coming-soon">
                   <a>privacy & policy</a>
                 </Link>
               </div>
-              <div className="hover:text-primary transition ease-linear text-slate-600">
+              <div className="hover:text-primary transition ease-linear text-slate-500">
                 <Link href="/contact">
                   <a>contact us</a>
                 </Link>
               </div>
-              <div className="hover:text-primary transition ease-linear text-slate-600">
+              <div className="hover:text-primary transition ease-linear text-slate-500">
                 <Link href="/coming-soon">
                   <a>FAQ</a>
                 </Link>
@@ -79,7 +79,7 @@ export const Footer = () => {
         </div>
       </div>
       <hr />
-      <div className="text-slate-600 text-sm py-5 flex flex-wrap space-y-5 items-center justify-between">
+      <div className="text-slate-500 text-sm py-5 flex flex-wrap space-y-5 items-center justify-between">
         <p>&copy; Pink-Codrs.com. All rights reserved.</p>
         <div className="flex items-center space-x-5">
           <div>

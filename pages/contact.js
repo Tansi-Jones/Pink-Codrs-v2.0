@@ -28,38 +28,38 @@ export default function contact() {
             <form>
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-2 items-center justify-center pb-5">
                 <div>
-                  <p className="pb-2 text-slate-600 text-base lg:text-lg">
+                  <p className="pb-2 text-slate-500 text-base lg:text-lg">
                     Your name <span className="text-red-500">*</span>
                   </p>
                   <input
                     type="text"
                     name="name"
                     id="name"
-                    className="outline-none border border-tertiary w-full p-2 text-slate-600"
+                    className="outline-none border border-tertiary w-full p-2 text-slate-500"
                   />
                 </div>
                 <div>
-                  <p className="pb-2 text-slate-600 text-base lg:text-lg">
+                  <p className="pb-2 text-slate-500 text-base lg:text-lg">
                     Your email <span className="text-red-500">*</span>
                   </p>
                   <input
                     type="email"
                     name="email"
                     id="email"
-                    className="outline-none border border-tertiary w-full p-2 text-slate-600"
+                    className="outline-none border border-tertiary w-full p-2 text-slate-500"
                   />
                 </div>
               </div>
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-2 items-center justify-center pb-5">
                 <div>
-                  <p className="pb-2 text-slate-600 text-base lg:text-lg">
+                  <p className="pb-2 text-slate-500 text-base lg:text-lg">
                     Your subject <span className="text-red-500">*</span>
                   </p>
                   <input
                     type="text"
                     name="subject"
                     id="subject"
-                    className="outline-none border border-tertiary w-full p-2 text-slate-600"
+                    className="outline-none border border-tertiary w-full p-2 text-slate-500"
                   />
                 </div>
                 <div>
@@ -70,7 +70,7 @@ export default function contact() {
                     type="text"
                     name="occupation"
                     id="occupation"
-                    className="outline-none border border-tertiary w-full p-2 text-slate-600"
+                    className="outline-none border border-tertiary w-full p-2 text-slate-500"
                   />
                 </div>
               </div>
@@ -83,7 +83,7 @@ export default function contact() {
                   id="message"
                   cols="30"
                   rows="6"
-                  className="outline-none border border-tertiary w-full p-2 resize-none text-slate-600"
+                  className="outline-none border border-tertiary w-full p-2 resize-none text-slate-500"
                 ></textarea>
               </div>
               <div className="pb-5">
@@ -100,7 +100,7 @@ export default function contact() {
               <div>
                 <HomeIcon className="h-6 text-primary" />
               </div>
-              <p className="pb-2 text-slate-600 text-base lg:text-lg">
+              <p className="pb-2 text-slate-500 text-base lg:text-lg">
                 44 Stanley Avenue Milpark Johannesburg 2092
               </p>
             </div>
@@ -108,7 +108,7 @@ export default function contact() {
               <div>
                 <MailIcon className="h-6 text-primary" />
               </div>
-              <p className="pb-2 text-slate-600 text-base lg:text-lg">
+              <p className="pb-2 text-slate-500 text-base lg:text-lg">
                 +27 (81) 523-8220
               </p>
             </div>
@@ -116,7 +116,7 @@ export default function contact() {
               <div>
                 <DeviceMobileIcon className="h-6 text-primary" />
               </div>
-              <p className="pb-2 text-slate-600 text-base lg:text-lg">
+              <p className="pb-2 text-slate-500 text-base lg:text-lg">
                 info@pinkcodrs.africa
               </p>
             </div>
