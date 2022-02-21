@@ -5,7 +5,7 @@ import { Footer } from "../components/footer/Footer";
 import { JoinUs } from "../components/join us/JoinUs";
 import styles from "../styles/Others.module.css";
 
-export default function about() {
+export default function About() {
   return (
     <>
       <Meta title="About" />

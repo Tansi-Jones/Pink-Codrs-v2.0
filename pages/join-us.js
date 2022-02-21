@@ -4,7 +4,7 @@ import { ArrowRightIcon } from "@heroicons/react/outline";
 import { RiDoubleQuotesL } from "react-icons/ri";
 import Link from "next/link";
 
-export default function joinUs() {
+export default function JoinUs() {
   return (
     <>
       <Meta title="Join Us" />

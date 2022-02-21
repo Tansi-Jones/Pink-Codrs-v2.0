@@ -6,7 +6,7 @@ import { SearchIcon } from "@heroicons/react/outline";
 import { BsCollection } from "react-icons/bs";
 import styles from "../styles/Others.module.css";
 
-export default function learn() {
+export default function Learn() {
   return (
     <>
       <Meta title="Learn" />

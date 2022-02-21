@@ -1,5 +1,6 @@
 import Link from "next/link";
 import styles from "./JoinUs.module.css";
+import { ArrowRightIcon } from "@heroicons/react/outline";
 
 export const JoinUs = ({ textColor, btnBackground }) => {
   return (
@@ -18,8 +19,13 @@ export const JoinUs = ({ textColor, btnBackground }) => {
         </p>
         <Link href="/join-us">
           <a>
-            <button className={`${btnBackground} py-3 px-6 w-full lg:w-auto`}>
-              join pink codrs
+            <button
+              className={`${btnBackground} py-3 px-6 w-full lg:w-auto flex items-center justify-center space-x-2`}
+            >
+              <span>join pink codrs</span>
+              <span>
+                <ArrowRightIcon className="text-white h-4" />
+              </span>
             </button>
           </a>
         </Link>

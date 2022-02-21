@@ -8,6 +8,7 @@ import { Footer } from "../components/footer/Footer";
 import Link from "next/link";
 import { BsPlayFill, BsPauseFill } from "react-icons/bs";
 import { JoinUs } from "../components/join us/JoinUs";
+import { ArrowRightIcon } from "@heroicons/react/outline";
 
 export default function Home() {
   const [isPlaying, setIsPlaying] = useState(false);
@@ -43,7 +44,7 @@ export default function Home() {
             <div className="block md:flex gap-5 space-y-5 md:space-y-0 my-10">
               <Link href="/join-us">
                 <a>
-                  <button className="btn-primary py-3 px-11 w-full lg:w-auto">
+                  <button className="btn-primary py-3 px-11 w-full lg:w-auto mb-5">
                     join pink codrs
                   </button>
                 </a>
@@ -58,8 +59,12 @@ export default function Home() {
             </div>
           </div>
 
+          {/* Intro Video */}
           <div className={`${styles.video} relative rounded-lg`}>
-            <div className="relative z-50" onClick={handlePlayPause}>
+            <div
+              className="relative z-50 cursor-pointer bg-pink-400"
+              onClick={handlePlayPause}
+            >
               <video
                 width={1000}
                 height={1000}
@@ -70,32 +75,16 @@ export default function Home() {
                   src="assets/vid/Pink Codrs Africa.mp4"
                   type="video/mp4"
                 />
+                Your browser does not support the video tag.
               </video>
-              <div
-                className={`${styles.videoPlayer} ${
-                  playerActive ? "flex" : "hidden"
-                }`}
-              >
-                <input
-                  type="range"
-                  name=""
-                  id=""
-                  className={`w-full mt-1 ${styles.playerRange}`}
-                />
-                <div className="cursor-pointer" onClick={handlePlayPause}>
-                  {isPlaying ? (
-                    <BsPauseFill className="text-3xl text-primary" />
-                  ) : (
-                    <BsPlayFill className="text-3xl text-primary" />
-                  )}
-                </div>
-              </div>
             </div>
+
             <div
-              className={` cursor-pointer ${isPlaying ? "hidden" : "block"}`}
+              className={`cursor-pointer ${isPlaying ? "hidden" : "block"}`}
+              onClick={handlePlayPause}
             >
-              <div className="w-20 h-20 absolute top-[28%] left-[40%] z-50 flex items-center justify-center rounded-full">
-                <BsPlayFill className="text-white text-8xl" />
+              <div className="w-20 h-20 absolute top-[28%] left-[40%] z-50 flex items-center justify-center rounded-full bg-white bg-opacity-70">
+                <BsPlayFill className="text-primary text-3xl" />
               </div>
             </div>
 
@@ -253,9 +242,9 @@ export default function Home() {
               </div>
             </div>
             <div className="mt-20">
-              <div className="-mt-52 lg:-mt-0 relative w-[20rem] h-[35rem] lg:h-[40rem] lg:w-[30rem]">
+              <div className="-mt-52 lg:-mt-0 relative w-[22rem] md:w-[32rem] h-[45rem] lg:w-[35rem]">
                 <Image
-                  src="/assets/svg/work.svg"
+                  src="/assets/img/work.png"
                   layout="fill"
                   objectFit="contain"
                   alt="pink codrs africa logo"
@@ -276,7 +265,7 @@ export default function Home() {
             <article
               className={`${styles.card} relative min-w-[325px] max-w-[325px] h-[23rem] space-y-3 text-gray-700  justify-self-center`}
             >
-              <div className="relative w-full h-full z-50 rounded-sm overflow-auto bg-pink-300">
+              <div className="relative w-full h-full z-50 rounded-sm overflow-auto bg-pink-300 ">
                 <Image
                   src="/assets/img/img-4.jpg"
                   layout="fill"
@@ -485,7 +474,7 @@ export default function Home() {
                   className="max-w-xl shadow-xl bg-white p-6 space-y-3"
                 >
                   <div className="relative flex items-center space-x-3">
-                    <div className="relative h-[50px] w-[50px] rounded-full overflow-auto">
+                    <div className="relative h-[50px] w-[50px] rounded-full overflow-auto border bg-pink-400">
                       <Image
                         src={img}
                         layout="fill"
@@ -512,8 +501,11 @@ export default function Home() {
             )}
           </div>
           <div className="pt-20">
-            <button className="btn-primary py-3 px-6 w-full lg:w-auto">
-              see all testimonials
+            <button className="btn-primary py-3 px-6 w-full lg:w-auto flex items-center justify-center space-x-2">
+              <span>see all testimonials</span>
+              <span>
+                <ArrowRightIcon className="text-white h-4" />
+              </span>
             </button>
           </div>
         </section>

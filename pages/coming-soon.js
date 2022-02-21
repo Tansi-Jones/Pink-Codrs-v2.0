@@ -4,7 +4,7 @@ import { Footer } from "../components/footer/Footer";
 import Link from "next/link";
 import styles from "../styles/Others.module.css";
 
-export default function comingSoon() {
+export default function ComingSoon() {
   return (
     <>
       <Meta title="Coming Soon" />

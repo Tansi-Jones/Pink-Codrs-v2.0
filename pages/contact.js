@@ -3,9 +3,28 @@ import { Navigation } from "../components/navigation/Navigation";
 import { Footer } from "../components/footer/Footer";
 import { JoinUs } from "../components/join us/JoinUs";
 import { HomeIcon, DeviceMobileIcon, MailIcon } from "@heroicons/react/solid";
+import { ArrowRightIcon } from "@heroicons/react/outline";
 import styles from "../styles/Others.module.css";
+import { useState } from "react";
 
-export default function contact() {
+export default function Contact() {
+  const [contactInput, setContactInput] = useState({
+    name: "",
+    email: "",
+    subject: "",
+    occupation: "",
+    message: "",
+  });
+
+  const handleChange = (event) => {
+    const { name, value } = event.target;
+    setContactInput((prevValue) => {
+      return { ...prevValue, [name]: value };
+    });
+  };
+
+  const handleSubmit = () => {};
+
   return (
     <>
       <Meta title="Contact" />
@@ -25,7 +44,7 @@ export default function contact() {
         <section className="grid grid-cols-1 xl:grid-cols-2 justify-center">
           {/* left side */}
           <div>
-            <form>
+            <form onSubmit={handleSubmit}>
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-2 items-center justify-center pb-5">
                 <div>
                   <p className="pb-2 text-slate-500 text-base lg:text-lg">
@@ -35,7 +54,8 @@ export default function contact() {
                     type="text"
                     name="name"
                     id="name"
-                    className="outline-none border border-tertiary w-full p-2 text-slate-500"
+                    onChange={handleChange}
+                    className="outline-none border border-slate-400 w-full p-2 text-slate-500"
                   />
                 </div>
                 <div>
@@ -46,7 +66,8 @@ export default function contact() {
                     type="email"
                     name="email"
                     id="email"
-                    className="outline-none border border-tertiary w-full p-2 text-slate-500"
+                    onChange={handleChange}
+                    className="outline-none border border-slate-400 w-full p-2 text-slate-500"
                   />
                 </div>
               </div>
@@ -59,7 +80,8 @@ export default function contact() {
                     type="text"
                     name="subject"
                     id="subject"
-                    className="outline-none border border-tertiary w-full p-2 text-slate-500"
+                    onChange={handleChange}
+                    className="outline-none border border-slate-400 w-full p-2 text-slate-500"
                   />
                 </div>
                 <div>
@@ -70,7 +92,8 @@ export default function contact() {
                     type="text"
                     name="occupation"
                     id="occupation"
-                    className="outline-none border border-tertiary w-full p-2 text-slate-500"
+                    onChange={handleChange}
+                    className="outline-none border border-slate-400 w-full p-2 text-slate-500"
                   />
                 </div>
               </div>
@@ -83,12 +106,16 @@ export default function contact() {
                   id="message"
                   cols="30"
                   rows="6"
-                  className="outline-none border border-tertiary w-full p-2 resize-none text-slate-500"
+                  onChange={handleChange}
+                  className="outline-none border border-slate-400 w-full p-2 resize-none text-slate-500"
                 ></textarea>
               </div>
               <div className="pb-5">
-                <button className="btn-primary p-2 w-full text-xl ">
-                  send
+                <button className="btn-primary p-2 w-full text-base flex items-center justify-center space-x-2">
+                  <span>send</span>
+                  <span>
+                    <ArrowRightIcon className="text-pink-200 h-4" />
+                  </span>
                 </button>
               </div>
             </form>
