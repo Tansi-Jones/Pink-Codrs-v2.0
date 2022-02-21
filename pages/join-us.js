@@ -43,11 +43,26 @@ export default function joinUs() {
                 Your email <span className="text-red-500">*</span>
               </p>
               <input
-                type="text"
-                name="name"
-                id="name"
+                type="email"
+                name="email"
+                id="email"
                 className="outline-none border border-slate-400 w-full p-2 text-slate-600"
               />
+            </div>
+            <div className="pb-5">
+              <p className="pb-2 text-tertiary text-base lg:text-lg font-normal">
+                Your country <span className="text-red-500">*</span>
+              </p>
+              <select
+                name="country"
+                id="country"
+                className="outline-none border border-slate-400 w-full p-2 text-slate-600"
+              >
+                <option value="">Select a country</option>
+                <option value="South Africa">South Africa</option>
+                <option value="Nigeria">Nigeria</option>
+                <option value="Tanzania">Tanzania</option>
+              </select>
             </div>
             <div className="py-5">
               <button className="btn-primary p-2 w-full text-base flex items-center justify-center space-x-2">

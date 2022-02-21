@@ -20,7 +20,7 @@ export default function Custom505() {
           oh no
         </h1>
         <p className="text-slate-500 font-open text-xl text-center">
-          {" Looks like the server went down. Please refresh the page"}
+          {" Looks like the server is down. Please refresh the page"}
         </p>
         <Link href="/">
           <a>
