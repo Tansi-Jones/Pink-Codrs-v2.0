@@ -17,14 +17,15 @@ export default function about() {
           objectFit="cover"
           objectPosition="bottom"
           alt="header image"
-          className="opacity-20 grayscale"
+          className="opacity-10 grayscale"
+          priority
         />
 
         <nav className="z-50 sticky">
           <Navigation textColor="text-slate-400" logoSrc="/pink-codrs.svg" />
         </nav>
         <div className="container sticky my-20">
-          <h1 className="font-noto text-5xl lg:text-6xl font-semibold tracking-wide  leading-tight text-center">
+          <h1 className="font-noto text-3xl md:text-5xl lg:text-6xl font-semibold tracking-wide  leading-tight text-center">
             {"We're building & training new talents"}
           </h1>
         </div>
@@ -32,9 +33,9 @@ export default function about() {
 
       {/* about us */}
       <section className="container transform -translate-y-32">
-        <div className="relative w-full h-[38rem]">
+        <div className="relative w-ful h-[20rem] md:h-[38rem]  shadow-lg">
           <Image
-            src="/assets/img/img-3.jpg"
+            src="/assets/img/img-10.jpg"
             layout="fill"
             objectFit="cover"
             alt="about image"
@@ -42,24 +43,26 @@ export default function about() {
         </div>
         <div className=" lg:w-[75%] mx-auto h-40 bg-primary transform -translate-y-20 shadow-lg grid grid-cols-3 items-center">
           <div className="text-center lg:border-r-2 border-pink-400 space-y-3">
-            <h1 className="font-noto text-5xl font-semibold text-white">
+            <h1 className="font-noto text-2xl md:text-5xl font-semibold text-white">
               150+
             </h1>
-            <p className="text-pink-300 font-medium text-lg capitalize">
-              paying customers
+            <p className="text-pink-300 font-medium text-base md:text-lg capitalize">
+              <span className="hidden md:inline">paying</span>customers
             </p>
           </div>
           <div className="text-center lg:border-r-2 border-pink-400 space-y-3">
-            <h1 className="font-noto text-5xl font-semibold text-white">110</h1>
-            <p className="text-pink-300 font-medium text-lg capitalize">
+            <h1 className="font-noto text-2xl md:text-5xl font-semibold text-white">
+              110
+            </h1>
+            <p className="text-pink-300 font-medium text-base md:text-lg capitalize">
               total trainers
             </p>
           </div>
           <div className="text-center space-y-3">
-            <h1 className="font-noto text-5xl font-semibold text-white">
+            <h1 className="font-noto text-2xl md:text-5xl font-semibold text-white">
               750+
             </h1>
-            <p className="text-pink-300 font-medium text-lg capitalize">
+            <p className="text-pink-300 font-medium text-base md:text-lg capitalize">
               total trainies
             </p>
           </div>
@@ -69,7 +72,7 @@ export default function about() {
           <h1 className="capitalize font-noto text-4xl font-semibold text-secondary">
             our story
           </h1>
-          <p className="text-slate-500 font-medium font-open text-lg">
+          <p className="text-slate-500 font-medium font-open text-base md:text-lg">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis
             enim lobortis scelerisque fermentum. Neque sodales ut etiam sit amet
@@ -81,14 +84,14 @@ export default function about() {
             porttitor. Odio pellentesque diam volutpat commodo sed. Elit sed
             vulputate mi sit amet mauris commodo quis imperdiet.
           </p>
-          <p className="text-slate-500 font-medium font-open text-lg">
+          <p className="text-slate-500 font-medium font-open text-base md:text-lg">
             Temper auctor neque vitae tempus quam pellentesque nec. Amet dictum
             sit amet justo donec enim diam. Varius sit amet mattis vulputate
             enim nulla aliquet porttitor. Odio pellentesque diam volutpat
             commodo sed. Elit sed vulputate mi sit amet mauris commodo quis
             imperdiet.
           </p>
-          <p className="text-slate-500 font-medium font-open capitalize text-lg">
+          <p className="text-slate-500 font-medium font-open capitalize text-base md:text-lg">
             mbali hlongwane
           </p>
         </div>
@@ -97,38 +100,39 @@ export default function about() {
       {/* galery */}
       <section className={`${styles.paleBlueBg} py-20 space-y-10 `}>
         <div className="container">
-          <h1 className="font-noto text-5xl font-bold capitalize text-secondary text-center lg:w-[75%] mx-auto pb-5">
+          <h1 className="font-noto text-3xl md:text-5xl font-bold capitalize text-secondary text-center lg:w-[75%] mx-auto pb-5">
             slight peek at some of our past events
           </h1>
         </div>
         <div className="relative grid grid-cols-3 gap-x-5 items-center ">
-          <div className="h-[27rem] w-full">
+          <div className="h-[10rem] md:h-[15rem] lg:h-[20rem] xl:h-[27rem] w-full">
             <div className="relative h-full w-full">
               <Image
-                src="/assets/img/img-3.jpg"
+                src="/assets/img/img-4.jpg"
                 layout="fill"
                 objectFit="cover"
                 alt="event image-1"
               />
             </div>
           </div>
-          <div className="h-[27rem] w-full">
+          <div className="h-[10rem] md:h-[15rem] lg:h-[20rem] xl:h-[27rem] w-full">
             <div className="relative h-full w-full">
               <Image
-                src="/assets/img/img-3.jpg"
+                src="/assets/img/img.jpg"
                 layout="fill"
                 objectFit="cover"
                 alt="event image-1"
               />
             </div>
           </div>
-          <div className="h-[27rem] w-full">
+          <div className="h-[10rem] md:h-[15rem] lg:h-[20rem] xl:h-[27rem] w-full">
             <div className="relative h-full w-full">
               <Image
-                src="/assets/img/img-3.jpg"
+                src="/assets/img/img-1.jpg"
                 layout="fill"
                 objectFit="cover"
                 alt="event image-1"
+                priority
               />
             </div>
           </div>
@@ -137,7 +141,7 @@ export default function about() {
 
       {/* teams */}
       <section className="container my-20">
-        <h1 className="font-noto text-5xl font-bold capitalize text-secondary text-center ">
+        <h1 className="font-noto text-3xl md:text-5xl font-bold capitalize text-secondary text-center ">
           our amazing team
         </h1>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-10 items-center py-16">
@@ -160,48 +164,52 @@ export default function about() {
       {/* partners */}
       <section className="bg-secondary py-20 space-y-10">
         <div className="container">
-          <h1 className="font-noto text-5xl font-bold capitalize text-center lg:w-[80%] mx-auto pb-5">
+          <h1 className="font-noto text-3xl md:text-5xl font-bold capitalize text-center lg:w-[80%] mx-auto pb-5">
             {"We're fortunate to have incredible partners."}
           </h1>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3 items-center py-16 container">
           {ourPartners.map(({ id, img }) => (
-            <div key={id} className="border border-slate-700 py-7 px-10">
-              <Image
-                src={img}
-                objectFit="contain"
-                alt={img}
-                width={300}
-                height={90}
-                className=" brightness-200 grayscale"
-              />
+            <div
+              key={id}
+              className="border border-slate-700 py-7 px-10 flex items-center justify-center"
+            >
+              <div className="relative h-[2rem] w-[5rem] md:h-[4rem] md:w-[10rem] ">
+                <Image
+                  src={img}
+                  objectFit="contain"
+                  alt={img}
+                  layout="fill"
+                  className=" brightness-200 grayscale"
+                />
+              </div>
             </div>
           ))}
         </div>
       </section>
 
       {/* join pink codrs */}
-      <section
-        className={`${styles.paleBlueBg} py-20 flex flex-col items-center space-y-10`}
-      >
-        <h1
-          className={`${styles.mainText} font-noto text-5xl font-bold capitalize text-secondary text-center`}
-        >
-          want to be part of the
-          <span className="text-green-500"> journey?</span>
-        </h1>
+      <section className={`${styles.paleBlueBg} py-20 `}>
+        <div className="container flex flex-col items-center space-y-10">
+          <h1
+            className={`${styles.mainText} font-noto text-3xl md:text-5xl font-bold capitalize text-secondary text-center`}
+          >
+            want to be part of the
+            <span className="text-green-500"> journey?</span>
+          </h1>
 
-        <p className="text-slate-500 font-open text-xl text-center max-w-4xl mx-auto">
-          We are always open to talk to great people who want to help us shape
-          the future of work, and we have job openings all over the world.
-        </p>
-        <Link href="/">
-          <a>
-            <button className="btn-secondary py-3 px-6 w-full lg:w-auto ">
-              join pink codrs
-            </button>
-          </a>
-        </Link>
+          <p className="text-slate-500 font-open text-base md:text-xl text-center max-w-4xl mx-auto">
+            We are always open to talk to great people who want to help us shape
+            the future of work, and we have job openings all over the world.
+          </p>
+          <Link href="/">
+            <a>
+              <button className="btn-secondary py-3 px-6 w-full lg:w-auto ">
+                join pink codrs
+              </button>
+            </a>
+          </Link>
+        </div>
       </section>
 
       <footer>

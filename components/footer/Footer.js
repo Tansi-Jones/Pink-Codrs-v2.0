@@ -6,12 +6,12 @@ import { BsFacebook, BsTwitter, BsInstagram, BsLinkedin } from "react-icons/bs";
 export const Footer = () => {
   return (
     <div className="w-[90%] lg:w-[58%] mx-auto">
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  py-10 px-8 font-open mb-5 gap-y-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  py-10 lg:px-8 font-open mb-5 gap-y-8">
         <div className="justify-self-start lg:justify-self-start">
           <h1 className="capitalize text-lg font-medium mb-2 text-secondary">
             company
           </h1>
-          <div className="space-y-2 font-normal text-sm capitalize tracking-wide">
+          <div className="space-y-2 font-normal text-md capitalize tracking-wide">
             <div>
               <div className="hover:text-primary transition ease-linear text-slate-600">
                 <Link href="/about">
@@ -35,7 +35,7 @@ export const Footer = () => {
           <h1 className="capitalize text-lg font-medium mb-2 text-secondary">
             join pink codrs
           </h1>
-          <div className="space-y-2  font-normal text-sm capitalize tracking-wide">
+          <div className="space-y-2  font-normal text-md capitalize tracking-wide">
             <div className="hover:text-primary transition ease-linear text-slate-600">
               <Link href="/coming-soon">
                 <a className="flex items-center space-x-2">
@@ -57,7 +57,7 @@ export const Footer = () => {
           <h1 className="capitalize text-lg font-medium mb-2 text-secondary">
             resources
           </h1>
-          <div className="space-y-2  font-normal text-sm capitalize tracking-wide">
+          <div className="space-y-2  font-normal text-md capitalize tracking-wide">
             <div>
               <div className="hover:text-primary transition ease-linear text-slate-600">
                 <Link href="/about">

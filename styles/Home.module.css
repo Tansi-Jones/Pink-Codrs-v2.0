@@ -16,3 +16,8 @@
   transform: translate(-20%, -70%);
   display: inline-block;
 }
+@media screen and (max-width: 900px) {
+  .mainText::after {
+    display: none;
+  }
+}
