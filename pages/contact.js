@@ -28,7 +28,7 @@ export default function contact() {
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-2 items-center justify-center pb-5">
                 <div>
                   <p className="pb-2 text-slate-600 text-base lg:text-lg">
-                    Your name <span className="text-slate-500">*</span>
+                    Your name <span className="text-red-500">*</span>
                   </p>
                   <input
                     type="text"
@@ -39,7 +39,7 @@ export default function contact() {
                 </div>
                 <div>
                   <p className="pb-2 text-slate-600 text-base lg:text-lg">
-                    Your email <span className="text-slate-500">*</span>
+                    Your email <span className="text-red-500">*</span>
                   </p>
                   <input
                     type="email"
@@ -52,7 +52,7 @@ export default function contact() {
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-2 items-center justify-center pb-5">
                 <div>
                   <p className="pb-2 text-slate-600 text-base lg:text-lg">
-                    Your subject <span className="text-slate-500">*</span>
+                    Your subject <span className="text-red-500">*</span>
                   </p>
                   <input
                     type="text"
@@ -63,7 +63,7 @@ export default function contact() {
                 </div>
                 <div>
                   <p className="pb-2 text-slate-600 text-base lg:text-lg">
-                    Your occupation <span className="text-slate-500">*</span>
+                    Your occupation <span className="text-red-500">*</span>
                   </p>
                   <input
                     type="text"
@@ -75,7 +75,7 @@ export default function contact() {
               </div>
               <div className="pb-5">
                 <p className="pb-2 text-slate-600 text-base lg:text-lg">
-                  Your message <span className="text-slate-500">*</span>
+                  Your message <span className="text-red-500">*</span>
                 </p>
                 <textarea
                   name="message"

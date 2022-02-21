@@ -41,12 +41,20 @@ export default function Home() {
               Building Female Developers Across Africa
             </h1>
             <div className="block md:flex gap-5 space-y-5 md:space-y-0 my-10">
-              <button className="btn-primary py-3 px-11 w-full lg:w-auto">
-                work with us
-              </button>
-              <button className="btn-secondary py-3 px-11 w-full lg:w-auto">
-                join pink codrs
-              </button>
+              <Link href="/join-us">
+                <a>
+                  <button className="btn-primary py-3 px-11 w-full lg:w-auto">
+                    join pink codrs
+                  </button>
+                </a>
+              </Link>
+              <Link href="/work-with-us">
+                <a>
+                  <button className="btn-secondary py-3 px-11 w-full lg:w-auto">
+                    work with us
+                  </button>
+                </a>
+              </Link>
             </div>
           </div>
 
