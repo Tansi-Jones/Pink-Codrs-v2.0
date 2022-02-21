@@ -6,18 +6,25 @@ import React, { useState, useRef } from "react";
 import { PlayIcon } from "@heroicons/react/solid";
 import { Footer } from "../components/footer/Footer";
 import Link from "next/link";
+import { BsPlayFill, BsPauseFill } from "react-icons/bs";
+import { JoinUs } from "../components/join us/JoinUs";
 
 export default function Home() {
   const [isPlaying, setIsPlaying] = useState(false);
+  const [playerActive, setPlayerActive] = useState(false);
 
   const videoPlayer = useRef();
 
   const handlePlayPause = () => {
     setIsPlaying(!isPlaying);
+    setPlayerActive(true);
     if (!isPlaying) {
-      videoPlayer.current.play();
+      return videoPlayer.current.play();
+    } else {
+      return videoPlayer.current.pause();
     }
   };
+
   return (
     <>
       <Meta />
@@ -43,28 +50,44 @@ export default function Home() {
             </div>
           </div>
 
-          <div
-            className={`${styles.video} relative rounded-lg`}
-            onClick={handlePlayPause}
-          >
-            <div className="relative z-50">
+          <div className={`${styles.video} relative rounded-lg`}>
+            <div className="relative z-50" onClick={handlePlayPause}>
               <video
                 width={1000}
                 height={1000}
                 ref={videoPlayer}
-                className="rounded-sm z-[100%]  "
+                className="rounded-sm z-[100%]"
               >
                 <source
                   src="assets/vid/Pink Codrs Africa.mp4"
                   type="video/mp4"
                 />
               </video>
+              <div
+                className={`${styles.videoPlayer} ${
+                  playerActive ? "flex" : "hidden"
+                }`}
+              >
+                <input
+                  type="range"
+                  name=""
+                  id=""
+                  className={`w-full mt-1 ${styles.playerRange}`}
+                />
+                <div className="cursor-pointer" onClick={handlePlayPause}>
+                  {isPlaying ? (
+                    <BsPauseFill className="text-3xl text-primary" />
+                  ) : (
+                    <BsPlayFill className="text-3xl text-primary" />
+                  )}
+                </div>
+              </div>
             </div>
             <div
               className={` cursor-pointer ${isPlaying ? "hidden" : "block"}`}
             >
               <div className="w-20 h-20 absolute top-[28%] left-[40%] z-50 flex items-center justify-center rounded-full">
-                <PlayIcon className="text-primary h-20" />
+                <BsPlayFill className="text-white text-8xl" />
               </div>
             </div>
 
@@ -245,7 +268,7 @@ export default function Home() {
             <article
               className={`${styles.card} relative min-w-[325px] max-w-[325px] h-[23rem] space-y-3 text-gray-700  justify-self-center`}
             >
-              <div className="relative w-full h-full z-50 rounded-sm overflow-auto">
+              <div className="relative w-full h-full z-50 rounded-sm overflow-auto bg-pink-300">
                 <Image
                   src="/assets/img/img-4.jpg"
                   layout="fill"
@@ -279,7 +302,7 @@ export default function Home() {
             <article
               className={`${styles.card} relative min-w-[325px] max-w-[325px] h-[23rem] space-y-3 text-gray-700  justify-self-center`}
             >
-              <div className="relative w-full h-full z-50 rounded-sm overflow-auto">
+              <div className="relative w-full h-full z-50 rounded-sm overflow-auto bg-pink-300">
                 <Image
                   src="/assets/img/img-3.jpg"
                   layout="fill"
@@ -313,7 +336,7 @@ export default function Home() {
             <article
               className={`${styles.card} relative min-w-[325px] max-w-[325px] h-[23rem] space-y-3 text-gray-700  justify-self-center`}
             >
-              <div className="relative w-full h-full z-50 rounded-sm overflow-auto">
+              <div className="relative w-full h-full z-50 rounded-sm overflow-auto bg-pink-300">
                 <Image
                   src="/assets/img/img-2.jpg"
                   layout="fill"
@@ -358,7 +381,7 @@ export default function Home() {
                 {/* left  */}
                 <div className="flex flex-row-reverse md:contents">
                   <div className="bg-primary col-start-1 col-end-5 p-4 rounded-xl my-4 ml-auto shadow-md">
-                    <h3 className="font-semibold text-lg mb-1">
+                    <h3 className="font-greatVibes text-2xl mb-1">
                       Andria Hitchin
                     </h3>
                     <p className="leading-tight md:text-justify  text-sm">
@@ -400,7 +423,9 @@ export default function Home() {
                     </div>
                   </div>
                   <div className="bg-primary col-start-6 col-end-10 p-4 rounded-xl my-4 mr-auto shadow-md">
-                    <h3 className="font-semibold text-lg mb-1">Willy Mikson</h3>
+                    <h3 className="font-greatVibes text-2xl mb-1">
+                      Willy Mikson
+                    </h3>
                     <p className="leading-tight md:text-justify text-sm">
                       Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                       Vitae, facilis.
@@ -410,7 +435,9 @@ export default function Home() {
                 {/*  left  */}
                 <div className="flex flex-row-reverse md:contents">
                   <div className="bg-primary col-start-1 col-end-5 p-4 rounded-xl my-4 ml-auto shadow-md">
-                    <h3 className="font-semibold text-lg mb-1">Sonnia Fasci</h3>
+                    <h3 className="font-greatVibes text-2xl mb-1">
+                      Sonnia Fasci
+                    </h3>
                     <p className="leading-tight md:text-justify text-sm">
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
                       Modi, quaerat?
@@ -436,7 +463,7 @@ export default function Home() {
                 {/*  left  */}
                 <div className="flex flex-row-reverse md:contents">
                   <div className="bg-primary col-start-1 col-end-5 p-4 rounded-xl my-4 ml-auto shadow-md">
-                    <h3 className="font-semibold text-lg mb-1">
+                    <h3 className="font-greatVibes text-2xl mb-1">
                       Jessica Maria
                     </h3>
                     <p className="leading-tight md:text-justify text-sm">
@@ -478,7 +505,9 @@ export default function Home() {
                     </div>
                   </div>
                   <div className="bg-primary col-start-6 col-end-10 p-4 rounded-xl my-4 mr-auto shadow-md">
-                    <h3 className="font-semibold text-lg mb-1">Paul Borge</h3>
+                    <h3 className="font-greatVibes text-2xl mb-1">
+                      Paul Borge
+                    </h3>
                     <p className="leading-tight md:text-justify text-sm">
                       Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                       Vitae, facilis.
@@ -490,29 +519,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className={`${styles.paleBlueBg} py-20 `}>
-          <div className="container flex flex-col items-center space-y-10">
-            <h1
-              className={`${styles.mainText} font-noto text-3xl md:text-5xl font-bold capitalize text-secondary text-center`}
-            >
-              want to be part of the
-              <span className="text-green-500"> journey?</span>
-            </h1>
-
-            <p className="text-slate-500 font-open text-base md:text-xl text-center max-w-4xl mx-auto">
-              We are always open to talk to great people who want to help us
-              shape the future of work, and we have job openings all over the
-              world.
-            </p>
-            <Link href="/">
-              <a>
-                <button className="btn-secondary py-3 px-6 w-full lg:w-auto ">
-                  join pink codrs
-                </button>
-              </a>
-            </Link>
-          </div>
-        </section>
+        <JoinUs />
       </main>
 
       <footer>

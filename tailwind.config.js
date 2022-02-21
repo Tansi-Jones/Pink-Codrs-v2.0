@@ -14,6 +14,7 @@ module.exports = {
 
     fontFamily: {
       noto: ["Noto Serif Display", "serif"],
+      greatVibes: ["Great Vibes", "cursive"],
       open: ["Open Sans", "sans-serif"],
     },
   },

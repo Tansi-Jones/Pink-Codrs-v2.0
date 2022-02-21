@@ -1,0 +1,13 @@
+.mainText::after {
+  content: url(../../public/assets/svg/path-1.svg);
+  transform: translate(-20%, -70%);
+  display: inline-block;
+}
+@media screen and (max-width: 900px) {
+  .mainText::after {
+    display: none;
+  }
+}
+.paleBlueBg {
+  background-color: #f1f5f9;
+}

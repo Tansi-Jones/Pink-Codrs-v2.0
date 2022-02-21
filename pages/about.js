@@ -4,6 +4,7 @@ import { Navigation } from "../components/navigation/Navigation";
 import styles from "../styles/Others.module.css";
 import Link from "next/link";
 import { Footer } from "../components/footer/Footer";
+import { JoinUs } from "../components/join us/JoinUs";
 
 export default function about() {
   return (
@@ -25,7 +26,7 @@ export default function about() {
           <Navigation textColor="text-slate-400" logoSrc="/pink-codrs.svg" />
         </nav>
         <div className="container sticky my-20">
-          <h1 className="font-noto text-3xl md:text-5xl lg:text-6xl font-semibold tracking-wide  leading-tight text-center">
+          <h1 className="font-noto text-3xl md:text-5xl lg:text-6xl font-semibold tracking-wide leading-loose text-center">
             {"We're building & training new talents"}
           </h1>
         </div>
@@ -33,7 +34,7 @@ export default function about() {
 
       {/* about us */}
       <section className="container transform -translate-y-32">
-        <div className="relative w-ful h-[20rem] md:h-[38rem]  shadow-lg">
+        <div className="relative w-ful h-[20rem] md:h-[38rem]  shadow-lg bg-pink-300">
           <Image
             src="/assets/img/img-10.jpg"
             layout="fill"
@@ -47,7 +48,7 @@ export default function about() {
               150+
             </h1>
             <p className="text-pink-300 font-medium text-base md:text-lg capitalize">
-              <span className="hidden md:inline">paying</span>customers
+              <span className="hidden md:inline">paying</span> customers
             </p>
           </div>
           <div className="text-center lg:border-r-2 border-pink-400 space-y-3">
@@ -91,22 +92,23 @@ export default function about() {
             commodo sed. Elit sed vulputate mi sit amet mauris commodo quis
             imperdiet.
           </p>
-          <p className="text-slate-500 font-medium font-open capitalize text-base md:text-lg">
+          <p className="text-slate-500 font-medium font-greatVibes capitalize text-xl md:text-3xl">
             mbali hlongwane
           </p>
         </div>
       </section>
 
       {/* galery */}
-      <section className={`${styles.paleBlueBg} py-20 space-y-10 `}>
+      <section className="space-y-10">
         <div className="container">
+          <hr className="mb-10" />
           <h1 className="font-noto text-3xl md:text-5xl font-bold capitalize text-secondary text-center lg:w-[75%] mx-auto pb-5">
             slight peek at some of our past events
           </h1>
         </div>
         <div className="relative grid grid-cols-3 gap-x-5 items-center ">
           <div className="h-[10rem] md:h-[15rem] lg:h-[20rem] xl:h-[27rem] w-full">
-            <div className="relative h-full w-full">
+            <div className="relative h-full w-full bg-pink-300">
               <Image
                 src="/assets/img/img-4.jpg"
                 layout="fill"
@@ -116,7 +118,7 @@ export default function about() {
             </div>
           </div>
           <div className="h-[10rem] md:h-[15rem] lg:h-[20rem] xl:h-[27rem] w-full">
-            <div className="relative h-full w-full">
+            <div className="relative h-full w-full bg-pink-300">
               <Image
                 src="/assets/img/img.jpg"
                 layout="fill"
@@ -126,7 +128,7 @@ export default function about() {
             </div>
           </div>
           <div className="h-[10rem] md:h-[15rem] lg:h-[20rem] xl:h-[27rem] w-full">
-            <div className="relative h-full w-full">
+            <div className="relative h-full w-full bg-pink-300">
               <Image
                 src="/assets/img/img-1.jpg"
                 layout="fill"
@@ -141,6 +143,7 @@ export default function about() {
 
       {/* teams */}
       <section className="container my-20">
+        <hr className="my-10" />
         <h1 className="font-noto text-3xl md:text-5xl font-bold capitalize text-secondary text-center ">
           our amazing team
         </h1>
@@ -189,28 +192,7 @@ export default function about() {
       </section>
 
       {/* join pink codrs */}
-      <section className={`${styles.paleBlueBg} py-20 `}>
-        <div className="container flex flex-col items-center space-y-10">
-          <h1
-            className={`${styles.mainText} font-noto text-3xl md:text-5xl font-bold capitalize text-secondary text-center`}
-          >
-            want to be part of the
-            <span className="text-green-500"> journey?</span>
-          </h1>
-
-          <p className="text-slate-500 font-open text-base md:text-xl text-center max-w-4xl mx-auto">
-            We are always open to talk to great people who want to help us shape
-            the future of work, and we have job openings all over the world.
-          </p>
-          <Link href="/">
-            <a>
-              <button className="btn-secondary py-3 px-6 w-full lg:w-auto ">
-                join pink codrs
-              </button>
-            </a>
-          </Link>
-        </div>
-      </section>
+      <JoinUs />
 
       <footer>
         <Footer />

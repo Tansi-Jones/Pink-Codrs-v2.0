@@ -1,16 +1,3 @@
-/* Home page */
-
-.mainText::after {
-  content: url(../public/assets/svg/path-1.svg);
-  transform: translate(-20%, -70%);
-  display: inline-block;
-}
-@media screen and (max-width: 900px) {
-  .mainText::after {
-    display: none;
-  }
-}
-
 /* About page */
 .spliter:first-child::after {
   content: "";
@@ -19,6 +6,7 @@
   background-color: rgb(249 168 212);
   display: inline-block;
 }
-.paleBlueBg {
-  background-color: #f1f5f9;
+.line {
+  width: 75%;
+  margin: 0 auto;
 }
