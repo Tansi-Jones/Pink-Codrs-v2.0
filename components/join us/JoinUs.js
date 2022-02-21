@@ -16,7 +16,7 @@ export const JoinUs = () => {
           We are always open to talk to great people who want to help us shape
           the future of work, and we have job openings all over the world.
         </p>
-        <Link href="/">
+        <Link href="/join-us">
           <a>
             <button className="btn-secondary py-3 px-6 w-full lg:w-auto ">
               join pink codrs

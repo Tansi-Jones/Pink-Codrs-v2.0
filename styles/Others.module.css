@@ -6,7 +6,20 @@
   background-color: rgb(249 168 212);
   display: inline-block;
 }
-.line {
-  width: 75%;
+
+/* Work with us page */
+.workCard {
+  width: 70%;
   margin: 0 auto;
+  max-width: 32rem;
+  background-color: #fff;
+  padding: 1rem 2rem;
+  border-radius: 0.375rem;
+  box-shadow: 0 8px 10px rgba(0, 0, 0, 0.068);
+  transition: 0.2s ease-in;
+}
+@media screen and (max-width: 600px) {
+  .workCard {
+    width: 90%;
+  }
 }
