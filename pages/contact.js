@@ -4,10 +4,13 @@ import { Footer } from "../components/footer/Footer";
 import { JoinUs } from "../components/join us/JoinUs";
 import { HomeIcon, DeviceMobileIcon, MailIcon } from "@heroicons/react/solid";
 import { ArrowRightIcon } from "@heroicons/react/outline";
+import { BiLoaderAlt } from "react-icons/bi";
 import styles from "../styles/Others.module.css";
 import { useState } from "react";
+import axios from "axios";
 
 export default function Contact() {
+  const [isLoading, setIsLoading] = useState(false);
   const [contactInput, setContactInput] = useState({
     name: "",
     email: "",
@@ -23,7 +26,26 @@ export default function Contact() {
     });
   };
 
-  const handleSubmit = () => {};
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+    const { name, email, subject, occupation, message } = contactInput;
+    try {
+      setIsLoading(true);
+      const { data } = await axios.post("/api/contact", {
+        name,
+        email,
+        subject,
+        occupation,
+        message,
+      });
+
+      setIsLoading(false);
+      console.log(data);
+    } catch (error) {
+      setIsLoading("false");
+      console.log(error.response.data);
+    }
+  };
 
   return (
     <>
@@ -54,6 +76,8 @@ export default function Contact() {
                     type="text"
                     name="name"
                     id="name"
+                    autoComplete="off"
+                    required
                     onChange={handleChange}
                     className="outline-none border border-slate-400 w-full p-2 text-slate-500"
                   />
@@ -66,6 +90,8 @@ export default function Contact() {
                     type="email"
                     name="email"
                     id="email"
+                    autoComplete="off"
+                    required
                     onChange={handleChange}
                     className="outline-none border border-slate-400 w-full p-2 text-slate-500"
                   />
@@ -80,6 +106,8 @@ export default function Contact() {
                     type="text"
                     name="subject"
                     id="subject"
+                    autoComplete="off"
+                    required
                     onChange={handleChange}
                     className="outline-none border border-slate-400 w-full p-2 text-slate-500"
                   />
@@ -92,6 +120,8 @@ export default function Contact() {
                     type="text"
                     name="occupation"
                     id="occupation"
+                    autoComplete="off"
+                    required
                     onChange={handleChange}
                     className="outline-none border border-slate-400 w-full p-2 text-slate-500"
                   />
@@ -106,6 +136,7 @@ export default function Contact() {
                   id="message"
                   cols="30"
                   rows="6"
+                  required
                   onChange={handleChange}
                   className="outline-none border border-slate-400 w-full p-2 resize-none text-slate-500"
                 ></textarea>
@@ -114,7 +145,11 @@ export default function Contact() {
                 <button className="btn-primary p-2 w-full text-base flex items-center justify-center space-x-2">
                   <span>send</span>
                   <span>
-                    <ArrowRightIcon className="text-pink-200 h-4" />
+                    {isLoading ? (
+                      <BiLoaderAlt className="text-pink-200 text-lg animate-spin" />
+                    ) : (
+                      <ArrowRightIcon className="text-pink-200 h-4" />
+                    )}
                   </span>
                 </button>
               </div>
