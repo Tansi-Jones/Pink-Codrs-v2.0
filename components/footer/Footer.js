@@ -24,7 +24,7 @@ export const Footer = () => {
                 </Link>
               </div>
               <div className="hover:text-primary transition ease-linear text-slate-600">
-                <Link href="/contact">
+                <Link href="/coming-soon">
                   <a>terms & conditions</a>
                 </Link>
               </div>
@@ -60,17 +60,17 @@ export const Footer = () => {
           <div className="space-y-2  font-normal text-md capitalize tracking-wide">
             <div>
               <div className="hover:text-primary transition ease-linear text-slate-600">
-                <Link href="/about">
+                <Link href="/coming-soon">
                   <a>privacy & policy</a>
                 </Link>
               </div>
               <div className="hover:text-primary transition ease-linear text-slate-600">
-                <Link href="/learn">
+                <Link href="/contact">
                   <a>contact us</a>
                 </Link>
               </div>
               <div className="hover:text-primary transition ease-linear text-slate-600">
-                <Link href="/contact">
+                <Link href="/coming-soon">
                   <a>Help</a>
                 </Link>
               </div>
@@ -83,28 +83,28 @@ export const Footer = () => {
         <p>&copy; Pink-Codrs.com. All rights reserved.</p>
         <div className="flex items-center space-x-5">
           <div>
-            <Link href="/">
+            <Link href="/twitter">
               <a>
                 <BsTwitter className="text-xl text-primary" />
               </a>
             </Link>
           </div>
           <div>
-            <Link href="/">
+            <Link href="/linkedin">
               <a>
                 <BsLinkedin className="text-xl text-primary" />
               </a>
             </Link>
           </div>
           <div>
-            <Link href="/">
+            <Link href="/instagram">
               <a>
                 <BsInstagram className="text-xl text-primary" />
               </a>
             </Link>
           </div>
           <div>
-            <Link href="/">
+            <Link href="/facebook">
               <a>
                 <BsFacebook className="text-xl text-primary" />
               </a>
