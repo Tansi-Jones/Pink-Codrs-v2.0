@@ -9,6 +9,10 @@
   margin: 0;
 }
 
+h1 {
+  color: #f1f5f9;
+}
+
 @layer components {
   .container {
     @apply w-[90%] lg:w-[58%] mx-auto;
@@ -20,9 +24,3 @@
     @apply bg-tertiary hover:bg-slate-800 transition ease-linear text-white text-lg font-normal capitalize rounded-sm block font-open;
   }
 }
-
-h1 {
-  color: #f1f5f9;
-}
-
-/* #94A3B8 */

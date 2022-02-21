@@ -43,7 +43,10 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="relative rounded-lg " onClick={handlePlayPause}>
+          <div
+            className={`${styles.video} relative rounded-lg`}
+            onClick={handlePlayPause}
+          >
             <div className="relative z-50">
               <video
                 width={1000}
@@ -65,7 +68,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="md:h-[90%] lg:h-[70%] w-[100%]  transform translate-y-[1rem] translate-x-2 md:-translate-y-[20rem] lg:-translate-y-[17rem]  md:translate-x-5 border-2 border-tertiary rounded-sm z-[-100%]"></div>
+            <div className={styles.videoDesign}></div>
           </div>
         </div>
       </header>
@@ -152,7 +155,7 @@ export default function Home() {
           <h1 className="text-secondary font-bold text-3xl md:text-5xl font-noto capitalize my-3 text-center py-10">
             our vision & mission
           </h1>
-          <div className=" grid grid-cols-1 lg:grid-cols-2 gap-10">
+          <div className=" grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
             <div className="relative space-y-10 my-6 lg:my-16">
               <div className="space-y-5">
                 <div className="flex space-x-2">
@@ -239,7 +242,9 @@ export default function Home() {
             </h1>
           </div>
           <div className="w-[90%] lg:w-[58%] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 transform -translate-y-64 lg:-translate-y-80 gap-x-20 gap-y-52">
-            <article className="relative min-w-[325px] max-w-[325px] h-[23rem] space-y-3 text-gray-700  justify-self-center">
+            <article
+              className={`${styles.card} relative min-w-[325px] max-w-[325px] h-[23rem] space-y-3 text-gray-700  justify-self-center`}
+            >
               <div className="relative w-full h-full z-50 rounded-sm overflow-auto">
                 <Image
                   src="/assets/img/img-4.jpg"
@@ -258,7 +263,7 @@ export default function Home() {
                   alt="pink codrs africa logo"
                 />
               </div>
-              <div className="relative w-full h-full border-2 border-tertiary transform -translate-y-[400px] translate-x-[16px] -z-50 rounded-sm"></div>
+              <div className={styles.cardDesign}></div>
               <div>
                 <div className="text-slate-600 transform -translate-y-[370px]">
                   <h1 className="font-noto text-secondary text-3xl font-semibold">
@@ -271,7 +276,9 @@ export default function Home() {
                 </div>
               </div>
             </article>
-            <article className="relative min-w-[325px] max-w-[325px] h-[23rem] space-y-3 text-gray-700 justify-self-center">
+            <article
+              className={`${styles.card} relative min-w-[325px] max-w-[325px] h-[23rem] space-y-3 text-gray-700  justify-self-center`}
+            >
               <div className="relative w-full h-full z-50 rounded-sm overflow-auto">
                 <Image
                   src="/assets/img/img-3.jpg"
@@ -290,7 +297,7 @@ export default function Home() {
                   alt="pink codrs africa logo"
                 />
               </div>
-              <div className="relative w-full h-full border-2 border-tertiary transform -translate-y-[400px] translate-x-[16px] -z-50 rounded-sm"></div>
+              <div className={styles.cardDesign}></div>
               <div>
                 <div className="text-slate-600 transform -translate-y-[370px]">
                   <h1 className="font-noto text-secondary text-3xl font-semibold">
@@ -303,7 +310,9 @@ export default function Home() {
                 </div>
               </div>
             </article>
-            <article className="relative min-w-[325px] max-w-[325px] h-[23rem] space-y-3 text-gray-700  justify-self-center">
+            <article
+              className={`${styles.card} relative min-w-[325px] max-w-[325px] h-[23rem] space-y-3 text-gray-700  justify-self-center`}
+            >
               <div className="relative w-full h-full z-50 rounded-sm overflow-auto">
                 <Image
                   src="/assets/img/img-2.jpg"
@@ -322,7 +331,7 @@ export default function Home() {
                   alt="pink codrs africa logo"
                 />
               </div>
-              <div className="relative w-full h-full border-2 border-tertiary transform -translate-y-[400px] translate-x-[16px] -z-50 rounded-sm"></div>
+              <div className={styles.cardDesign}></div>
               <div>
                 <div className="text-slate-600 transform -translate-y-[370px]">
                   <h1 className="font-noto text-secondary text-3xl font-semibold">
