@@ -379,144 +379,89 @@ export default function Home() {
         </section>
 
         <section>
-          <div className=" w-[90%] lg:w-[58%] mx-auto mb-16">
+          <div className=" w-[90%] lg:w-[58%] mx-auto 9b-16">
             <hr />
             <h1 className="text-secondary font-bold text-3xl md:text-5xl font-noto capitalize my-3 text-center py-10 mt-10">
-              what people say about us
+              our process
             </h1>
-            <div>
+            {/* <!-- component --> */}
+            <div className="container">
               <div className="flex flex-col md:grid grid-cols-9 mx-auto p-2 text-blue-50">
-                {/* left  */}
+                {/* <!-- left --> */}
                 <div className="flex flex-row-reverse md:contents">
-                  <div className="bg-primary col-start-1 col-end-5 p-4 rounded-xl my-4 ml-auto shadow-md">
-                    <h3 className="font-greatVibes text-2xl mb-1">
-                      Andria Hitchin
-                    </h3>
-                    <p className="leading-tight md:text-justify  text-sm">
+                  <div className="bg-blue-500 col-start-1 col-end-5 p-4 rounded-xl my-4 ml-auto shadow-md">
+                    <h3 className="font-semibold text-lg mb-1">Lorem ipsum</h3>
+                    <p className="leading-tight text-justify">
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
                       Modi, quaerat?
                     </p>
                   </div>
                   <div className="col-start-5 col-end-6 md:mx-auto relative mr-10">
                     <div className="h-full w-6 flex items-center justify-center">
-                      <div className="h-full w-1 bg-pink-600 pointer-events-none overflow-auto"></div>
+                      <div className="h-full w-1 bg-blue-800 pointer-events-none"></div>
                     </div>
-                    <div className="w-7 h-7 absolute top-1/2 -mt-3 rounded-full bg-primary shadow overflow-auto">
-                      <div className="relative h-full w-full">
-                        <Image
-                          src="https://res.cloudinary.com/diqqf3eq2/image/upload/v1595959121/person-1_aufeoq.jpg"
-                          layout="fill"
-                          objectFit="cover"
-                          alt="pink codrs africa logo"
-                        />
-                      </div>
-                    </div>
+                    <div className="w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-blue-500 shadow"></div>
                   </div>
                 </div>
-                {/* right  */}
+                {/* <!-- right --> */}
                 <div className="flex md:contents">
                   <div className="col-start-5 col-end-6 mr-10 md:mx-auto relative">
                     <div className="h-full w-6 flex items-center justify-center">
-                      <div className="h-full w-1 bg-pink-600 pointer-events-none"></div>
+                      <div className="h-full w-1 bg-blue-800 pointer-events-none"></div>
                     </div>
-                    <div className="w-7 h-7 absolute top-1/2 -mt-3 rounded-full bg-primary shadow overflow-auto">
-                      <div className="relative h-full w-full">
-                        <Image
-                          src="https://res.cloudinary.com/diqqf3eq2/image/upload/v1595959131/person-2_ipcjws.jpg"
-                          layout="fill"
-                          objectFit="cover"
-                          alt="pink codrs africa logo"
-                        />
-                      </div>
-                    </div>
+                    <div className="w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-blue-500 shadow"></div>
                   </div>
-                  <div className="bg-primary col-start-6 col-end-10 p-4 rounded-xl my-4 mr-auto shadow-md">
-                    <h3 className="font-greatVibes text-2xl mb-1">
-                      Willy Mikson
-                    </h3>
-                    <p className="leading-tight md:text-justify text-sm">
+                  <div className="bg-blue-500 col-start-6 col-end-10 p-4 rounded-xl my-4 mr-auto shadow-md">
+                    <h3 className="font-semibold text-lg mb-1">Lorem ipsum</h3>
+                    <p className="leading-tight text-justify">
                       Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                       Vitae, facilis.
                     </p>
                   </div>
                 </div>
-                {/*  left  */}
+                {/* <!-- left --> */}
                 <div className="flex flex-row-reverse md:contents">
-                  <div className="bg-primary col-start-1 col-end-5 p-4 rounded-xl my-4 ml-auto shadow-md">
-                    <h3 className="font-greatVibes text-2xl mb-1">
-                      Sonnia Fasci
-                    </h3>
-                    <p className="leading-tight md:text-justify text-sm">
+                  <div className="bg-blue-500 col-start-1 col-end-5 p-4 rounded-xl my-4 ml-auto shadow-md">
+                    <h3 className="font-semibold text-lg mb-1">Lorem ipsum</h3>
+                    <p className="leading-tight text-justify">
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
                       Modi, quaerat?
                     </p>
                   </div>
                   <div className="col-start-5 col-end-6 md:mx-auto relative mr-10">
                     <div className="h-full w-6 flex items-center justify-center">
-                      <div className="h-full w-1 bg-pink-600 pointer-events-none"></div>
+                      <div className="h-full w-1 bg-blue-800 pointer-events-none"></div>
                     </div>
-                    <div className="w-7 h-7 absolute top-1/2 -mt-3 rounded-full bg-primary shadow  overflow-auto">
-                      {" "}
-                      <div className="relative h-full w-full">
-                        <Image
-                          src="https://res.cloudinary.com/diqqf3eq2/image/upload/v1586883334/person-1_rfzshl.jpg"
-                          layout="fill"
-                          objectFit="cover"
-                          alt="pink codrs africa logo"
-                        />
-                      </div>
-                    </div>
+                    <div className="w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-blue-500 shadow"></div>
                   </div>
                 </div>
-                {/*  left  */}
+                {/* <!-- left --> */}
                 <div className="flex flex-row-reverse md:contents">
-                  <div className="bg-primary col-start-1 col-end-5 p-4 rounded-xl my-4 ml-auto shadow-md">
-                    <h3 className="font-greatVibes text-2xl mb-1">
-                      Jessica Maria
-                    </h3>
-                    <p className="leading-tight md:text-justify text-sm">
+                  <div className="bg-blue-500 col-start-1 col-end-5 p-4 rounded-xl my-4 ml-auto shadow-md">
+                    <h3 className="font-semibold text-lg mb-1">Lorem ipsum</h3>
+                    <p className="leading-tight text-justify">
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
                       Modi, quaerat?
                     </p>
                   </div>
                   <div className="col-start-5 col-end-6 md:mx-auto relative mr-10">
                     <div className="h-full w-6 flex items-center justify-center">
-                      <div className="h-full w-1 bg-pink-600 pointer-events-none"></div>
+                      <div className="h-full w-1 bg-blue-800 pointer-events-none"></div>
                     </div>
-                    <div className="w-7 h-7 absolute top-1/2 -mt-3 rounded-full bg-primary shadow  overflow-auto">
-                      <div className="relative h-full w-full">
-                        <Image
-                          src="https://res.cloudinary.com/diqqf3eq2/image/upload/v1595959121/person-1_aufeoq.jpg"
-                          layout="fill"
-                          objectFit="cover"
-                          alt="pink codrs africa logo"
-                        />
-                      </div>
-                    </div>
+                    <div className="w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-blue-500 shadow"></div>
                   </div>
                 </div>
-                {/*  right  */}
+                {/* <!-- right --> */}
                 <div className="flex md:contents">
                   <div className="col-start-5 col-end-6 mr-10 md:mx-auto relative">
                     <div className="h-full w-6 flex items-center justify-center">
-                      <div className="h-full w-1 bg-pink-600 pointer-events-none"></div>
+                      <div className="h-full w-1 bg-blue-800 pointer-events-none"></div>
                     </div>
-                    <div className="w-7 h-7 absolute top-1/2 -mt-3 rounded-full bg-primary shadow overflow-auto">
-                      <div className="relative h-full w-full">
-                        <Image
-                          src="https://res.cloudinary.com/diqqf3eq2/image/upload/v1586883417/person-3_ipa0mj.jpg"
-                          layout="fill"
-                          objectFit="cover"
-                          alt="pink codrs africa logo"
-                        />
-                      </div>
-                    </div>
+                    <div className="w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-blue-500 shadow"></div>
                   </div>
-                  <div className="bg-primary col-start-6 col-end-10 p-4 rounded-xl my-4 mr-auto shadow-md">
-                    <h3 className="font-greatVibes text-2xl mb-1">
-                      Paul Borge
-                    </h3>
-                    <p className="leading-tight md:text-justify text-sm">
+                  <div className="bg-blue-500 col-start-6 col-end-10 p-4 rounded-xl my-4 mr-auto shadow-md">
+                    <h3 className="font-semibold text-lg mb-1">Lorem ipsum</h3>
+                    <p className="leading-tight text-justify">
                       Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                       Vitae, facilis.
                     </p>
@@ -527,7 +472,11 @@ export default function Home() {
           </div>
         </section>
 
-        <JoinUs />
+        <section className={styles.paleBlueBg}></section>
+
+        <section className="bg-secondary">
+          <JoinUs textColor="text-white" btnBackground="btn-primary" />
+        </section>
       </main>
 
       <footer>

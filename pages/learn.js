@@ -4,6 +4,7 @@ import { Footer } from "../components/footer/Footer";
 import { JoinUs } from "../components/join us/JoinUs";
 import { SearchIcon } from "@heroicons/react/outline";
 import { BsCollection } from "react-icons/bs";
+import styles from "../styles/Others.module.css";
 
 export default function learn() {
   return (
@@ -45,7 +46,9 @@ export default function learn() {
       </main>
 
       {/* join pink codrs */}
-      <JoinUs />
+      <section className={styles.paleBlueBg}>
+        <JoinUs textColor="text-secondary" btnBackground="btn-secondary" />
+      </section>
 
       <footer>
         <Footer />

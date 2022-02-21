@@ -15,15 +15,19 @@ export const Navigation = ({ textColor, logoSrc }) => {
       >
         {/* left side */}
         <menu className="flex items-center space-x-10">
-          <div className="relative">
-            <Image
-              src={`${logoSrc}`}
-              width={60}
-              height={60}
-              objectFit="fill"
-              alt="pink codrs africa logo"
-            />
-          </div>
+          <Link href="/">
+            <a>
+              <div className="relative">
+                <Image
+                  src={`${logoSrc}`}
+                  width={60}
+                  height={60}
+                  objectFit="fill"
+                  alt="pink codrs africa logo"
+                />
+              </div>
+            </a>
+          </Link>
           <div className="hidden lg:flex items-center justify-around space-x-10  font-medium text-base capitalize font-open tracking-wide">
             {menuLinks.map(({ id, name, href }) => (
               <div

@@ -1,12 +1,12 @@
 import Link from "next/link";
 import styles from "./JoinUs.module.css";
 
-export const JoinUs = () => {
+export const JoinUs = ({ textColor, btnBackground }) => {
   return (
-    <section className={`${styles.paleBlueBg} py-20 `}>
+    <div className=" py-20">
       <div className="container flex flex-col items-center space-y-10">
         <h1
-          className={`${styles.mainText} font-noto text-3xl md:text-5xl font-bold capitalize text-secondary text-center`}
+          className={`${styles.mainText} font-noto text-3xl md:text-5xl font-bold capitalize ${textColor} text-center`}
         >
           want to be part of the
           <span className="text-green-500"> journey?</span>
@@ -18,12 +18,12 @@ export const JoinUs = () => {
         </p>
         <Link href="/join-us">
           <a>
-            <button className="btn-secondary py-3 px-6 w-full lg:w-auto ">
+            <button className={`${btnBackground} py-3 px-6 w-full lg:w-auto`}>
               join pink codrs
             </button>
           </a>
         </Link>
       </div>
-    </section>
+    </div>
   );
 };

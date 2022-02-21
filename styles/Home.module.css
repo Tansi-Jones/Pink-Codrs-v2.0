@@ -82,3 +82,7 @@
   display: inline-block;
   transition: 0.3s ease-in-out;
 }
+
+.paleBlueBg {
+  background-color: #f1f5f9;
+}

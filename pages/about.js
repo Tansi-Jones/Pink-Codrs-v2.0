@@ -3,6 +3,7 @@ import { Meta } from "../components/meta/Meta";
 import { Navigation } from "../components/navigation/Navigation";
 import { Footer } from "../components/footer/Footer";
 import { JoinUs } from "../components/join us/JoinUs";
+import styles from "../styles/Others.module.css";
 
 export default function about() {
   return (
@@ -190,7 +191,9 @@ export default function about() {
       </section>
 
       {/* join pink codrs */}
-      <JoinUs />
+      <section className={styles.paleBlueBg}>
+        <JoinUs textColor="text-secondary" btnBackground="btn-secondary" />
+      </section>
 
       <footer>
         <Footer />
