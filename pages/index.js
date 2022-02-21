@@ -8,7 +8,6 @@ import { Footer } from "../components/footer/Footer";
 import Link from "next/link";
 import { BsPlayFill, BsPauseFill } from "react-icons/bs";
 import { JoinUs } from "../components/join us/JoinUs";
-import Process from "../components/Process";
 
 export default function Home() {
   const [isPlaying, setIsPlaying] = useState(false);
