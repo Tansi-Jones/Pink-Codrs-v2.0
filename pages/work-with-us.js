@@ -8,12 +8,62 @@ import {
 import Link from "next/link";
 import styles from "../styles/Others.module.css";
 import { useState } from "react";
+import axios from "axios";
+import toast, { Toaster } from "react-hot-toast";
+import { BiLoaderAlt } from "react-icons/bi";
 
 export default function WorkWithUs() {
   const [isSelectedValue, setIsSelectedValue] = useState(1);
+  const [isLoading, setIsLoading] = useState(false);
+  const [workForm, setWorkForm] = useState({
+    email: "",
+    organization: "",
+    representative: "",
+  });
+
+  const category = [
+    "Train With Pink Codrs",
+    "Run a Challenge",
+    " Recruit from Pink Codrs",
+  ];
+
+  const handleChange = (event) => {
+    const { name, value } = event.target;
+
+    setWorkForm((prevValue) => {
+      return { ...prevValue, [name]: value };
+    });
+  };
+
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+    const { email, organization, representative } = workForm;
+    try {
+      setIsLoading(true);
+      const { data } = await axios.post("/api/work-with-us", {
+        email,
+        organization,
+        representative,
+        category: category[isSelectedValue],
+      });
+
+      toast(data);
+      setIsLoading(false);
+      // console.log(data);
+    } catch (error) {
+      setIsLoading(true);
+      // console.log(error.response.data);
+      toast.error(error.response.data);
+    }
+  };
+
   return (
     <>
       <Meta title="Work With Us" />
+
+      {/* Toaster */}
+      <Toaster />
+
       <main className="flex flex-col-reverse lg:grid grid-cols-1 md:grid-cols-2 place-items-center">
         <section className="w-[90%] md:w-[60%] lg:w-[50%] mx-auto space-y-5 my-20 lg:my-60 xl:my-0">
           <Link href="/">
@@ -50,15 +100,16 @@ export default function WorkWithUs() {
           >
             Recruit from Pink Codrs
           </h1>
-          <form>
+          <form onSubmit={handleSubmit}>
             <div className="py-8">
               <p className="pb-2 text-tertiary text-base lg:text-lg font-normal">
                 Your email <span className="text-red-500">*</span>
               </p>
               <input
                 type="text"
-                name="name"
-                id="name"
+                name="email"
+                id="email"
+                onChange={handleChange}
                 className="outline-none border border-slate-400 w-full p-2 text-slate-600"
               />
             </div>
@@ -68,8 +119,9 @@ export default function WorkWithUs() {
               </p>
               <input
                 type="text"
-                name="name"
-                id="name"
+                name="organization"
+                id="organization"
+                onChange={handleChange}
                 className="outline-none border border-slate-400 w-full p-2 text-slate-600"
               />
             </div>
@@ -79,8 +131,9 @@ export default function WorkWithUs() {
               </p>
               <input
                 type="text"
-                name="name"
-                id="name"
+                name="representative"
+                id="representative"
+                onChange={handleChange}
                 className="outline-none border border-slate-400 w-full p-2 text-slate-600"
               />
             </div>
@@ -98,6 +151,9 @@ export default function WorkWithUs() {
                   <IoSearchOutline className="text-2xl text-white" />
                 </span>
                 <span>Send</span>
+                {isLoading && (
+                  <BiLoaderAlt className="text-pink-200 text-lg animate-spin" />
+                )}
               </button>
             </div>
           </form>
