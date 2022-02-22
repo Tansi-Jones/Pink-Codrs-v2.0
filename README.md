@@ -16,9 +16,9 @@
 - [ ] Train with us
 
 **Founder**
-==Mbali hlongwane==
+```Mbali hlongwane```
 
 **Developer**
-==Tansi Jones==
+```Tansi Jones```
 
 [website](https://www.google.com)
