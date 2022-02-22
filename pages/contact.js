@@ -65,9 +65,10 @@ export default function Contact() {
         </div>
       </header>
 
+      {/* Toaster */}
+      <Toaster />
+
       <main className="container my-20">
-        {/* Toaster */}
-        <Toaster />
         <section className="grid grid-cols-1 xl:grid-cols-2 justify-center">
           {/* left side */}
           <div>

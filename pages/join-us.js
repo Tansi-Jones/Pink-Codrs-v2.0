@@ -3,11 +3,53 @@ import Image from "next/image";
 import { ArrowRightIcon } from "@heroicons/react/outline";
 import { RiDoubleQuotesL } from "react-icons/ri";
 import Link from "next/link";
+import { useState } from "react";
+import axios from "axios";
+import toast, { Toaster } from "react-hot-toast";
+import { BiLoaderAlt } from "react-icons/bi";
 
 export default function JoinUs() {
+  const [isLoading, setIsLoading] = useState(false);
+  const [joinForm, setJoinForm] = useState({
+    name: "",
+    email: "",
+    country: "",
+  });
+
+  const handleChange = (event) => {
+    const { name, value } = event.target;
+    setJoinForm((prevValue) => {
+      return { ...prevValue, [name]: value };
+    });
+  };
+
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+    const { name, email, country } = joinForm;
+    try {
+      setIsLoading(true);
+      const { data } = await axios.post("/api/join-us", {
+        name,
+        email,
+        country,
+      });
+
+      toast(data);
+      setIsLoading(false);
+      // console.log(data);
+    } catch (error) {
+      setIsLoading(true);
+      // console.log(error.response.data);
+      toast.error(error.response.data);
+    }
+  };
   return (
     <>
       <Meta title="Join Us" />
+
+      {/* Toaster */}
+      <Toaster />
+
       <main className="lg:grid grid-cols-1 md:grid-cols-2 place-items-center">
         <section className="w-[90%] md:w-[60%] lg:w-[50%] mx-auto space-y-5 my-32 md:my-60 lg:my-0">
           <Link href="/">
@@ -26,7 +68,7 @@ export default function JoinUs() {
           <h1 className="text-secondary font-noto text-3xl md:text-4xl lg:text-4xl font-bold tracking-wide leading-loose">
             Join Pink Codrs
           </h1>
-          <form>
+          <form onSubmit={handleSubmit}>
             <div className="py-8">
               <p className="pb-2 text-tertiary text-base lg:text-lg font-normal">
                 Your name <span className="text-red-500">*</span>
@@ -35,6 +77,7 @@ export default function JoinUs() {
                 type="text"
                 name="name"
                 id="name"
+                onChange={handleChange}
                 className="outline-none border border-slate-400 w-full p-2 text-slate-600"
               />
             </div>
@@ -46,6 +89,7 @@ export default function JoinUs() {
                 type="email"
                 name="email"
                 id="email"
+                onChange={handleChange}
                 className="outline-none border border-slate-400 w-full p-2 text-slate-600"
               />
             </div>
@@ -56,6 +100,7 @@ export default function JoinUs() {
               <select
                 name="country"
                 id="country"
+                onChange={handleChange}
                 className="outline-none border border-slate-400 w-full p-2 text-slate-600"
               >
                 <option value="">Select a country</option>
@@ -68,7 +113,11 @@ export default function JoinUs() {
               <button className="btn-primary p-2 w-full text-base flex items-center justify-center space-x-2">
                 <span>register</span>
                 <span>
-                  <ArrowRightIcon className="text-pink-200 h-4" />
+                  {isLoading ? (
+                    <BiLoaderAlt className="text-pink-200 text-lg animate-spin" />
+                  ) : (
+                    <ArrowRightIcon className="text-pink-200 h-4" />
+                  )}
                 </span>
               </button>
             </div>
