@@ -1,4 +1,4 @@
-# PINK CODRS AFRICA
+# PINK CODRS AFRICA (2.0)
 
 **About**
 
