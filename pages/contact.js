@@ -8,6 +8,7 @@ import { BiLoaderAlt } from "react-icons/bi";
 import styles from "../styles/Others.module.css";
 import { useState } from "react";
 import axios from "axios";
+import toast, { Toaster } from "react-hot-toast";
 
 export default function Contact() {
   const [isLoading, setIsLoading] = useState(false);
@@ -39,11 +40,13 @@ export default function Contact() {
         message,
       });
 
+      toast(data);
       setIsLoading(false);
-      console.log(data);
+      // console.log(data);
     } catch (error) {
       setIsLoading("false");
-      console.log(error.response.data);
+      // console.log(error.response.data);
+      toast.error(error.response.data);
     }
   };
 
@@ -63,6 +66,8 @@ export default function Contact() {
       </header>
 
       <main className="container my-20">
+        {/* Toaster */}
+        <Toaster />
         <section className="grid grid-cols-1 xl:grid-cols-2 justify-center">
           {/* left side */}
           <div>
@@ -77,7 +82,7 @@ export default function Contact() {
                     name="name"
                     id="name"
                     autoComplete="off"
-                    required
+                    // required
                     onChange={handleChange}
                     className="outline-none border border-slate-400 w-full p-2 text-slate-500"
                   />
@@ -91,7 +96,7 @@ export default function Contact() {
                     name="email"
                     id="email"
                     autoComplete="off"
-                    required
+                    // required
                     onChange={handleChange}
                     className="outline-none border border-slate-400 w-full p-2 text-slate-500"
                   />
@@ -107,7 +112,7 @@ export default function Contact() {
                     name="subject"
                     id="subject"
                     autoComplete="off"
-                    required
+                    // required
                     onChange={handleChange}
                     className="outline-none border border-slate-400 w-full p-2 text-slate-500"
                   />
@@ -121,7 +126,7 @@ export default function Contact() {
                     name="occupation"
                     id="occupation"
                     autoComplete="off"
-                    required
+                    // required
                     onChange={handleChange}
                     className="outline-none border border-slate-400 w-full p-2 text-slate-500"
                   />
@@ -136,7 +141,7 @@ export default function Contact() {
                   id="message"
                   cols="30"
                   rows="6"
-                  required
+                  // required
                   onChange={handleChange}
                   className="outline-none border border-slate-400 w-full p-2 resize-none text-slate-500"
                 ></textarea>
@@ -192,6 +197,8 @@ export default function Contact() {
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3580.3478921115184!2d28.016746615634165!3d-26.185359069568257!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e950c0a6ffc9379%3A0x3d365796c1f181b!2s44%20STANLEY!5e0!3m2!1sen!2s!4v1637002101355!5m2!1sen!2s"
               className="w-full h-full border"
               loading="lazy"
+              aria-hidden="false"
+              tabIndex={0}
             ></iframe>
           </div>
         </section>
