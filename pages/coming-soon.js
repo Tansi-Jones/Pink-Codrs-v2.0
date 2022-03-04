@@ -10,7 +10,11 @@ export default function ComingSoon() {
       <Meta title="Coming Soon" />
 
       <nav>
-        <Navigation textColor="text-secondary" logoSrc="/pink-codrs-2.svg" />
+        <Navigation
+          textColor="text-secondary"
+          logoSrc="/pink-codrs-2.svg"
+          menuBarColor="bg-secondary"
+        />
       </nav>
 
       <main className=" w-[90%] lg:w-[58%] mx-auto tex-secondary space-y-10 py-32 flex flex-col items-center">

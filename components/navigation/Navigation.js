@@ -5,7 +5,7 @@ import menuLinks from "./menuLinks";
 import styles from "./Navigation.module.css";
 import { CodeIcon, CogIcon } from "@heroicons/react/outline";
 
-export const Navigation = ({ textColor, logoSrc }) => {
+export const Navigation = ({ textColor, logoSrc, menuBarColor }) => {
   const [isMenuClicked, setIsMenuClicked] = useState(false);
 
   return (
@@ -63,11 +63,21 @@ export const Navigation = ({ textColor, logoSrc }) => {
 
         {/* sidebar menu button*/}
         <div
-          className={`block lg:hidden ${isMenuClicked && styles.menu}`}
+          className={`block lg:hidden cursor-pointer ${
+            isMenuClicked && styles.menu
+          }`}
           onClick={() => setIsMenuClicked(!isMenuClicked)}
         >
-          <div className={styles.menuBar}></div>
-          <div className={styles.menuBar}></div>
+          <div
+            className={`${styles.menuBar} ${
+              menuBarColor ? menuBarColor : "bg-white"
+            }`}
+          ></div>
+          <div
+            className={`${styles.menuBar} ${
+              menuBarColor ? menuBarColor : "bg-white"
+            }`}
+          ></div>
         </div>
       </div>
 
