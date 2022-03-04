@@ -113,6 +113,7 @@ export default function About() {
                 layout="fill"
                 objectFit="cover"
                 alt="event image-1"
+                className="transition-transform duration-500 ease-in-out hover:scale-105"
               />
             </div>
           </div>
@@ -123,6 +124,7 @@ export default function About() {
                 layout="fill"
                 objectFit="cover"
                 alt="event image-1"
+                className="transition-transform duration-500 ease-in-out hover:scale-105"
               />
             </div>
           </div>
@@ -134,6 +136,7 @@ export default function About() {
                 objectFit="cover"
                 alt="event image-1"
                 priority
+                className="transition-transform duration-500 ease-in-out hover:scale-105"
               />
             </div>
           </div>
