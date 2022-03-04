@@ -271,6 +271,7 @@ export default function Home() {
                   layout="fill"
                   objectFit="cover"
                   alt="pink codrs africa logo"
+                  className="transition-transform duration-500 ease-in-out hover:scale-105"
                 />
               </div>
 
@@ -305,6 +306,7 @@ export default function Home() {
                   layout="fill"
                   objectFit="cover"
                   alt="pink codrs africa logo"
+                  className="transition-transform duration-500 ease-in-out hover:scale-105"
                 />
               </div>
 
@@ -339,6 +341,7 @@ export default function Home() {
                   layout="fill"
                   objectFit="cover"
                   alt="pink codrs africa logo"
+                  className="transition-transform duration-500 ease-in-out hover:scale-105"
                 />
               </div>
 
