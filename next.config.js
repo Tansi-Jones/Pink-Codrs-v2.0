@@ -5,8 +5,8 @@ const nextConfig = {
     domains: ["res.cloudinary.com"],
   },
   env: {
-    USER: "markus.smitham67@ethereal.email",
-    PASS: "DhPTWX4UfMHrCnd9JV",
+    USER: "karelle.tremblay76@ethereal.email",
+    PASS: "eG9vgrkCDKEdePrawT",
   },
 };
 

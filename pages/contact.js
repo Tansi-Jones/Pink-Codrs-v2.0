@@ -44,7 +44,7 @@ export default function Contact() {
       setIsLoading(false);
       // console.log(data);
     } catch (error) {
-      setIsLoading("false");
+      setIsLoading(false);
       // console.log(error.response.data);
       toast.error(error.response.data);
     }
