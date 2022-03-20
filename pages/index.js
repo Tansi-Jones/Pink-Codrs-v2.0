@@ -95,7 +95,7 @@ export default function Home() {
 
       <main className="relative ">
         <h1 className="text-secondary font-bold text-3xl md:text-5xl font-noto capitalize my-3 text-center py-10 mt-10">
-          our process
+          Area of focus
         </h1>
         <section className="grid grid-cols-1 md:grid-cols-2 gap-10 my-20 container">
           <div className="max-w-sm">

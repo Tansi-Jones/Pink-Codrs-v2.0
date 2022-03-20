@@ -2,7 +2,7 @@ import { Meta } from "../components/meta/Meta";
 import { Navigation } from "../components/navigation/Navigation";
 import { Footer } from "../components/footer/Footer";
 import Link from "next/link";
-import styles from "../styles/Others.module.css";
+import styles from "../styles/Home.module.css";
 
 export default function ComingSoon() {
   return (
