@@ -13,6 +13,9 @@ export default function JoinUs() {
   const [joinForm, setJoinForm] = useState({
     name: "",
     email: "",
+    occupation: "",
+    ageGroup: "",
+    gender: "",
     country: "",
   });
 
@@ -25,12 +28,15 @@ export default function JoinUs() {
 
   const handleSubmit = async (event) => {
     event.preventDefault();
-    const { name, email, country } = joinForm;
+    const { name, email, country, occupation, ageGroup, gender } = joinForm;
     try {
       setIsLoading(true);
       const { data } = await axios.post("/api/join-us", {
         name,
         email,
+        occupation,
+        ageGroup,
+        gender,
         country,
       });
 
@@ -92,6 +98,55 @@ export default function JoinUs() {
                 onChange={handleChange}
                 className="outline-none border border-slate-400 w-full p-2 text-slate-600"
               />
+            </div>
+            <div className="pb-5">
+              <p className="pb-2 text-tertiary text-base lg:text-lg font-normal">
+                Your occupation <span className="text-red-500">*</span>
+              </p>
+              <select
+                name="occupation"
+                id="occupation"
+                onChange={handleChange}
+                className="outline-none border border-slate-400 w-full p-2 text-slate-600"
+              >
+                <option value="">Select your occupation</option>
+                <option value="Studying">Studying</option>
+                <option value="Working">Working</option>
+                <option value="Unemployed">Unemployed</option>
+              </select>
+            </div>
+            <div className="pb-5">
+              <p className="pb-2 text-tertiary text-base lg:text-lg font-normal">
+                Your Age group <span className="text-red-500">*</span>
+              </p>
+              <select
+                name="ageGroup"
+                id="ageGroup"
+                onChange={handleChange}
+                className="outline-none border border-slate-400 w-full p-2 text-slate-600"
+              >
+                <option value="">Select an age group</option>
+                <option value="16-20">16-20</option>
+                <option value="21-26">21-26</option>
+                <option value="27-35">27-35</option>
+                <option value="36+">36+</option>
+              </select>
+            </div>
+            <div className="pb-5">
+              <p className="pb-2 text-tertiary text-base lg:text-lg font-normal">
+                Your gender <span className="text-red-500">*</span>
+              </p>
+              <select
+                name="gender"
+                id="gender"
+                onChange={handleChange}
+                className="outline-none border border-slate-400 w-full p-2 text-slate-600"
+              >
+                <option value="">Select your gender</option>
+                <option value="Female">Female</option>
+                <option value="Male">Male</option>
+                <option value="Unicorn">Unicorn</option>
+              </select>
             </div>
             <div className="pb-5">
               <p className="pb-2 text-tertiary text-base lg:text-lg font-normal">
