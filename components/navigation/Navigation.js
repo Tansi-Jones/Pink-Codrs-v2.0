@@ -1,7 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
 import React, { useState, useRef } from "react";
-import menuLinks from "./menuLinks";
 import styles from "./Navigation.module.css";
 import { CodeIcon, CogIcon } from "@heroicons/react/outline";
 
@@ -55,7 +54,7 @@ export const Navigation = ({ textColor, logoSrc, menuBarColor }) => {
             <Link href="/coming-soon">
               <a className="flex items-center space-x-2">
                 <CodeIcon className="h-5" />
-                <span> for developers</span>
+                <span> for companies</span>
               </a>
             </Link>
           </div>
@@ -112,7 +111,7 @@ export const Navigation = ({ textColor, logoSrc, menuBarColor }) => {
               <Link href="/coming-soon">
                 <a className="flex items-center space-x-2">
                   <CodeIcon className="h-5" />
-                  <span> for developers</span>
+                  <span> for companies</span>
                 </a>
               </Link>
             </div>
@@ -122,3 +121,26 @@ export const Navigation = ({ textColor, logoSrc, menuBarColor }) => {
     </>
   );
 };
+
+export const menuLinks = [
+  {
+    id: 0,
+    name: "home",
+    href: "/",
+  },
+  {
+    id: 1,
+    name: "about",
+    href: "/about",
+  },
+  {
+    id: 2,
+    name: "learn",
+    href: "/learn",
+  },
+  {
+    id: 3,
+    name: "contact",
+    href: "/contact",
+  },
+];

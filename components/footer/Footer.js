@@ -47,7 +47,7 @@ export const Footer = () => {
               <Link href="/coming-soon">
                 <a className="flex items-center space-x-2">
                   <CodeIcon className="h-4" />
-                  <span> for developers</span>
+                  <span> for companies</span>
                 </a>
               </Link>
             </div>
@@ -83,29 +83,29 @@ export const Footer = () => {
         <p>&copy; Pink-Codrs.com. All rights reserved.</p>
         <div className="flex items-center space-x-5">
           <div>
-            <Link href="/twitter">
-              <a>
+            <Link href="https://twitter.com/PinkcodrsAfrica">
+              <a target="_blank">
                 <BsTwitter className="text-xl text-primary" />
               </a>
             </Link>
           </div>
           <div>
-            <Link href="/linkedin">
-              <a>
+            <Link href="https://www.linkedin.com/company/19128552/admin/">
+              <a target="_blank">
                 <BsLinkedin className="text-xl text-primary" />
               </a>
             </Link>
           </div>
           <div>
-            <Link href="/instagram">
-              <a>
+            <Link href="https://www.instagram.com/pinkcodrs_africa/">
+              <a target="_blank">
                 <BsInstagram className="text-xl text-primary" />
               </a>
             </Link>
           </div>
           <div>
             <Link href="/facebook">
-              <a>
+              <a target="_blank">
                 <BsFacebook className="text-xl text-primary" />
               </a>
             </Link>
