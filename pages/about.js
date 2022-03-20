@@ -25,14 +25,14 @@ export default function About() {
           <Navigation textColor="text-slate-400" logoSrc="/pink-codrs.svg" />
         </nav>
         <div className="container sticky my-8 lg:my-20">
-          <h1 className="lg:w-[75%] mx-auto font-noto text-3xl md:text-5xl lg:text-6xl font-semibold tracking-wide leading-loose text-center">
+          <h1 className="lg:w-[75%] mx-auto font-noto text-3xl md:text-5xl xl:text-5xl 2xl:text-6xl font-semibold tracking-wide leading-loose text-center">
             {"We're building & training new talents"}
           </h1>
         </div>
       </header>
 
       {/* about us */}
-      <section className="container transform -translate-y-32">
+      <section className="container transform -translate-y-24 lg:-translate-y-16 2xl:-translate-y-32">
         <div className="relative w-ful h-[20rem] md:h-[38rem]  shadow-lg bg-pink-300">
           <Image
             src="/assets/img/img-10.jpg"
@@ -41,7 +41,7 @@ export default function About() {
             alt="about image"
           />
         </div>
-        <div className="lg:w-[75%] mx-auto h-40 bg-primary transform -translate-y-20 shadow-lg grid grid-cols-3 items-center">
+        <div className="lg:w-[75%] mx-auto h-40 bg-primary transform  -translate-y-20 shadow-lg grid grid-cols-3 items-center">
           <div className="text-center lg:border-r-2 border-pink-400 space-y-3">
             <h1 className="font-noto text-2xl md:text-5xl font-semibold text-white">
               150+
