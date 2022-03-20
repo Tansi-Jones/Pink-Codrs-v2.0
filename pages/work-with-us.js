@@ -137,6 +137,22 @@ export default function WorkWithUs() {
                 className="outline-none border border-slate-400 w-full p-2 text-slate-600"
               />
             </div>
+            <div className="pb-5">
+              <p className="pb-2 text-tertiary text-base lg:text-lg font-normal">
+                Your country <span className="text-red-500">*</span>
+              </p>
+              <select
+                name="country"
+                id="country"
+                onChange={handleChange}
+                className="outline-none border border-slate-400 w-full p-2 text-slate-600"
+              >
+                <option value="">Select a country</option>
+                <option value="South Africa">South Africa</option>
+                <option value="Nigeria">Nigeria</option>
+                <option value="Tanzania">Tanzania</option>
+              </select>
+            </div>
 
             {/* Edit this base on functionality */}
             <div className="py-5">
