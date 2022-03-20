@@ -1,11 +1,10 @@
-import Image from "next/image";
 import Link from "next/link";
-import { CodeIcon, CogIcon } from "@heroicons/react/outline";
+import { OfficeBuildingIcon, CogIcon } from "@heroicons/react/outline";
 import { BsFacebook, BsTwitter, BsInstagram, BsLinkedin } from "react-icons/bs";
 
 export const Footer = () => {
   return (
-    <div className="w-[90%] lg:w-[58%] mx-auto">
+    <div className="container">
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  py-10 lg:px-8 font-open mb-5 gap-y-8">
         <div className="justify-self-start lg:justify-self-start">
           <h1 className="capitalize text-lg font-medium mb-2 text-secondary">
@@ -46,7 +45,7 @@ export const Footer = () => {
             <div className="hover:text-primary transition ease-linear text-slate-500">
               <Link href="/coming-soon">
                 <a className="flex items-center space-x-2">
-                  <CodeIcon className="h-4" />
+                  <OfficeBuildingIcon className="h-4" />
                   <span> for companies</span>
                 </a>
               </Link>

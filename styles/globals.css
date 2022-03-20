@@ -16,7 +16,7 @@ h1 {
 
 @layer components {
   .container {
-    @apply w-[90%] lg:w-[58%] mx-auto;
+    @apply w-[90%] lg:w-[70%] 2xl:w-[58%] mx-auto;
   }
   .btn-primary {
     @apply bg-primary hover:bg-pink-600 transition ease-linear text-white text-lg font-normal capitalize rounded-b-sm block font-open;

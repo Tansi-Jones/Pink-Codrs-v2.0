@@ -105,7 +105,7 @@ export default function About() {
             slight peek at some of our past events
           </h1>
         </div>
-        <div className="relative grid grid-cols-3 gap-x-5 items-center ">
+        <div className="relative grid grid-cols-3 gap-x-1 md:gap-x-5 items-center ">
           <div className="h-[10rem] md:h-[15rem] lg:h-[20rem] xl:h-[27rem] w-full">
             <div className="relative h-full w-full bg-pink-300">
               <Image
@@ -275,7 +275,7 @@ export const ourPartners = [
   },
   {
     id: 5,
-    img: "/assets/img/snake nation.png",
+    img: "/assets/img/dotmodus.png",
   },
   {
     id: 6,

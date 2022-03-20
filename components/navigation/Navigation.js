@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React, { useState, useRef } from "react";
 import styles from "./Navigation.module.css";
-import { CodeIcon, CogIcon } from "@heroicons/react/outline";
+import { OfficeBuildingIcon, CogIcon } from "@heroicons/react/outline";
 
 export const Navigation = ({ textColor, logoSrc, menuBarColor }) => {
   const [isMenuClicked, setIsMenuClicked] = useState(false);
@@ -10,7 +10,7 @@ export const Navigation = ({ textColor, logoSrc, menuBarColor }) => {
   return (
     <>
       <div
-        className={`flex items-center justify-between py-3 w-[90%] lg:w-[58%] mx-auto ${textColor} `}
+        className={`flex items-center justify-between py-3 container ${textColor} `}
       >
         {/* left side */}
         <menu className="flex items-center space-x-10">
@@ -53,7 +53,7 @@ export const Navigation = ({ textColor, logoSrc, menuBarColor }) => {
           <div className="hover:text-primary transition ease-linear">
             <Link href="/coming-soon">
               <a className="flex items-center space-x-2">
-                <CodeIcon className="h-5" />
+                <OfficeBuildingIcon className="h-5" />
                 <span> for companies</span>
               </a>
             </Link>
@@ -110,7 +110,7 @@ export const Navigation = ({ textColor, logoSrc, menuBarColor }) => {
             <div className="hover:text-primary transition ease-linear">
               <Link href="/coming-soon">
                 <a className="flex items-center space-x-2">
-                  <CodeIcon className="h-5" />
+                  <OfficeBuildingIcon className="h-5" />
                   <span> for companies</span>
                 </a>
               </Link>

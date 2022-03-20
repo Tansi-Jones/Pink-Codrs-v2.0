@@ -36,9 +36,9 @@ export default function Home() {
           <Navigation textColor="text-slate-400" logoSrc="/pink-codrs.svg" />
         </nav>
 
-        <div className="py-16 grid grid-cols-1 lg:grid-cols-2 w-[90%] lg:w-[58%] mx-auto h-[60vh]">
+        <div className="py-16 grid grid-cols-1 lg:grid-cols-2 container h-[60vh] lg:gap-x-3">
           <div className="lg:my-5">
-            <h1 className="font-noto text-4xl lg:text-6xl font-semibold tracking-wide text-left leading-tight">
+            <h1 className="font-noto text-4xl lg:text-5xl 2xl:text-6xl font-semibold tracking-wide text-left leading-tight">
               Building Female Developers Across Africa
             </h1>
             <div className="block md:flex gap-5 space-y-5 md:space-y-0 my-10">
@@ -94,7 +94,10 @@ export default function Home() {
       </header>
 
       <main className="relative ">
-        <section className="grid grid-cols-1 md:grid-cols-2 gap-10 my-20 w-[90%] lg:w-[58%] mx-auto">
+        <h1 className="text-secondary font-bold text-3xl md:text-5xl font-noto capitalize my-3 text-center py-10 mt-10">
+          our process
+        </h1>
+        <section className="grid grid-cols-1 md:grid-cols-2 gap-10 my-20 container">
           <div className="max-w-sm">
             <div className="relative w-[60px] h-[60px] rounded-full bg-primary flex items-center justify-center">
               <Image
@@ -171,7 +174,7 @@ export default function Home() {
 
         <hr />
 
-        <section className="my-8 w-[90%] lg:w-[58%] mx-auto">
+        <section className="my-8 container">
           <h1 className="text-secondary font-bold text-3xl md:text-5xl font-noto capitalize my-3 text-center py-10">
             our vision & mission
           </h1>
@@ -257,11 +260,11 @@ export default function Home() {
         {/* Our events */}
         <section>
           <div className={`bg-secondary h-[40rem] ${styles.header}`}>
-            <h1 className="font-bold text-3xl md:text-5xl font-noto capitalize md:my-3 text-center py-32  w-[90%] lg:w-[58%] mx-auto">
+            <h1 className="font-bold text-3xl md:text-5xl font-noto capitalize md:my-3 text-center py-32  container">
               our most exciting events
             </h1>
           </div>
-          <div className="w-[90%] lg:w-[58%] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 transform -translate-y-64 lg:-translate-y-80 gap-x-20 gap-y-52">
+          <div className="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 transform -translate-y-64 lg:-translate-y-80 gap-x-20 gap-y-52">
             <article
               className={`${styles.card} relative min-w-[325px] max-w-[325px] h-[23rem] space-y-3 text-gray-700  justify-self-center`}
             >
