@@ -24,7 +24,7 @@ export const Footer = () => {
               </div>
               <div className="hover:text-primary transition ease-linear text-slate-500">
                 <Link href="/coming-soon">
-                  <a>terms & conditions</a>
+                  <a>terms </a>
                 </Link>
               </div>
             </div>
@@ -59,8 +59,8 @@ export const Footer = () => {
           <div className="space-y-2  font-normal text-md capitalize tracking-wide">
             <div>
               <div className="hover:text-primary transition ease-linear text-slate-500">
-                <Link href="/coming-soon">
-                  <a>privacy & policy</a>
+                <Link href="/privacy">
+                  <a>privacy</a>
                 </Link>
               </div>
               <div className="hover:text-primary transition ease-linear text-slate-500">
