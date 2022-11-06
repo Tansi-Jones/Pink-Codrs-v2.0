@@ -58,6 +58,7 @@ export default function JoinUs() {
 
       <main className="lg:grid grid-cols-1 md:grid-cols-2 place-items-center">
         <section className="w-[90%] md:w-[60%] lg:w-[50%] mx-auto space-y-5 my-32 md:my-60 lg:my-0">
+          <div className="flex items-center justify-between">
           <Link href="/">
             <a>
               <div className="relative">
@@ -71,6 +72,13 @@ export default function JoinUs() {
               </div>
             </a>
           </Link>
+          <Link href="/">
+            <a className="text-slate-500 font-semibold">
+Home
+            </a>
+          </Link>
+
+          </div>
           <h1 className="text-secondary font-noto text-3xl md:text-4xl lg:text-4xl font-bold tracking-wide leading-loose">
             Join Pink Codrs
           </h1>
@@ -189,30 +197,12 @@ export default function JoinUs() {
             priority
           />
           <div className="w-[50%] mx-auto">
-            <h1 className="font-noto text-4xl font-semibold tracking-wide leading-loose ">
-              kaizer chiefs
-            </h1>
             <div>
               <RiDoubleQuotesL className="text-primary text-3xl" />
               <p className="text-slate-400 text-lg px-10 italic">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque,
-                cumque quibusdam optio odio ut quasi reiciendis voluptatum modi
-                corrupti!
+              Join our Virtual community of female engineers and tech enthusiasts in Africa. The best place to connect;  learn; accelerate your ideas; search for funding opportunities and jobs
               </p>
-              <div className="flex items-center space-x-5 pt-3">
-                <div className="relative h-[30px] w-[30px] rounded-full overflow-auto">
-                  <Image
-                    src="/assets/img/team-4.jpg"
-                    layout="fill"
-                    objectFit="cover"
-                    alt=""
-                  />
-                </div>
-                <h1 className=" font-open text-lg space-x-2 font-medium">
-                  <span className="text-white">Micheal Wisdom</span>
-                  <span className="text-slate-500 ">CEO, Kaizer Chiefs</span>
-                </h1>
-              </div>
+             
             </div>
           </div>
         </section>

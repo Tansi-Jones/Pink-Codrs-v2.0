@@ -4,6 +4,7 @@ import { Navigation } from "../components/navigation/Navigation";
 import { Footer } from "../components/footer/Footer";
 import { JoinUs } from "../components/join us/JoinUs";
 import styles from "../styles/Others.module.css";
+import { Portal } from "../components/join us/Portal";
 
 export default function About() {
   return (
@@ -73,24 +74,24 @@ export default function About() {
             our story
           </h1>
           <p className="text-slate-500 font-medium font-open text-base md:text-lg">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis
-            enim lobortis scelerisque fermentum. Neque sodales ut etiam sit amet
-            how to manage. Malesuada proin libero nunc consequat interdum
-            varius. Quam pellentesque nec nam aliquam sem et tortor consequat.
-            Pellentesque adipiscing commodo elit at imperdiet. Semper auctor
-            neque vitae tempus quam pellentesque nec. Amet dictum sit amet justo
-            donec enim diam. Varius sit amet mattis vulputate enim nulla aliquet
-            porttitor. Odio pellentesque diam volutpat commodo sed. Elit sed
-            vulputate mi sit amet mauris commodo quis imperdiet.
+          Pink Codrs Africa is an Institute set up in 2017 to address the current shortage of female engineers worldwide (with a specific focus on Africa) by empowering women to become digital technology experts and building a strong network of female engineers around Africa. 
           </p>
           <p className="text-slate-500 font-medium font-open text-base md:text-lg">
-            Temper auctor neque vitae tempus quam pellentesque nec. Amet dictum
-            sit amet justo donec enim diam. Varius sit amet mattis vulputate
-            enim nulla aliquet porttitor. Odio pellentesque diam volutpat
-            commodo sed. Elit sed vulputate mi sit amet mauris commodo quis
-            imperdiet.
+          Our vision is to change the dismal number of women representation in tech by providing opportunities to women interested in digital technology skills advancement and other related skills and creating sustainable change in the industry through relevant job placements.
           </p>
+          <p className="text-slate-500 font-medium font-open text-base md:text-lg">
+          Our goal at Pink Codrs Africa is to train and place 1 million women in tech by 2030.
+          </p>
+          <p className="text-slate-500 font-medium font-open text-base md:text-lg">
+          In line with the theory of change that looks to create opportunities for women to learn and prosper. Our strategy deepens the Theory of Change through three key pillars: 
+          </p>
+              <ul className="text-slate-500 font-medium font-open text-base md:text-lg">
+                <li>Demand Pillar: Resource, Mentor, Grow</li>
+                <li>Linkage Pillar: Inform, Prepare, Connect</li>
+                <li>Supply Pillar: Skill, Upskill, Reskill</li>
+              </ul>
+          
+          
           <p className="text-slate-500 font-medium font-greatVibes capitalize text-xl md:text-3xl">
             mbali hlongwane
           </p>
@@ -164,6 +165,11 @@ export default function About() {
             </div>
           ))}
         </div>
+      </section>
+
+      {/* join pink codrs */}
+      <section className={styles.paleBlueBg}>
+        <Portal textColor="text-secondary" btnBackground="btn-secondary" />
       </section>
 
       {/* partners */}

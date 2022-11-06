@@ -89,7 +89,7 @@ export const Footer = () => {
             </Link>
           </div>
           <div>
-            <Link href="https://www.linkedin.com/company/19128552/admin/">
+            <Link href="https://www.linkedin.com/company/pink-codrs-africa/">
               <a target="_blank">
                 <BsLinkedin className="text-xl text-primary" />
               </a>

@@ -38,8 +38,8 @@ export default function Home() {
 
         <div className="py-16 grid grid-cols-1 lg:grid-cols-2 container h-[60vh] lg:gap-x-3">
           <div className="lg:my-5">
-            <h1 className="font-noto text-4xl lg:text-5xl 2xl:text-6xl font-semibold tracking-wide text-left leading-tight">
-              Building Female Developers Across Africa
+            <h1 className="font-noto text-3xl lg:text-4xl 2xl:text-5xl font-semibold tracking-wide text-left leading-tight">
+              Enable 1 million women with in-demand tech skills by 2030
             </h1>
             <div className="block md:flex gap-5 space-y-5 md:space-y-0 my-10">
               <Link href="/join-us">
@@ -192,7 +192,7 @@ export default function Home() {
                     />
                   </div>
                   <h1 className="font-noto text-secondary text-5xl font-semibold">
-                    500+
+                    700+
                   </h1>
                 </div>
 
@@ -234,7 +234,7 @@ export default function Home() {
                     />
                   </div>
                   <h1 className="font-noto text-secondary text-5xl font-semibold">
-                    90%
+                    95%
                   </h1>
                 </div>
 
@@ -261,7 +261,7 @@ export default function Home() {
         <section>
           <div className={`bg-secondary h-[40rem] ${styles.header}`}>
             <h1 className="font-bold text-3xl md:text-5xl font-noto capitalize md:my-3 text-center py-32  container">
-              our most exciting events
+              our most exciting activities
             </h1>
           </div>
           <div className="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 transform -translate-y-64 lg:-translate-y-80 gap-x-20 gap-y-52">
@@ -291,7 +291,7 @@ export default function Home() {
               <div>
                 <div className="text-slate-500 transform -translate-y-[370px]">
                   <h1 className="font-noto text-secondary text-3xl font-semibold">
-                    career guide
+                    Meetups
                   </h1>
                   <p className="text-base md:text-lg font-normal py-2">
                     Get your blood tests delivered at home collect a sample from
@@ -326,7 +326,7 @@ export default function Home() {
               <div>
                 <div className="text-slate-500 transform -translate-y-[370px]">
                   <h1 className="font-noto text-secondary text-3xl font-semibold">
-                    career guide
+                    Workshops
                   </h1>
                   <p className="text-base md:text-lg font-normal py-2">
                     Get your blood tests delivered at home collect a sample from
@@ -361,7 +361,7 @@ export default function Home() {
               <div>
                 <div className="text-slate-500 transform -translate-y-[370px]">
                   <h1 className="font-noto text-secondary text-3xl font-semibold">
-                    career guide
+                    Bootcamps
                   </h1>
                   <p className="text-base md:text-lg font-normal py-2">
                     Get your blood tests delivered at home collect a sample from
@@ -480,14 +480,14 @@ export default function Home() {
                   className="max-w-xl shadow-xl bg-white p-6 space-y-3"
                 >
                   <div className="relative flex items-center space-x-3">
-                    <div className="relative h-[50px] w-[50px] rounded-full overflow-auto border bg-pink-400">
+                    {/* <div className="relative h-[50px] w-[50px] rounded-full overflow-auto border bg-pink-400">
                       <Image
                         src={img}
                         layout="fill"
                         objectFit="cover"
                         alt={name}
                       />
-                    </div>
+                    </div> */}
                     <div className="absolute -top-2 left-5">
                       <RiDoubleQuotesL className="text-primary text-3xl" />
                     </div>
@@ -506,14 +506,14 @@ export default function Home() {
               )
             )}
           </div>
-          <div className="pt-20">
+          {/* <div className="pt-20">
             <button className="btn-primary py-3 px-6 w-full lg:w-auto flex items-center justify-center space-x-2">
               <span>see all testimonials</span>
               <span>
                 <ArrowRightIcon className="text-white h-4" />
               </span>
             </button>
-          </div>
+          </div> */}
         </section>
 
         <section className="bg-secondary">
@@ -531,56 +531,29 @@ export default function Home() {
 export const testimonials = [
   {
     id: 1,
-    name: "Mbali Hlongwane",
-    position: "CEO, Founder",
+    name: "Amanda Nyathi",
+    // position: "CEO, Founder",
     img: "/assets/img/team-8.jpg",
-    company: "pink codrs",
+    // company: "pink codrs",
     details:
-      "Tidy has been the system to drive change in collaboration on content for our organisation.",
+      "'I am proud to say that I am the plant that blossomed from the seed planted by Pinkcodrs and its partners. No amount of words can explain the amount of gratitude instilled in me because of the opportunity presented by Pink Codis, It afforded me the opportunity to broaden my skills, to Jeam something new and intriguing that will take my career path to a different level. am thankful for the concept of upskilling more women in tech space and wish the opportunity I had can be available for more women out there.'",
   },
   {
     id: 2,
-    name: "Mbali Hlongwane",
-    position: "CEO, Founder",
+    name: "Ives-Noma Ngubane",
+    // position: "CEO, Founder",
     img: "/assets/img/team-4.jpg",
-    company: "pink codrs",
+    // company: "pink codrs",
     details:
-      "Tidy has been the system to drive change in collaboration on content for our organisation.",
+      "Thank you so much to Pink Codh Atica for your great contribution in empowering us as young black women. Because of the opportunties presented by Pink Cods Ahicai able to quit myself with in demand technical skills that have put me at the forebont of the tech transformation p an advantage at the job market as i have relevant skills / am excited for the future and the opportunity to positively change my he and my family",
   },
   {
     id: 3,
-    name: "Mbali Hlongwane",
-    position: "CEO, Founder",
+    name: "Kally Nube",
+    // position: "CEO, Founder",
     img: "/assets/img/team-6.jpg",
-    company: "pink codrs",
+    // company: "pink codrs",
     details:
-      "Tidy has been the system to drive change in collaboration on content for our organisation.",
-  },
-  {
-    id: 4,
-    name: "Mbali Hlongwane",
-    position: "CEO, Founder",
-    img: "/assets/img/team-3.jpg",
-    company: "pink codrs",
-    details:
-      "Tidy has been the system to drive change in collaboration on content for our organisation.",
-  },
-  {
-    id: 5,
-    name: "Mbali Hlongwane",
-    position: "CEO, Founder",
-    img: "/assets/img/team-1.jpg",
-    company: "pink codrs",
-    details:
-      "Tidy has been the system to drive change in collaboration on content for our organisation.",
-  },
-  {
-    id: 6,
-    name: "Mbali Hlongwane",
-    position: "CEO, Founder",
-    img: "/assets/img/team-2.jpg",
-    company: "pink codrs",
-    details:
-      "Tidy has been the system to drive change in collaboration on content for our organisation.",
-  },
+      "Engaging with the Microsoft Professional Program in Data Science has been a wondert experience. Not only have I obtained al round data science skills that can add value to almost any organisation but I have had a platform to create sisterhood with women who share the same interests and drive and above all broaden understanding on how to tackle the information era fuly equipped Once again, thank you to Pisk Coars Atice for finding us as a worthy investment",
+  }
 ];
