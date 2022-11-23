@@ -72,7 +72,7 @@ export default function Home() {
                 className="rounded-sm z-[100%]"
               >
                 <source
-                  src="assets/vid/Pink Codrs Africa.mp4"
+                  src="https://res.cloudinary.com/dqw0lwkil/video/upload/v1669162467/Pink%20Codrs/Pink_Codrs_hxdfyf.mp4"
                   type="video/mp4"
                 />
                 Your browser does not support the video tag.
@@ -555,5 +555,5 @@ export const testimonials = [
     // company: "pink codrs",
     details:
       "Engaging with the Microsoft Professional Program in Data Science has been a wondert experience. Not only have I obtained al round data science skills that can add value to almost any organisation but I have had a platform to create sisterhood with women who share the same interests and drive and above all broaden understanding on how to tackle the information era fuly equipped Once again, thank you to Pisk Coars Atice for finding us as a worthy investment",
-  }
+  },
 ];
