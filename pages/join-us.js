@@ -59,31 +59,28 @@ export default function JoinUs() {
       <main className="lg:grid grid-cols-1 md:grid-cols-2 place-items-center">
         <section className="w-[90%] md:w-[60%] lg:w-[50%] mx-auto space-y-5 my-32 md:my-60 lg:my-0">
           <div className="flex items-center justify-between">
-          <Link href="/">
-            <a>
-              <div className="relative">
-                <Image
-                  src="/pink-codrs-2.svg"
-                  width={50}
-                  height={50}
-                  objectFit="fill"
-                  alt="pink codrs africa logo"
-                />
-              </div>
-            </a>
-          </Link>
-          <Link href="/">
-            <a className="text-slate-500 font-semibold">
-Home
-            </a>
-          </Link>
-
+            <Link href="/">
+              <a>
+                <div className="relative">
+                  <Image
+                    src="/pink-codrs-2.svg"
+                    width={50}
+                    height={50}
+                    objectFit="fill"
+                    alt="pink codrs africa logo"
+                  />
+                </div>
+              </a>
+            </Link>
+            <Link href="/">
+              <a className="text-slate-500 font-semibold">Home</a>
+            </Link>
           </div>
           <h1 className="text-secondary font-noto text-3xl md:text-4xl lg:text-4xl font-bold tracking-wide leading-loose">
             Join Pink Codrs
           </h1>
           <form onSubmit={handleSubmit}>
-            <div className="py-8">
+            <div className="mb-5">
               <p className="pb-2 text-tertiary text-base lg:text-lg font-normal">
                 Your name <span className="text-red-500">*</span>
               </p>
@@ -200,9 +197,10 @@ Home
             <div>
               <RiDoubleQuotesL className="text-primary text-3xl" />
               <p className="text-slate-400 text-lg px-10 italic">
-              Join our Virtual community of female engineers and tech enthusiasts in Africa. The best place to connect;  learn; accelerate your ideas; search for funding opportunities and jobs
+                Join our Virtual community of female engineers and tech
+                enthusiasts in Africa. The best place to connect; learn;
+                accelerate your ideas; search for funding opportunities and jobs
               </p>
-             
             </div>
           </div>
         </section>

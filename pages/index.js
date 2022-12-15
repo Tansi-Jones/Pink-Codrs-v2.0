@@ -62,7 +62,7 @@ export default function Home() {
           {/* Intro Video */}
           <div className={`${styles.video} relative rounded-lg`}>
             <div
-              className="relative z-50 cursor-pointer bg-pink-400"
+              className="relative z-50 cursor-pointer"
               onClick={handlePlayPause}
             >
               <video
@@ -101,42 +101,6 @@ export default function Home() {
           <div className="max-w-sm">
             <div className="relative w-[60px] h-[60px] rounded-full bg-primary flex items-center justify-center">
               <Image
-                src="/assets/svg/cloud.svg"
-                width={30}
-                height={30}
-                objectFit="fill"
-                alt="pink codrs africa cloud computing icon"
-              />
-            </div>
-            <h1 className="text-secondary font-bold text-3xl font-noto capitalize my-3">
-              cloud computing
-            </h1>
-            <p className="text-base md:text-lg text-slate-500 font-normal font-open">
-              Duis aute irure dolor in reprehenderit in voluptate velit esse
-              cillum dolore eu fugiat nulla pariatur.
-            </p>
-          </div>
-          <div className="max-w-sm justify-self-start lg:justify-self-end">
-            <div className="relative w-[60px] h-[60px] rounded-full bg-primary flex items-center justify-center">
-              <Image
-                src="/assets/svg/ml.svg"
-                width={30}
-                height={30}
-                objectFit="fill"
-                alt="pink codrs africa machine learning icon"
-              />
-            </div>
-            <h1 className="text-secondary font-bold text-3xl font-noto capitalize my-3">
-              machine learning
-            </h1>
-            <p className="text-base md:text-lg text-slate-500 font-normal font-open">
-              Duis aute irure dolor in reprehenderit in voluptate velit esse
-              cillum dolore eu fugiat nulla pariatur.
-            </p>
-          </div>
-          <div className="max-w-sm">
-            <div className="relative w-[60px] h-[60px] rounded-full bg-primary flex items-center justify-center">
-              <Image
                 src="/assets/svg/dev.svg"
                 width={30}
                 height={30}
@@ -165,6 +129,42 @@ export default function Home() {
             <h1 className="text-secondary font-bold text-3xl font-noto capitalize my-3 ">
               data science
             </h1>
+            <p className="text-base md:text-lg text-slate-500 font-normal font-open">
+              Duis aute irure dolor in reprehenderit in voluptate velit esse
+              cillum dolore eu fugiat nulla pariatur.
+            </p>
+          </div>
+          <div className="max-w-sm">
+            <div className="relative w-[60px] h-[60px] rounded-full bg-primary flex items-center justify-center">
+              <Image
+                src="/assets/svg/ml.svg"
+                width={30}
+                height={30}
+                objectFit="fill"
+                alt="pink codrs africa machine learning icon"
+              />
+            </div>
+            <h1 className="text-secondary font-bold text-3xl font-noto capitalize my-3">
+              machine learning
+            </h1>
+            <p className="text-base md:text-lg text-slate-500 font-normal font-open">
+              Duis aute irure dolor in reprehenderit in voluptate velit esse
+              cillum dolore eu fugiat nulla pariatur.
+            </p>
+          </div>
+          <div className="max-w-sm justify-self-start lg:justify-self-end">
+            <div className="relative w-[60px] h-[60px] rounded-full bg-primary flex items-center justify-center">
+              <Image
+                src="/assets/svg/cloud.svg"
+                width={30}
+                height={30}
+                objectFit="fill"
+                alt="pink codrs africa cloud computing icon"
+              />
+            </div>
+            <h1 className="text-secondary font-bold text-3xl font-noto capitalize my-3">
+              cloud computing
+            </h1>
             <p className="text-lg text-slate-500 font-normal font-open">
               Duis aute irure dolor in reprehenderit in voluptate velit esse
               cillum dolore eu fugiat nulla pariatur.
@@ -178,7 +178,7 @@ export default function Home() {
           <h1 className="text-secondary font-bold text-3xl md:text-5xl font-noto capitalize my-3 text-center py-10">
             our vision & mission
           </h1>
-          <div className=" grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+          <div className=" grid grid-cols-1 lg:grid-cols-2 gap-10 items-center lg:py-20">
             <div className="relative space-y-10 my-6 lg:my-16">
               <div className="space-y-5">
                 <div className="flex space-x-2">
@@ -245,7 +245,7 @@ export default function Home() {
               </div>
             </div>
             <div className="mt-20">
-              <div className="-mt-52 lg:-mt-0 relative w-[22rem] md:w-[32rem] h-[45rem] lg:w-[35rem]">
+              <div className="-mt-52 lg:-mt-52 relative w-[22rem] md:w-[32rem] h-[45rem] lg:w-[35rem]">
                 <Image
                   src="/assets/img/work.png"
                   layout="fill"
@@ -268,7 +268,7 @@ export default function Home() {
             <article
               className={`${styles.card} relative min-w-[325px] max-w-[325px] h-[23rem] space-y-3 text-gray-700  justify-self-center`}
             >
-              <div className="relative w-full h-full z-50 rounded-sm overflow-auto bg-pink-300 ">
+              <div className="relative w-full h-full z-50 rounded-sm overflow-auto">
                 <Image
                   src="/assets/img/img-4.jpg"
                   layout="fill"
@@ -278,7 +278,7 @@ export default function Home() {
                 />
               </div>
 
-              <div className="bg-primary w-16 h-16 absolute -top-12 left-[40px] z-50 flex items-center justify-center rounded-full">
+              <div className=" w-16 h-16 absolute -top-12 left-[40px] z-50 flex items-center justify-center rounded-full">
                 <Image
                   src="/assets/svg/1.svg"
                   width={30}
@@ -303,7 +303,7 @@ export default function Home() {
             <article
               className={`${styles.card} relative min-w-[325px] max-w-[325px] h-[23rem] space-y-3 text-gray-700  justify-self-center`}
             >
-              <div className="relative w-full h-full z-50 rounded-sm overflow-auto bg-pink-300">
+              <div className="relative w-full h-full z-50 rounded-sm overflow-auto ">
                 <Image
                   src="/assets/img/img-3.jpg"
                   layout="fill"
@@ -313,7 +313,7 @@ export default function Home() {
                 />
               </div>
 
-              <div className="bg-primary w-16 h-16 absolute -top-12 left-[40px] z-50 flex items-center justify-center rounded-full">
+              <div className=" w-16 h-16 absolute -top-12 left-[40px] z-50 flex items-center justify-center rounded-full">
                 <Image
                   src="/assets/svg/2.svg"
                   width={30}
@@ -338,7 +338,7 @@ export default function Home() {
             <article
               className={`${styles.card} relative min-w-[325px] max-w-[325px] h-[23rem] space-y-3 text-gray-700  justify-self-center`}
             >
-              <div className="relative w-full h-full z-50 rounded-sm overflow-auto bg-pink-300">
+              <div className="relative w-full h-full z-50 rounded-sm overflow-auto">
                 <Image
                   src="/assets/img/img-2.jpg"
                   layout="fill"
@@ -348,7 +348,7 @@ export default function Home() {
                 />
               </div>
 
-              <div className="bg-primary w-16 h-16 absolute -top-12 left-[40px] z-50 flex items-center justify-center rounded-full">
+              <div className=" w-16 h-16 absolute -top-12 left-[40px] z-50 flex items-center justify-center rounded-full">
                 <Image
                   src="/assets/svg/3.svg"
                   width={30}

@@ -12,9 +12,12 @@ import axios from "axios";
 import toast, { Toaster } from "react-hot-toast";
 import { BiLoaderAlt } from "react-icons/bi";
 
-const train = "Get matched with the best candidate for your organisation from our network of female engineers from around Africa. On-board the best talent with a quick and easy hiring process without hassle. Our engineers are vetted and matched against global standards. "
-const run = "We have over 1000 women engineers ready to solve the most pressing challenges in your organisation/country.  Our army of female engineers uses code, and innovation to solve the most challenging problems. "
-const recruit = "Understanding that women should be at the forefront of the tech transformation. Our focus at Pink Codrs Africa is to Upskill or Reskill teams/individuals with in demand tech skills to close the mismatch between skills gained at institutions and the requirements of the job market. We recognize the importance for Africa to enhance and develop the skills of its workforce and invest in its local talents, especially women."
+const train =
+  "Understanding that women should be at the forefront of the tech transformation. Our focus at Pink Codrs Africa is to Upskill or Reskill teams/individuals with in demand tech skills to close the mismatch between skills gained at institutions and the requirements of the job market. We recognize the importance for Africa to enhance and develop the skills of its workforce and invest in its local talents, especially women.";
+const recruit =
+  "Get matched with the best candidate for your organisation from our network of female engineers from around Africa. On-board the best talent with a quick and easy hiring process without hassle. Our engineers are vetted and matched against global standards. ";
+const run =
+  "We have over 1000 women engineers ready to solve the most pressing challenges in your organisation/country.  Our army of female engineers uses code, and innovation to solve the most challenging problems. ";
 
 export default function WorkWithUs() {
 const [displayTrain,setDisplayTrain]=useState(false)

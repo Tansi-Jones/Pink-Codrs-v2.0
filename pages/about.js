@@ -34,7 +34,7 @@ export default function About() {
 
       {/* about us */}
       <section className="container transform -translate-y-24 lg:-translate-y-16 2xl:-translate-y-32">
-        <div className="relative w-ful h-[20rem] md:h-[38rem]  shadow-lg bg-pink-300">
+        <div className="relative w-ful h-[20rem] md:h-[38rem]  shadow-lg">
           <Image
             src="/assets/img/img-10.jpg"
             layout="fill"
@@ -74,24 +74,33 @@ export default function About() {
             our story
           </h1>
           <p className="text-slate-500 font-medium font-open text-base md:text-lg">
-          Pink Codrs Africa is an Institute set up in 2017 to address the current shortage of female engineers worldwide (with a specific focus on Africa) by empowering women to become digital technology experts and building a strong network of female engineers around Africa. 
+            Pink Codrs Africa is an Institute set up in 2017 to address the
+            current shortage of female engineers worldwide (with a specific
+            focus on Africa) by empowering women to become digital technology
+            experts and building a strong network of female engineers around
+            Africa.
           </p>
           <p className="text-slate-500 font-medium font-open text-base md:text-lg">
-          Our vision is to change the dismal number of women representation in tech by providing opportunities to women interested in digital technology skills advancement and other related skills and creating sustainable change in the industry through relevant job placements.
+            Our vision is to change the dismal number of women representation in
+            tech by providing opportunities to women interested in digital
+            technology skills advancement and other related skills and creating
+            sustainable change in the industry through relevant job placements.
           </p>
           <p className="text-slate-500 font-medium font-open text-base md:text-lg">
-          Our goal at Pink Codrs Africa is to train and place 1 million women in tech by 2030.
+            Our goal at Pink Codrs Africa is to train and place 1 million women
+            in tech by 2030.
           </p>
           <p className="text-slate-500 font-medium font-open text-base md:text-lg">
-          In line with the theory of change that looks to create opportunities for women to learn and prosper. Our strategy deepens the Theory of Change through three key pillars: 
+            In line with the theory of change that looks to create opportunities
+            for women to learn and prosper. Our strategy deepens the Theory of
+            Change through three key pillars:
           </p>
-              <ul className="text-slate-500 font-medium font-open text-base md:text-lg">
-                <li>Demand Pillar: Resource, Mentor, Grow</li>
-                <li>Linkage Pillar: Inform, Prepare, Connect</li>
-                <li>Supply Pillar: Skill, Upskill, Reskill</li>
-              </ul>
-          
-          
+          <ul className="text-slate-500 font-medium font-open text-base md:text-lg">
+            <li>Demand Pillar: Resource, Mentor, Grow</li>
+            <li>Linkage Pillar: Inform, Prepare, Connect</li>
+            <li>Supply Pillar: Skill, Upskill, Reskill</li>
+          </ul>
+
           <p className="text-slate-500 font-medium font-greatVibes capitalize text-xl md:text-3xl">
             mbali hlongwane
           </p>
@@ -108,7 +117,7 @@ export default function About() {
         </div>
         <div className="relative grid grid-cols-3 gap-x-1 md:gap-x-5 items-center ">
           <div className="h-[10rem] md:h-[15rem] lg:h-[20rem] xl:h-[27rem] w-full">
-            <div className="relative h-full w-full bg-pink-300">
+            <div className="relative h-full w-full">
               <Image
                 src="/assets/img/img-4.jpg"
                 layout="fill"
@@ -119,7 +128,7 @@ export default function About() {
             </div>
           </div>
           <div className="h-[10rem] md:h-[15rem] lg:h-[20rem] xl:h-[27rem] w-full">
-            <div className="relative h-full w-full bg-pink-300">
+            <div className="relative h-full w-full">
               <Image
                 src="/assets/img/img.jpg"
                 layout="fill"
@@ -130,7 +139,7 @@ export default function About() {
             </div>
           </div>
           <div className="h-[10rem] md:h-[15rem] lg:h-[20rem] xl:h-[27rem] w-full">
-            <div className="relative h-full w-full bg-pink-300">
+            <div className="relative h-full w-full">
               <Image
                 src="/assets/img/img-1.jpg"
                 layout="fill"
@@ -153,7 +162,7 @@ export default function About() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-10 items-center py-16">
           {teamMembers.map(({ id, name, position, img }) => (
             <div key={id} className="flex flex-col items-center space-y-1">
-              <div className="relative rounded-full overflow-auto h-32 w-32 bg-pink-300 ">
+              <div className="relative rounded-full overflow-auto h-32 w-32">
                 <Image src={img} layout="fill" objectFit="cover" alt={name} />
               </div>
               <h1 className="font-noto text-secondary text-xl font-bold text-center pt-3">
