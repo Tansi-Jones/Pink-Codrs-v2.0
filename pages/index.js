@@ -13,6 +13,7 @@ import { ArrowRightIcon } from "@heroicons/react/outline";
 export default function Home() {
   const [isPlaying, setIsPlaying] = useState(false);
   const [playerActive, setPlayerActive] = useState(false);
+  const [readmore, setReadmore] = useState(false);
 
   const videoPlayer = useRef();
 
@@ -112,8 +113,9 @@ export default function Home() {
               software development
             </h1>
             <p className="text-base md:text-lg text-slate-500 font-normal font-open">
-              Duis aute irure dolor in reprehenderit in voluptate velit esse
-              cillum dolore eu fugiat nulla pariatur.
+              12-month full-stack program that takes our candidates through C#,
+              Java, Javascript, Databases, web; both front-end, back-end, and
+              development operations.
             </p>
           </div>
           <div className="max-w-sm justify-self-start lg:justify-self-end">
@@ -130,8 +132,9 @@ export default function Home() {
               data science
             </h1>
             <p className="text-base md:text-lg text-slate-500 font-normal font-open">
-              Duis aute irure dolor in reprehenderit in voluptate velit esse
-              cillum dolore eu fugiat nulla pariatur.
+              6 months Data Science course takes you through T-SQL, Microsoft
+              Excel, Power BI, the R and Python languages, Azure Machine
+              Learning, HDInsight, and Spark
             </p>
           </div>
           <div className="max-w-sm">
@@ -148,8 +151,9 @@ export default function Home() {
               machine learning
             </h1>
             <p className="text-base md:text-lg text-slate-500 font-normal font-open">
-              Duis aute irure dolor in reprehenderit in voluptate velit esse
-              cillum dolore eu fugiat nulla pariatur.
+              The skills attained from our 12-week machine learning program in
+              python are SciPy and scikit-learn, Machine Learning, regression,
+              Classification, Hierarchical Clustering
             </p>
           </div>
           <div className="max-w-sm justify-self-start lg:justify-self-end">
@@ -166,8 +170,9 @@ export default function Home() {
               cloud computing
             </h1>
             <p className="text-lg text-slate-500 font-normal font-open">
-              Duis aute irure dolor in reprehenderit in voluptate velit esse
-              cillum dolore eu fugiat nulla pariatur.
+              Develop, deploy, and manage cloud-based applications. Hire
+              freelance cloud developers to analyse customer needs, design
+              solutions, and debug systems.
             </p>
           </div>
         </section>
@@ -192,13 +197,13 @@ export default function Home() {
                     />
                   </div>
                   <h1 className="font-noto text-secondary text-5xl font-semibold">
-                    700+
+                    WHY?
                   </h1>
                 </div>
 
                 <p className="text-base md:text-lg text-slate-500 font-normal font-open">
-                  Duis aute irure dolor in reprehenderit in voluptate velit esse
-                  cillum dolore eu fugiat nulla pariatur.
+                  To mentor young women into skilled tech employees and
+                  entrepreneurs that will drive African innovation
                 </p>
               </div>
               <div className="space-y-5">
@@ -213,13 +218,13 @@ export default function Home() {
                     />
                   </div>
                   <h1 className="font-noto text-secondary text-5xl font-semibold">
-                    80%
+                    How?
                   </h1>
                 </div>
 
                 <p className="text-base md:text-lg text-slate-500 font-normal font-open">
-                  Duis aute irure dolor in reprehenderit in voluptate velit esse
-                  cillum dolore eu fugiat nulla pariatur.
+                  Training 1 million African women with in-demand digital skills
+                  by 2030
                 </p>
               </div>
               <div className="space-y-5">
@@ -234,13 +239,14 @@ export default function Home() {
                     />
                   </div>
                   <h1 className="font-noto text-secondary text-5xl font-semibold">
-                    95%
+                    Outcome
                   </h1>
                 </div>
 
                 <p className="text-base md:text-lg text-slate-500 font-normal font-open">
-                  Duis aute irure dolor in reprehenderit in voluptate velit esse
-                  cillum dolore eu fugiat nulla pariatur.
+                  Pipeline of skilled women, Industry recognised qualification,
+                  direct project experience, and job placements with corporates,
+                  governments, NGOs, and tech startups
                 </p>
               </div>
             </div>
@@ -265,111 +271,43 @@ export default function Home() {
             </h1>
           </div>
           <div className="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 transform -translate-y-64 lg:-translate-y-80 gap-x-20 gap-y-52">
-            <article
-              className={`${styles.card} relative min-w-[325px] max-w-[325px] h-[23rem] space-y-3 text-gray-700  justify-self-center`}
-            >
-              <div className="relative w-full h-full z-50 rounded-sm overflow-auto">
-                <Image
-                  src="/assets/img/img-4.jpg"
-                  layout="fill"
-                  objectFit="cover"
-                  alt="pink codrs africa logo"
-                  className="transition-transform duration-500 ease-in-out hover:scale-105"
-                />
-              </div>
-
-              <div className=" w-16 h-16 absolute -top-12 left-[40px] z-50 flex items-center justify-center rounded-full">
-                <Image
-                  src="/assets/svg/1.svg"
-                  width={30}
-                  height={30}
-                  objectFit="contain"
-                  alt="pink codrs africa logo"
-                />
-              </div>
-              <div className={styles.cardDesign}></div>
-              <div>
-                <div className="text-slate-500 transform -translate-y-[370px]">
-                  <h1 className="font-noto text-secondary text-3xl font-semibold">
-                    Meetups
-                  </h1>
-                  <p className="text-base md:text-lg font-normal py-2">
-                    Get your blood tests delivered at home collect a sample from
-                    the your blood tests.
-                  </p>
+            {events.map((event) => (
+              <article
+                key={event.id}
+                className={`${styles.card} relative min-w-[325px] max-w-[325px] h-[23rem] space-y-3 text-gray-700  justify-self-center`}
+              >
+                <div className="relative w-full h-full z-50 rounded-sm overflow-auto">
+                  <Image
+                    src={event.img}
+                    layout="fill"
+                    objectFit="cover"
+                    alt="pink codrs africa logo"
+                    className="transition-transform duration-500 ease-in-out hover:scale-105"
+                  />
                 </div>
-              </div>
-            </article>
-            <article
-              className={`${styles.card} relative min-w-[325px] max-w-[325px] h-[23rem] space-y-3 text-gray-700  justify-self-center`}
-            >
-              <div className="relative w-full h-full z-50 rounded-sm overflow-auto ">
-                <Image
-                  src="/assets/img/img-3.jpg"
-                  layout="fill"
-                  objectFit="cover"
-                  alt="pink codrs africa logo"
-                  className="transition-transform duration-500 ease-in-out hover:scale-105"
-                />
-              </div>
 
-              <div className=" w-16 h-16 absolute -top-12 left-[40px] z-50 flex items-center justify-center rounded-full">
-                <Image
-                  src="/assets/svg/2.svg"
-                  width={30}
-                  height={30}
-                  objectFit="contain"
-                  alt="pink codrs africa logo"
-                />
-              </div>
-              <div className={styles.cardDesign}></div>
-              <div>
-                <div className="text-slate-500 transform -translate-y-[370px]">
-                  <h1 className="font-noto text-secondary text-3xl font-semibold">
-                    Workshops
-                  </h1>
-                  <p className="text-base md:text-lg font-normal py-2">
-                    Get your blood tests delivered at home collect a sample from
-                    the your blood tests.
-                  </p>
+                <div className=" w-16 h-16 absolute -top-12 left-[40px] z-50 flex items-center justify-center rounded-full">
+                  <Image
+                    src={event.img_fig}
+                    width={30}
+                    height={30}
+                    objectFit="contain"
+                    alt="pink codrs africa logo"
+                  />
                 </div>
-              </div>
-            </article>
-            <article
-              className={`${styles.card} relative min-w-[325px] max-w-[325px] h-[23rem] space-y-3 text-gray-700  justify-self-center`}
-            >
-              <div className="relative w-full h-full z-50 rounded-sm overflow-auto">
-                <Image
-                  src="/assets/img/img-2.jpg"
-                  layout="fill"
-                  objectFit="cover"
-                  alt="pink codrs africa logo"
-                  className="transition-transform duration-500 ease-in-out hover:scale-105"
-                />
-              </div>
-
-              <div className=" w-16 h-16 absolute -top-12 left-[40px] z-50 flex items-center justify-center rounded-full">
-                <Image
-                  src="/assets/svg/3.svg"
-                  width={30}
-                  height={30}
-                  objectFit="contain"
-                  alt="pink codrs africa logo"
-                />
-              </div>
-              <div className={styles.cardDesign}></div>
-              <div>
-                <div className="text-slate-500 transform -translate-y-[370px]">
-                  <h1 className="font-noto text-secondary text-3xl font-semibold">
-                    Bootcamps
-                  </h1>
-                  <p className="text-base md:text-lg font-normal py-2">
-                    Get your blood tests delivered at home collect a sample from
-                    the your blood tests.
-                  </p>
+                <div className={styles.cardDesign}></div>
+                <div>
+                  <div className="text-slate-500 transform -translate-y-[370px]">
+                    <h1 className="font-noto text-secondary text-3xl font-semibold">
+                      {event.title}
+                    </h1>
+                    <p className="text-base md:text-lg font-normal py-2">
+                      {event.details}
+                    </p>
+                  </div>
                 </div>
-              </div>
-            </article>
+              </article>
+            ))}
           </div>
         </section>
 
@@ -385,10 +323,9 @@ export default function Home() {
               {/*  left  */}
               <div className="flex flex-row-reverse md:contents">
                 <div className="bg-primary col-start-1 col-end-5 p-4 rounded-xl my-4 ml-auto shadow-md">
-                  <h3 className="font-semibold text-lg mb-1">Lorem ipsum</h3>
-                  <p className="leading-tight text-justify">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Modi, quaerat?
+                  {/* <h3 className="font-semibold text-lg mb-1">Join the Army</h3> */}
+                  <p className="leading-tight text-justify font-semibold text-lg mb-1">
+                    Join the Army
                   </p>
                 </div>
                 <div className="col-start-5 col-end-6 md:mx-auto relative mr-10">
@@ -407,20 +344,20 @@ export default function Home() {
                   <div className="w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-primary shadow"></div>
                 </div>
                 <div className="bg-primary col-start-6 col-end-10 p-4 rounded-xl my-4 mr-auto shadow-md">
-                  <h3 className="font-semibold text-lg mb-1">Lorem ipsum</h3>
-                  <p className="leading-tight text-justify">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Vitae, facilis.
+                  {/* <h3 className="font-semibold text-lg mb-1">Lorem ipsum</h3> */}
+                  <p className="leading-tight text-justify font-semibold text-lg mb-1">
+                    Participate in our community activities ie Meetups,
+                    workshops etc
                   </p>
                 </div>
               </div>
               {/*  left  */}
               <div className="flex flex-row-reverse md:contents">
                 <div className="bg-primary col-start-1 col-end-5 p-4 rounded-xl my-4 ml-auto shadow-md">
-                  <h3 className="font-semibold text-lg mb-1">Lorem ipsum</h3>
-                  <p className="leading-tight text-justify">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Modi, quaerat?
+                  {/* <h3 className="font-semibold text-lg mb-1">Lorem ipsum</h3> */}
+                  <p className="leading-tight text-justify font-semibold text-lg mb-1">
+                    Be selected for our partner programs and get trained and
+                    certified for FREE
                   </p>
                 </div>
                 <div className="col-start-5 col-end-6 md:mx-auto relative mr-10">
@@ -433,10 +370,9 @@ export default function Home() {
               {/*  left  */}
               <div className="flex flex-row-reverse md:contents">
                 <div className="bg-primary col-start-1 col-end-5 p-4 rounded-xl my-4 ml-auto shadow-md">
-                  <h3 className="font-semibold text-lg mb-1">Lorem ipsum</h3>
-                  <p className="leading-tight text-justify">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Modi, quaerat?
+                  {/* <h3 className="font-semibold text-lg mb-1">Lorem ipsum</h3> */}
+                  <p className="leading-tight text-justify font-semibold text-lg mb-1">
+                    Work on amazing projects and build your profile
                   </p>
                 </div>
                 <div className="col-start-5 col-end-6 md:mx-auto relative mr-10">
@@ -455,10 +391,9 @@ export default function Home() {
                   <div className="w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-primary shadow"></div>
                 </div>
                 <div className="bg-primary col-start-6 col-end-10 p-4 rounded-xl my-4 mr-auto shadow-md">
-                  <h3 className="font-semibold text-lg mb-1">Lorem ipsum</h3>
-                  <p className="leading-tight text-justify">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Vitae, facilis.
+                  {/* <h3 className="font-semibold text-lg mb-1">Lorem ipsum</h3> */}
+                  <p className="leading-tight text-justify font-semibold text-lg mb-1">
+                    Get selected by our partners and land your dream job
                   </p>
                 </div>
               </div>
@@ -536,7 +471,7 @@ export const testimonials = [
     img: "/assets/img/team-8.jpg",
     // company: "pink codrs",
     details:
-      "'I am proud to say that I am the plant that blossomed from the seed planted by Pinkcodrs and its partners. No amount of words can explain the amount of gratitude instilled in me because of the opportunity presented by Pink Codis, It afforded me the opportunity to broaden my skills, to Jeam something new and intriguing that will take my career path to a different level. am thankful for the concept of upskilling more women in tech space and wish the opportunity I had can be available for more women out there.'",
+      "I am proud to say that I am the plant that blossomed from the seed planted by Pink codrs and its partners. No amount of words can explain the amount of gratitude instilled in me because of the opportunity presented by Pink Codrs, It afforded me the opportunity to broaden my skills, to Jeam something new and intriguing that will take my career path to a different level. am thankful for the concept of upskilling more women in tech space and wish the opportunity I had can be available for more women out there.",
   },
   {
     id: 2,
@@ -545,15 +480,42 @@ export const testimonials = [
     img: "/assets/img/team-4.jpg",
     // company: "pink codrs",
     details:
-      "Thank you so much to Pink Codh Atica for your great contribution in empowering us as young black women. Because of the opportunties presented by Pink Cods Ahicai able to quit myself with in demand technical skills that have put me at the forebont of the tech transformation p an advantage at the job market as i have relevant skills / am excited for the future and the opportunity to positively change my he and my family",
+      "Thank you so much to Pink Codrs Africa for your great contribution in empowering us as young black women. Because of the opportunties presented by Pink Codrs Africa able to quit myself with in demand technical skills that have put me at the forefront of the tech transformation and advantage at the job market as i have relevant skills / am excited for the future and the opportunity to positively change my he and my family",
   },
   {
     id: 3,
-    name: "Kally Nube",
+    name: "Kelly Ncube",
     // position: "CEO, Founder",
     img: "/assets/img/team-6.jpg",
     // company: "pink codrs",
     details:
-      "Engaging with the Microsoft Professional Program in Data Science has been a wondert experience. Not only have I obtained al round data science skills that can add value to almost any organisation but I have had a platform to create sisterhood with women who share the same interests and drive and above all broaden understanding on how to tackle the information era fuly equipped Once again, thank you to Pisk Coars Atice for finding us as a worthy investment",
+      "Engaging with the Microsoft Professional Program in Data Science has been a wondert experience. Not only have I obtained al round data science skills that can add value to almost any organisation but I have had a platform to create sisterhood with women who share the same interests and drive and above all broaden understanding on how to tackle the information era fuly equipped Once again, thank you to Pink Codrs Africa for finding us as a worthy investment",
+  },
+];
+
+export const events = [
+  {
+    id: 1,
+    title: "Meetups",
+    img: "/assets/img/img-4.jpg",
+    img_fig: "/assets/svg/1.svg",
+    details:
+      "Our meet-ups are monthly networking events for women in tech to connect, learn, and tackle industry challenges. A platform for women to meet like-minded thinkers and be themselves.",
+  },
+  {
+    id: 2,
+    title: "Workshops",
+    img: "/assets/img/img-3.jpg",
+    img_fig: "/assets/svg/2.svg",
+    details:
+      "The 2-day intense workshops are introductory sessions facilitated by industry experts covering Software development, Cloud, Machine Learning and Data Science.",
+  },
+  {
+    id: 3,
+    title: "Bootcamps",
+    img: "/assets/img/img-2.jpg",
+    img_fig: "/assets/svg/3.svg",
+    details:
+      "Our zero-to-hero boot camps are the best place for individuals interested to get into tech to learn everything they need to know to kick-start their career in tech with just 6 weeks of theory and practical learning.",
   },
 ];

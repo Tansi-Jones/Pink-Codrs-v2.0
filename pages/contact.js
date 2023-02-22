@@ -177,17 +177,17 @@ export default function Contact() {
                 <MailIcon className="h-6 text-primary" />
               </div>
               <p className="pb-2 text-slate-500 text-base lg:text-lg">
-                info@pinkcodrs.africa
+                help@pinkcodrs.africa
               </p>
             </div>
-            <div className="flex space-x-3">
+            {/* <div className="flex space-x-3">
               <div>
                 <DeviceMobileIcon className="h-6 text-primary" />
               </div>
               <p className="pb-2 text-slate-500 text-base lg:text-lg">
                 +27 (81) 523-8220
               </p>
-            </div>
+            </div> */}
           </div>
         </section>
 

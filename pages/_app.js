@@ -2,6 +2,7 @@ import "../styles/globals.css";
 
 import ProgressBar from "@badrap/bar-of-progress";
 import Router from "next/router";
+import ScrollToTop from "react-scroll-to-top";
 
 const progress = new ProgressBar({
   size: 4,
@@ -15,7 +16,22 @@ Router.events.on("routeChangeComplete", progress.finish);
 Router.events.on("routeChangeError", progress.finish);
 
 function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />;
+  return (
+    <>
+      <ScrollToTop
+        smooth
+        color="#fff"
+        style={{
+          backgroundColor: "#E81A6B",
+          borderRadius: "50%",
+          width: "50px",
+          height: "50px",
+          padding: "10px",
+        }}
+      />
+      <Component {...pageProps} />;
+    </>
+  );
 }
 
 export default MyApp;

@@ -4,8 +4,9 @@ import { ArrowRightIcon } from "@heroicons/react/outline";
 import { useState } from "react";
 
 export const Portal = ({ textColor, btnBackground }) => {
-    let [dropdown,setDropdown]=useState(false)
-    const content = "Pink codrs is building the largest portal of women in tech across africa. To thrive as a continent in a digital revolution, Pink Codrs Africa and Id8 Space recognises the importance for Africa to enhance and develop the skills of its workforce and invest in its local talents, especially women. To promote gender parity in its teams, the partnership between Pink Codrs Africa and Id8 Space has developed a platform  equipped with enough resources to connect you, assist you, source out resources and equip skills to hasten your ideas and tech careers."
+  let [dropdown, setDropdown] = useState(false);
+  const content =
+    "Pink codrs is building the largest portal of women in tech across africa. To thrive as a continent in a digital revolution, Pink Codrs Africa and Id8 Space recognises the importance for Africa to enhance and develop the skills of its workforce and invest in its local talents, especially women. To promote gender parity in its teams, the partnership between Pink Codrs Africa and Id8 Space has developed a platform  equipped with enough resources to connect you, assist you, source out resources and equip skills to hasten your ideas and tech careers.";
   return (
     <div className=" py-20">
       <div className="container flex flex-col items-center space-y-10">
@@ -17,11 +18,19 @@ export const Portal = ({ textColor, btnBackground }) => {
         </h1>
 
         <p className="text-slate-500 font-open text-base md:text-xl text-center max-w-4xl mx-auto">
-        {dropdown? content: content.slice(0,150)}
-        ... <button onClick={()=>setDropdown(!dropdown)} className="text-slate-500 font-semibold">{dropdown? "show less":"read more"}</button>
+          {dropdown ? content : content.slice(0, 150)}{" "}
+          <button
+            onClick={() => setDropdown(!dropdown)}
+            className="text-slate-500 font-semibold"
+          >
+            {dropdown ? "show less" : "...read more"}
+          </button>
         </p>
         <p className="text-slate-500 font-open text-base md:text-xl text-center max-w-4xl mx-auto">
-            <strong>Sign up on our portal and be a part of a community of women  in tech in  Africa.</strong>
+          <strong>
+            Sign up on our portal and be a part of a community of women in tech
+            in Africa.
+          </strong>
         </p>
         <Link href="/#">
           <a>

@@ -79,7 +79,7 @@ export const Footer = () => {
       </div>
       <hr />
       <div className="text-slate-500 text-sm py-5 flex flex-wrap space-y-5 items-center justify-between">
-        <p>&copy; Pink-Codrs.com. All rights reserved.</p>
+        <p>&copy;2023 pinkcodrs.africa, All rights reserved.</p>
         <div className="flex items-center space-x-5">
           <div>
             <Link href="https://twitter.com/PinkcodrsAfrica">
