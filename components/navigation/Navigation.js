@@ -27,7 +27,7 @@ export const Navigation = ({ textColor, logoSrc, menuBarColor }) => {
               </div>
             </a>
           </Link>
-          <div className="hidden lg:flex items-center justify-around space-x-10  font-medium text-base capitalize font-open tracking-wide">
+          <div className="hidden lg:flex items-center justify-around space-x-10  font-medium text-lg capitalize font-open tracking-wide">
             {menuLinks.map(({ id, name, href }) => (
               <div
                 key={id}
@@ -42,16 +42,16 @@ export const Navigation = ({ textColor, logoSrc, menuBarColor }) => {
         </menu>
 
         {/* right side */}
-        <menu className="hidden lg:flex items-center space-x-10  font-medium text-base capitalize font-open tracking-wide">
+        <menu className="hidden lg:flex items-center space-x-10  font-medium text-lg capitalize font-open tracking-wide">
           <div className="hover:text-primary transition ease-linear">
-            <Link href="/coming-soon">
+            <Link href="/for-engineers">
               <a className="flex items-center space-x-2">
                 <CogIcon className="h-5" /> <span>for engineers</span>
               </a>
             </Link>
           </div>
           <div className="hover:text-primary transition ease-linear">
-            <Link href="/coming-soon">
+            <Link href="/for-companies">
               <a className="flex items-center space-x-2">
                 <OfficeBuildingIcon className="h-5" />
                 <span> for companies</span>
@@ -101,14 +101,14 @@ export const Navigation = ({ textColor, logoSrc, menuBarColor }) => {
           </div>
           <div className="block lg:hidden items-center space-y-5 text-secondary font-medium text-base capitalize font-open tracking-wide">
             <div className="hover:text-primary transition ease-linear">
-              <Link href="/coming-soon">
+              <Link href="/for-engineers">
                 <a className="flex items-center space-x-2">
                   <CogIcon className="h-5" /> <span>for engineers</span>
                 </a>
               </Link>
             </div>
             <div className="hover:text-primary transition ease-linear">
-              <Link href="/coming-soon">
+              <Link href="/for-companies">
                 <a className="flex items-center space-x-2">
                   <OfficeBuildingIcon className="h-5" />
                   <span> for companies</span>

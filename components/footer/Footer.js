@@ -10,7 +10,7 @@ export const Footer = () => {
           <h1 className="capitalize text-lg font-medium mb-2 text-secondary">
             company
           </h1>
-          <div className="space-y-2 font-normal text-md capitalize tracking-wide">
+          <div className="space-y-2 font-normal text-lg capitalize tracking-wide">
             <div>
               <div className="hover:text-primary transition ease-linear text-slate-500">
                 <Link href="/about">
@@ -36,15 +36,15 @@ export const Footer = () => {
           </h1>
           <div className="space-y-2  font-normal text-md capitalize tracking-wide">
             <div className="hover:text-primary transition ease-linear text-slate-500">
-              <Link href="/coming-soon">
-                <a className="flex items-center space-x-2">
+              <Link href="/for-engineers">
+                <a className="flex items-center space-x-2 text-lg">
                   <CogIcon className="h-4" /> <span>for engineers</span>
                 </a>
               </Link>
             </div>
             <div className="hover:text-primary transition ease-linear text-slate-500">
-              <Link href="/coming-soon">
-                <a className="flex items-center space-x-2">
+              <Link href="/for-companies">
+                <a className="flex items-center space-x-2 text-lg">
                   <OfficeBuildingIcon className="h-4" />
                   <span> for companies</span>
                 </a>
@@ -56,7 +56,7 @@ export const Footer = () => {
           <h1 className="capitalize text-lg font-medium mb-2 text-secondary">
             resources
           </h1>
-          <div className="space-y-2  font-normal text-md capitalize tracking-wide">
+          <div className="space-y-2 font-normal text-lg capitalize tracking-wide">
             <div>
               <div className="hover:text-primary transition ease-linear text-slate-500">
                 <Link href="/privacy">
