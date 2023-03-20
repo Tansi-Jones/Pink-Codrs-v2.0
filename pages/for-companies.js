@@ -54,7 +54,7 @@ export default function ForCompanies() {
             How To Play A Part
           </h1>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 mb-20">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-20">
             <article className="border border-slate-200 p-5 max-w-xs w-64 h-48">
               <h4 className="text-secondary space-x-2 flex items-center font-medium mb-2 capitalize">
                 <span className="font-noto text-2xl">Donate</span>
