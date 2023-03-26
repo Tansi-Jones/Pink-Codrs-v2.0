@@ -43,7 +43,7 @@ export const Navigation = ({ textColor, logoSrc, menuBarColor }) => {
 
         {/* right side */}
         <menu className="hidden lg:flex items-center space-x-10  font-medium text-lg capitalize font-open tracking-wide">
-          <div className="hover:text-primary transition ease-linear">
+          {/* <div className="hover:text-primary transition ease-linear">
             <Link href="/for-engineers">
               <a className="flex items-center space-x-2">
                 <CogIcon className="h-5" /> <span>for engineers</span>
@@ -57,7 +57,7 @@ export const Navigation = ({ textColor, logoSrc, menuBarColor }) => {
                 <span> for companies</span>
               </a>
             </Link>
-          </div>
+          </div> */}
         </menu>
 
         {/* sidebar menu button*/}
