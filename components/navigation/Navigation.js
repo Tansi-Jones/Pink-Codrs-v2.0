@@ -99,7 +99,7 @@ export const Navigation = ({ textColor, logoSrc, menuBarColor }) => {
               </div>
             ))}
           </div>
-          <div className="block lg:hidden items-center space-y-5 text-secondary font-medium text-base capitalize font-open tracking-wide">
+          {/* <div className="block lg:hidden items-center space-y-5 text-secondary font-medium text-base capitalize font-open tracking-wide">
             <div className="hover:text-primary transition ease-linear">
               <Link href="/for-engineers">
                 <a className="flex items-center space-x-2">
@@ -115,7 +115,7 @@ export const Navigation = ({ textColor, logoSrc, menuBarColor }) => {
                 </a>
               </Link>
             </div>
-          </div>
+          </div> */}
         </div>
       </menu>
     </>
