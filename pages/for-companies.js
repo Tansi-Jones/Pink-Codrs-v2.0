@@ -4,7 +4,9 @@ import { Footer } from "../components/footer/Footer";
 import Link from "next/link";
 import { JoinUs } from "../components/join us/JoinUs";
 import styles from "../styles/Home.module.css";
-import { BadgeCheckIcon } from "@heroicons/react/solid";
+import { ChevronUpIcon } from "@heroicons/react/solid";
+import { Disclosure } from "@headlessui/react";
+
 import Image from "next/image";
 
 export default function ForCompanies() {
@@ -26,17 +28,17 @@ export default function ForCompanies() {
 
         <div className="my-20 lg:my-32 container z-50 sticky">
           <div className="lg:my-5">
-            <h1 className="font-noto text-3xl md:text-5xl font-semibold tracking-wide text-left leading-tight">
+            <h1 className="font-noto text-3xl md:text-4xl lg:text-6xl font-semibold tracking-wide text-left leading-tight">
               Passionate about the development of women in tech and seeking ways
               to support them?
             </h1>
-            <p className="mt-5 text-lg md:text-xl text-slate-500 font-medium font-open">
+            <p className="mt-5 text-sm md:text-xl text-slate-500 font-medium font-open">
               Empowering African Women for the Future of Tech
             </p>
             <div className="block md:flex gap-5 space-y-5 md:space-y-0 my-16">
               <Link href="/work-with-us">
                 <a>
-                  <button className="btn-secondary py-3 px-11 w-full lg:w-auto">
+                  <button className="btn-secondary py-2 px-11 w-full lgsm-auto">
                     work with us
                   </button>
                 </a>
@@ -52,48 +54,164 @@ export default function ForCompanies() {
             How To Play A Part
           </h1>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-20">
-            <article className="border border-slate-200 p-5 max-w-xs w-64 h-48">
-              <h4 className="text-secondary space-x-2 flex items-center font-medium mb-2 capitalize">
-                <span className="font-noto text-2xl">Donate</span>
-                <span>
-                  <BadgeCheckIcon className="w-7 text-green-500" />
-                </span>
-              </h4>
-              <p className="text-base md:text-[1.1rem] text-slate-500 font-normal font-open">
-                Sponsor a female to go through our 12 month programs for as
-                little as R10,000
-              </p>
-            </article>
-            <article className="border border-slate-200 p-5 max-w-xs w-64 h-48">
-              <h4 className="text-secondary space-x-2 flex items-center font-medium mb-2 capitalize">
-                <span className="font-noto text-2xl">Fund a Cohort</span>
-                <span>
-                  <BadgeCheckIcon className="w-7 text-green-500" />
-                </span>
-              </h4>
-              <p className="text-base md:text-[1.1rem] text-slate-500 font-normal font-open">
-                Pink Codrs runs 6-12 months program with 30-50 candidates per
-                cohort.
-              </p>
-            </article>
-            <article className="border border-slate-200 p-5 max-w-xs w-64 h-48">
-              <p className="text-base md:text-[1.1rem] text-slate-500 font-normal font-open">
-                Donate a device and help a woman interested in learning how to
-                code.
-              </p>
-            </article>
-            <article className="border border-slate-200 p-5 max-w-xs w-64 lg:w-72 h-48">
-              <h4 className="text-secondary space-x-2 flex items-center font-medium mb-2 capitalize">
-                <span className="font-noto text-2xl"> Partner with us</span>
-                <span>
-                  <BadgeCheckIcon className="w-7 text-green-500" />
-                </span>
-              </h4>
-              <p className="text-base md:text-[1.1rem] text-slate-500 font-normal font-open">
-                Contact mbali@pinkcodrs.africa
-              </p>
-            </article>
+          <div className="lg:flex items-start justify-between lg:space-x-10 mb-10 lg:mb-20">
+            <div className="mt-10 lg:mt-0 relative w-[22rem] h-[18rem] lg:w-[26rem] lg:h-[26rem]">
+              <Image
+                src="/assets/img/img-16.png"
+                layout="fill"
+                alt=""
+                priority
+              />
+            </div>
+            <div className="w-[30rem] px-4 pt-1">
+              <div className="w-full rounded-2xl bg-white p-2 space-y-2">
+                <Disclosure>
+                  {({ open }) => (
+                    <>
+                      <Disclosure.Button className="flex w-full justify-between rounded-md bg-slate-100 px-4 py-2 text-left text-sm font-medium text-secondary hover:bg-slate-200 focus:outline-none focus-visible:ring focus-visible:ring-slate-500 focus-visible:ring-opacity-75">
+                        <span>
+                          What kind of tech skills do you offer to African
+                          women?
+                        </span>
+                        <ChevronUpIcon
+                          className={`${
+                            open ? "rotate-180 transform" : ""
+                          } h-5 w-5 text-secondary`}
+                        />
+                      </Disclosure.Button>
+                      <Disclosure.Panel className="px-4 pt-4 pb-2 text-sm text-gray-500">
+                        We offer a wide range of tech skills that are in high
+                        demand in the current job market. Our courses include
+                        web development, mobile app development, data analysis,
+                        artificial intelligence, cybersecurity, and digital
+                        marketing.
+                      </Disclosure.Panel>
+                    </>
+                  )}
+                </Disclosure>
+                <Disclosure>
+                  {({ open }) => (
+                    <>
+                      <Disclosure.Button className="flex w-full justify-between rounded-md bg-slate-100 px-4 py-2 text-left text-sm font-medium text-secondary hover:bg-slate-200 focus:outline-none focus-visible:ring focus-visible:ring-slate-500 focus-visible:ring-opacity-75">
+                        <span>Providing Funding</span>
+                        <ChevronUpIcon
+                          className={`${
+                            open ? "rotate-180 transform" : ""
+                          } h-5 w-5 text-secondary`}
+                        />
+                      </Disclosure.Button>
+                      <Disclosure.Panel className="px-4 pt-4 pb-2 text-sm text-gray-500">
+                        Companies can provide funding to support the development
+                        of the Pink Codrs Africa and its programs. This could
+                        include funding for specific programs that align with
+                        the {"corporate's"} values and mission.
+                      </Disclosure.Panel>
+                    </>
+                  )}
+                </Disclosure>
+                <Disclosure>
+                  {({ open }) => (
+                    <>
+                      <Disclosure.Button className="flex w-full justify-between rounded-md bg-slate-100 px-4 py-2 text-left text-sm font-medium text-secondary hover:bg-slate-200 focus:outline-none focus-visible:ring focus-visible:ring-slate-500 focus-visible:ring-opacity-75">
+                        <span>What is the duration of your program?</span>
+                        <ChevronUpIcon
+                          className={`${
+                            open ? "rotate-180 transform" : ""
+                          } h-5 w-5 text-secondary`}
+                        />
+                      </Disclosure.Button>
+                      <Disclosure.Panel className="px-4 pt-4 pb-2 text-sm text-gray-500">
+                        Our program duration varies depending on the course.
+                        Some courses can be completed in a few weeks, while
+                        others may take several months.
+                      </Disclosure.Panel>
+                    </>
+                  )}
+                </Disclosure>
+                <Disclosure>
+                  {({ open }) => (
+                    <>
+                      <Disclosure.Button className="flex w-full justify-between rounded-md bg-slate-100 px-4 py-2 text-left text-sm font-medium text-secondary hover:bg-slate-200 focus:outline-none focus-visible:ring focus-visible:ring-slate-500 focus-visible:ring-opacity-75">
+                        <span>Offering Mentorship</span>
+                        <ChevronUpIcon
+                          className={`${
+                            open ? "rotate-180 transform" : ""
+                          } h-5 w-5 text-secondary`}
+                        />
+                      </Disclosure.Button>
+                      <Disclosure.Panel className="px-4 pt-4 pb-2 text-sm text-gray-500">
+                        Companies can offer mentorship to the Pink Codrs Africa
+                        founders and leadership team. This can provide valuable
+                        insights, guidance, and networks to help the company
+                        grow and succeed.
+                      </Disclosure.Panel>
+                    </>
+                  )}
+                </Disclosure>
+                <Disclosure>
+                  {({ open }) => (
+                    <>
+                      <Disclosure.Button className="flex w-full justify-between rounded-md bg-slate-100 px-4 py-2 text-left text-sm font-medium text-secondary hover:bg-slate-200 focus:outline-none focus-visible:ring focus-visible:ring-slate-500 focus-visible:ring-opacity-75">
+                        <span>Providing Access to Resources</span>
+                        <ChevronUpIcon
+                          className={`${
+                            open ? "rotate-180 transform" : ""
+                          } h-5 w-5 text-secondary`}
+                        />
+                      </Disclosure.Button>
+                      <Disclosure.Panel className="px-4 pt-4 pb-2 text-sm text-gray-500">
+                        Companies can provide access to resources that the Pink
+                        Codrs Africa may not have access to, such as technology,
+                        training materials, and expertise in specific areas.
+                      </Disclosure.Panel>
+                    </>
+                  )}
+                </Disclosure>
+                <Disclosure>
+                  {({ open }) => (
+                    <>
+                      <Disclosure.Button className="flex w-full justify-between rounded-md bg-slate-100 px-4 py-2 text-left text-sm font-medium text-secondary hover:bg-slate-200 focus:outline-none focus-visible:ring focus-visible:ring-slate-500 focus-visible:ring-opacity-75">
+                        <span>Offering Partnership Opportunities</span>
+                        <ChevronUpIcon
+                          className={`${
+                            open ? "rotate-180 transform" : ""
+                          } h-5 w-5 text-secondary`}
+                        />
+                      </Disclosure.Button>
+                      <Disclosure.Panel className="px-4 pt-4 pb-2 text-sm text-gray-500">
+                        Companies can offer partnership opportunities that can
+                        help Pink Codrs Africa grow and scale its impact. This
+                        could include partnering with the company on specific
+                        initiatives or providing access to their networks and
+                        resources.
+                      </Disclosure.Panel>
+                    </>
+                  )}
+                </Disclosure>
+                <Disclosure>
+                  {({ open }) => (
+                    <>
+                      <Disclosure.Button className="flex w-full justify-between rounded-md bg-slate-100 px-4 py-2 text-left text-sm font-medium text-secondary hover:bg-slate-200 focus:outline-none focus-visible:ring focus-visible:ring-slate-500 focus-visible:ring-opacity-75">
+                        <span>Supporting Diversity and Inclusion</span>
+                        <ChevronUpIcon
+                          className={`${
+                            open ? "rotate-180 transform" : ""
+                          } h-5 w-5 text-secondary`}
+                        />
+                      </Disclosure.Button>
+                      <Disclosure.Panel className="px-4 pt-4 pb-2 text-sm text-gray-500">
+                        Companies can support Pink Codrs Africa efforts to
+                        promote diversity and inclusion within the tech
+                        industry. This could include providing access to
+                        training, resources, and programs that promote diversity
+                        and inclusion or partnering on initiatives that promote
+                        these values.
+                      </Disclosure.Panel>
+                    </>
+                  )}
+                </Disclosure>
+              </div>
+            </div>
           </div>
         </section>
       </main>

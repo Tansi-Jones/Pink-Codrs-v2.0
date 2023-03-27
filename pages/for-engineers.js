@@ -27,7 +27,7 @@ export default function ForEngineers() {
 
         <div className="my-20 lg:my-28 container z-50 sticky">
           <div className="lg:my-5">
-            <h1 className="font-noto text-3xl md:text-5xl font-semibold tracking-wide text-left leading-tight">
+            <h1 className="font-noto text-3xl md:text-4xl lg:text-6xl font-semibold tracking-wide text-left leading-tight">
               Be a part of the 1 million women we aim to enable with in-demand
               tech skills by 2030.
             </h1>
