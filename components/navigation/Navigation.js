@@ -50,14 +50,14 @@ export const Navigation = ({ textColor, logoSrc, menuBarColor }) => {
               </a>
             </Link>
           </div>
-          <div className="hover:text-primary transition ease-linear">
+          {/* <div className="hover:text-primary transition ease-linear">
             <Link href="/for-companies">
               <a className="flex items-center space-x-2">
                 <OfficeBuildingIcon className="h-5" />
                 <span> for companies</span>
               </a>
             </Link>
-          </div>
+          </div> */}
         </menu>
 
         {/* sidebar menu button*/}
