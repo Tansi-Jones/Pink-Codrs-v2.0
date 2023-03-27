@@ -39,8 +39,9 @@ export default function Learn() {
           <div>
             <BsCollection className="text-[8rem] text-slate-500" />
           </div>
-          <h1 className="text-slate-500 text-5xl font-medium font-noto capitalize">
-            no course yet!
+          <h1 className="text-slate-500 text-2xl font-medium font-noto capitalize w-[40%] text-center">
+            We are working hard to bring you the best courses.
+            Launching July 2023
           </h1>
         </section>
       </main>

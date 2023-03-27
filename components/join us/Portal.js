@@ -6,7 +6,7 @@ import { useState } from "react";
 export const Portal = ({ textColor, btnBackground }) => {
   let [dropdown, setDropdown] = useState(false);
   const content =
-    "Pink codrs is building the largest portal of women in tech across africa. To thrive as a continent in a digital revolution, Pink Codrs Africa and Id8 Space recognises the importance for Africa to enhance and develop the skills of its workforce and invest in its local talents, especially women. To promote gender parity in its teams, the partnership between Pink Codrs Africa and Id8 Space has developed a platform  equipped with enough resources to connect you, assist you, source out resources and equip skills to hasten your ideas and tech careers.";
+    "Pink Codrs Africa is actively working to create the largest online community of women    in tech across Africa. In order for the continent to thrive in the midst of a digital    revolution, Pink Codrs Africa has recognized the importance of developing the skills of    the African workforce and investing in local talents, particularly those of women. To    promote gender parity within their teams, Pink Codrs Africa is joining forces to create a    comprehensive platform that provides resources, assistance, and skills training to   accelerate the careers of women in tech. Join our community by signing up on our   portal today";
   return (
     <div className=" py-20">
       <div className="container flex flex-col items-center space-y-10">

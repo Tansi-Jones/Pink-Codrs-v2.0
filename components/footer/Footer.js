@@ -23,7 +23,7 @@ export const Footer = () => {
                 </Link>
               </div>
               <div className="hover:text-primary transition ease-linear text-slate-500">
-                <Link href="/coming-soon">
+                <Link href="/terms">
                   <a>terms </a>
                 </Link>
               </div>
@@ -42,14 +42,14 @@ export const Footer = () => {
                 </a>
               </Link>
             </div>
-            <div className="hover:text-primary transition ease-linear text-slate-500">
+            {/* <div className="hover:text-primary transition ease-linear text-slate-500">
               <Link href="/for-companies">
                 <a className="flex items-center space-x-2 text-lg">
                   <OfficeBuildingIcon className="h-4" />
                   <span> for companies</span>
                 </a>
               </Link>
-            </div>
+            </div> */}
           </div>
         </div>
         <div className="justify-self-start lg:justify-self-end">
@@ -69,7 +69,7 @@ export const Footer = () => {
                 </Link>
               </div>
               <div className="hover:text-primary transition ease-linear text-slate-500">
-                <Link href="/coming-soon">
+                <Link href="/faq">
                   <a>FAQ</a>
                 </Link>
               </div>

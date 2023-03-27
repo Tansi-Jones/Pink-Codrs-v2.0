@@ -14,7 +14,7 @@ export default function ForCompanies() {
 
       <header className={`bg-secondary h-[100vh] relative`}>
         <Image
-          src="/assets/img/img-12.jpg"
+          src="/assets/img/img-13.jpg"
           layout="fill"
           alt=""
           className="object-cover object-center opacity-10"
@@ -30,10 +30,8 @@ export default function ForCompanies() {
               Passionate about the development of women in tech and seeking ways
               to support them?
             </h1>
-            <p className="mt-10 text-lg md:text-xl text-slate-500 font-medium font-open">
-              Pink Codrs Africa has a growing pipeline of organisations that are
-              ensuring that the vision to develop 1 million women in Africa is
-              met.
+            <p className="mt-5 text-lg md:text-xl text-slate-500 font-medium font-open">
+              Empowering African Women for the Future of Tech
             </p>
             <div className="block md:flex gap-5 space-y-5 md:space-y-0 my-16">
               <Link href="/work-with-us">
