@@ -57,7 +57,7 @@ export default function ForCompanies() {
           </h1>
 
           <div className="lg:flex items-start justify-between lg:space-x-10 mb-10 lg:mb-20">
-            <div className="mt-10 lg:mt-0 relative w-[22rem] h-[18rem] lg:w-[26rem] lg:h-[26rem]">
+            <div className="mt-10 lg:mt-0 relative w-[22rem] h-[23rem] lg:w-[26rem] lg:h-[26rem]">
               <Image
                 src="/assets/img/img-16.png"
                 layout="fill"
