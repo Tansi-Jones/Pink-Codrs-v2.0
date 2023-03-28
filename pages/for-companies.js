@@ -33,7 +33,9 @@ export default function ForCompanies() {
               to support them?
             </h1>
             <p className="mt-5 text-sm md:text-xl text-slate-500 font-medium font-open">
-              Empowering African Women for the Future of Tech
+              Pink Codrs Africa has a growing pipeline of organisations that are
+              ensuring that the vision to develop 1 million women in Africa is
+              met.
             </p>
             <div className="block md:flex gap-5 space-y-5 md:space-y-0 my-16">
               <Link href="/work-with-us">

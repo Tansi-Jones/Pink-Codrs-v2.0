@@ -32,9 +32,7 @@ export default function ForEngineers() {
               tech skills by 2030.
             </h1>
             <p className="mt-5 text-lg md:text-xl text-slate-500 font-medium font-open">
-              Pink Codrs Africa has a growing pipeline of organisations that are
-              ensuring that the vision to develop 1 million women in Africa is
-              met.
+              Empowering African Women for the Future of Tech
             </p>
             <div className="block md:flex gap-5 space-y-5 md:space-y-0 my-10">
               <Link href="/join-us">
