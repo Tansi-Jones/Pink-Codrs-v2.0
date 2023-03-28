@@ -7,6 +7,7 @@ import { useState } from "react";
 import axios from "axios";
 import toast, { Toaster } from "react-hot-toast";
 import { BiLoaderAlt } from "react-icons/bi";
+import Countries from "../public/countries.json";
 
 export default function JoinUs() {
   const [isLoading, setIsLoading] = useState(false);
@@ -17,6 +18,10 @@ export default function JoinUs() {
     ageGroup: "",
     gender: "",
     country: "",
+  });
+
+  const filterCountries = Countries.filter((country) => {
+    return country.continent === "Africa";
   });
 
   const handleChange = (event) => {
@@ -164,9 +169,11 @@ export default function JoinUs() {
                 className="outline-none border border-slate-400 w-full p-2 text-slate-600"
               >
                 <option value="">Select a country</option>
-                <option value="South Africa">South Africa</option>
-                <option value="Nigeria">Nigeria</option>
-                <option value="Tanzania">Tanzania</option>
+                {filterCountries.map((country, index) => (
+                  <option key={index} value={country.country}>
+                    {country.country}
+                  </option>
+                ))}
               </select>
             </div>
             <div className="py-5">
