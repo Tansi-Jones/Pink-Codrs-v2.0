@@ -81,7 +81,7 @@ export default function ForEngineers() {
                   sharing your experiences.
                 </p>
               </div> */}
-              <div className="w-[30rem] px-4 pt-1">
+              <div className="md:w-[30rem] px-4 pt-1">
                 <div className="w-full max-w-xl rounded-2xl bg-white p-2">
                   <Disclosure>
                     {({ open }) => (

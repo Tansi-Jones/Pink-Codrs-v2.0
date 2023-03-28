@@ -65,7 +65,7 @@ export default function ForCompanies() {
                 priority
               />
             </div>
-            <div className="w-[30rem] px-4 pt-1">
+            <div className="md:w-[30rem] px-4 pt-1">
               <div className="w-full rounded-2xl bg-white p-2 space-y-2">
                 <Disclosure>
                   {({ open }) => (

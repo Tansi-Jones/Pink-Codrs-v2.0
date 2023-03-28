@@ -200,7 +200,7 @@ export default function JoinUs() {
             className="opacity-10 grayscale"
             priority
           />
-          <div className="w-[50%] mx-auto">
+          <div className="w-[50%] mx-auto sticky">
             <div>
               <RiDoubleQuotesL className="text-primary text-3xl" />
               <p className="text-slate-400 text-lg px-10 italic">
