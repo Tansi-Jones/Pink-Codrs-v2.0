@@ -63,24 +63,6 @@ export default function ForEngineers() {
               />
             </div>
             <div className="space-y-5 lg:space-y-8 mt-10 lg:mt-0">
-              {/* <div className="flex items-center space-x-3">
-                <span>
-                  <BadgeCheckIcon className="w-7 text-pink-500" />
-                </span>
-                <p className="text-base md:text-lg text-slate-500 font-normal font-open">
-                  Learn new skills from 50+ free courses, workshops, and events.
-                </p>
-              </div>
-
-              <div className="flex items-center space-x-3">
-                <span>
-                  <BadgeCheckIcon className="w-7 text-pink-500" />
-                </span>
-                <p className="text-base md:text-lg text-slate-500 font-normal font-open">
-                  Meet like-minded thinkers and tackle industry challenges while
-                  sharing your experiences.
-                </p>
-              </div> */}
               <div className="md:w-[30rem] px-4 pt-1">
                 <div className="w-full max-w-xl rounded-2xl bg-white p-2">
                   <Disclosure>
