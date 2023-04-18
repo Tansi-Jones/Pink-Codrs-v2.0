@@ -9,6 +9,7 @@ import styles from "../styles/Others.module.css";
 import { useState } from "react";
 import axios from "axios";
 import toast, { Toaster } from "react-hot-toast";
+import Router from "next/router";
 
 export default function Contact() {
   const [isLoading, setIsLoading] = useState(false);
@@ -39,10 +40,9 @@ export default function Contact() {
         occupation,
         message,
       });
-
-      toast(data);
+      toast.success(data.message);
       setIsLoading(false);
-      // console.log(data);
+      Router.push("/");
     } catch (error) {
       setIsLoading(false);
       // console.log(error.response.data);

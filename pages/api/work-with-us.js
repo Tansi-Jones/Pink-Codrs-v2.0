@@ -1,27 +1,15 @@
-import nodemailer from "nodemailer";
+import sgMail from "@sendgrid/mail";
+
+const apiKey = `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`;
+sgMail.setApiKey(apiKey);
 
 export default function handler(req, res) {
-  const { email, organization, representative, category } = req.body;
-  console.log(req.body);
+  const { email, organization, representative } = req.body;
 
-  // form validaation
-  if (email === "" || organization === "" || representative === "") {
-    return res.send("⚠️ Please fill out all fields");
-  }
-
-  const transporter = nodemailer.createTransport({
-    host: "smtp.ethereal.email",
-    port: 587,
-    auth: {
-      user: process.env.USER,
-      pass: process.env.PASS,
-    },
-  });
-
-  const mailOptions = {
-    from: email,
-    to: "tansijones@gmail.com",
-    subject: category,
+  const msg = {
+    to: ["apinkcodrsafrica@gmail.com"],
+    from: "info@pinkcodrs.africa",
+    subject: req.body.category,
     html: `
     <body
     style="
@@ -52,14 +40,14 @@ export default function handler(req, res) {
     </a>
   </body>`,
   };
+  sgMail
+    .send(msg)
+    .then(() => {
+      ("SendGrid Mail has been sent");
+    })
+    .catch((error) => {
+      console.error("Mail not been sent", error.message);
+    });
 
-  transporter.sendMail(mailOptions, (error, info) => {
-    if (error) {
-      console.log(error);
-      res.send("❌ Failed to send");
-    } else {
-      // console.log("Email sent: " + info.response);
-      res.send("✅ Application sent");
-    }
-  });
+  res.status(200).json({ message: "Mail sent successfully" });
 }

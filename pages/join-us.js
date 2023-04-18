@@ -1,5 +1,4 @@
 import { Meta } from "../components/meta/Meta";
-import Image from "next/image";
 import { ArrowRightIcon } from "@heroicons/react/outline";
 import { RiDoubleQuotesL } from "react-icons/ri";
 import Link from "next/link";
@@ -8,6 +7,7 @@ import axios from "axios";
 import toast, { Toaster } from "react-hot-toast";
 import { BiLoaderAlt } from "react-icons/bi";
 import Countries from "../public/countries.json";
+import Router from "next/router";
 
 export default function JoinUs() {
   const [isLoading, setIsLoading] = useState(false);
@@ -45,9 +45,9 @@ export default function JoinUs() {
         country,
       });
 
-      toast(data);
+      toast.success(data.message);
       setIsLoading(false);
-      // console.log(data);
+      Router.push("/");
     } catch (error) {
       setIsLoading(true);
       // console.log(error.response.data);
@@ -67,11 +67,11 @@ export default function JoinUs() {
             <Link href="/">
               <a>
                 <div className="relative">
-                  <Image
+                  <img
                     src="/pink-codrs-2.svg"
                     width={50}
                     height={50}
-                    objectFit="fill"
+                    className="object-fill"
                     alt="pink codrs africa logo"
                   />
                 </div>
@@ -191,14 +191,10 @@ export default function JoinUs() {
           </form>
         </section>
         <section className="relative h-screen w-full bg-secondary hidden lg:flex flex-col items-center justify-center">
-          <Image
+          <img
             src="/assets/img/img-1.jpg"
-            layout="fill"
-            objectFit="cover"
-            objectPosition="bottom"
-            alt="header image"
-            className="opacity-10 grayscale"
-            priority
+            alt="header"
+            className="opacity-10 grayscale object-cover object-center absolute w-full h-full"
           />
           <div className="w-[50%] mx-auto sticky">
             <div>

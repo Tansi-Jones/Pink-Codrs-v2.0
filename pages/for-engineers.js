@@ -6,20 +6,17 @@ import { JoinUs } from "../components/join us/JoinUs";
 import styles from "../styles/Home.module.css";
 import { BadgeCheckIcon, ChevronUpIcon } from "@heroicons/react/solid";
 import { Disclosure } from "@headlessui/react";
-import Image from "next/image";
 
 export default function ForEngineers() {
   return (
     <>
       <Meta title="For Engineers" />
 
-      <header className={`bg-secondary h-[100vh] relative`}>
-        <Image
+      <header className={`bg-secondary w-full h-[100vh] relative`}>
+        <img
           src="/assets/img/img-12.jpg"
-          layout="fill"
           alt=""
-          className="object-cover object-center opacity-10"
-          priority
+          className="object-cover absolute w-full h-full object-center opacity-10"
         />
         <nav className="z-50 sticky">
           <Navigation textColor="text-slate-400" logoSrc="/pink-codrs.svg" />
@@ -55,11 +52,10 @@ export default function ForEngineers() {
 
           <div className="lg:flex items-start justify-between lg:space-x-10 mb-10 lg:mb-20">
             <div className="mt-10 lg:mt-0 relative w-[22rem] h-[18rem] lg:w-[22rem] lg:h-[18rem]">
-              <Image
+              <img
                 src="/assets/img/img-15.png"
-                layout="fill"
                 alt=""
-                priority
+                className="absolute w-full h-full"
               />
             </div>
             <div className="space-y-5 lg:space-y-8 mt-10 lg:mt-0">
@@ -243,11 +239,10 @@ export default function ForEngineers() {
               </div>
             </div>
             <div className="mt-10 lg:mt-0 relative w-[22rem] h-[18rem] lg:w-[40rem] lg:h-[18rem]">
-              <Image
+              <img
                 src="/assets/img/img-14.png"
-                layout="fill"
+                className="absolute inset-0 w-full h-full "
                 alt=""
-                priority
               />
             </div>
           </div>

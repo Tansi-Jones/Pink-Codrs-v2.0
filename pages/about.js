@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { Meta } from "../components/meta/Meta";
 import { Navigation } from "../components/navigation/Navigation";
 import { Footer } from "../components/footer/Footer";
@@ -11,21 +10,17 @@ export default function About() {
     <>
       <Meta title="About" />
 
-      <header className="relative h-[50vh] w-full bg-secondary ">
-        <Image
+      <header className="relative h-[50vh] w-full bg-secondary">
+        <img
           src="/assets/img/img-1.jpg"
-          layout="fill"
-          objectFit="cover"
-          objectPosition="bottom"
-          alt="header image"
-          className="opacity-10 grayscale"
-          priority
+          alt="header img"
+          className="opacity-10 grayscale object-cover object-bottom absolute w-full h-full"
         />
 
         <nav className="z-50 sticky">
           <Navigation textColor="text-slate-400" logoSrc="/pink-codrs.svg" />
         </nav>
-        <div className="container sticky my-8 lg:my-20">
+        <div className="container sticky my-8 lg:my-16">
           <h1 className="lg:w-[75%] mx-auto font-noto text-3xl md:text-5xl xl:text-5xl 2xl:text-6xl font-semibold tracking-wide leading-loose text-center">
             {"We're building & training new talents"}
           </h1>
@@ -33,13 +28,12 @@ export default function About() {
       </header>
 
       {/* about us */}
-      <section className="container transform -translate-y-24 lg:-translate-y-16 2xl:-translate-y-32">
+      <section className="container transform -translate-y-24 lg:-translate-y-16 2xl:-translate-y-28">
         <div className="relative w-ful h-[20rem] md:h-[38rem]  shadow-lg">
-          <Image
+          <img
             src="/assets/img/img-10.jpg"
-            layout="fill"
-            objectFit="cover"
-            alt="about image"
+            className="object-cover object-center"
+            alt="about img"
           />
         </div>
         <div className="lg:w-[75%] mx-auto h-40 bg-primary transform  -translate-y-20 shadow-lg grid grid-cols-3 items-center">
@@ -117,63 +111,33 @@ export default function About() {
         <div className="relative grid grid-cols-3 gap-x-1 md:gap-x-5 items-center ">
           <div className="h-[10rem] md:h-[15rem] lg:h-[20rem] xl:h-[27rem] w-full">
             <div className="relative h-full w-full">
-              <Image
+              <img
                 src="/assets/img/img-4.jpg"
-                layout="fill"
-                objectFit="cover"
-                alt="event image-1"
-                className="transition-transform duration-500 ease-in-out hover:scale-105"
+                alt="event img-1"
+                className="transition-transform absolute h-full w-full duration-500 object-cover ease-in-out hover:scale-105"
               />
             </div>
           </div>
           <div className="h-[10rem] md:h-[15rem] lg:h-[20rem] xl:h-[27rem] w-full">
             <div className="relative h-full w-full">
-              <Image
+              <img
                 src="/assets/img/img.jpg"
-                layout="fill"
-                objectFit="cover"
-                alt="event image-1"
-                className="transition-transform duration-500 ease-in-out hover:scale-105"
+                alt="event img-1"
+                className="transition-transform absolute h-full w-full object-cover duration-500 ease-in-out hover:scale-105"
               />
             </div>
           </div>
           <div className="h-[10rem] md:h-[15rem] lg:h-[20rem] xl:h-[27rem] w-full">
             <div className="relative h-full w-full">
-              <Image
+              <img
                 src="/assets/img/img-1.jpg"
-                layout="fill"
-                objectFit="cover"
-                alt="event image-1"
-                priority
-                className="transition-transform duration-500 ease-in-out hover:scale-105"
+                alt="event img-1"
+                className="transition-transform absolute h-full w-full object-cover duration-500 ease-in-out hover:scale-105"
               />
             </div>
           </div>
         </div>
       </section>
-
-      {/* teams */}
-      {/* <section className="container my-20">
-        <hr className="my-10" />
-        <h1 className="font-noto text-3xl md:text-5xl font-bold capitalize text-secondary text-center ">
-          our amazing team
-        </h1>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-10 items-center py-16">
-          {teamMembers.map(({ id, name, position, img }) => (
-            <div key={id} className="flex flex-col items-center space-y-1">
-              <div className="relative rounded-full overflow-auto h-32 w-32">
-                <Image src={img} layout="fill" objectFit="cover" alt={name} />
-              </div>
-              <h1 className="font-noto text-secondary text-xl font-bold text-center pt-3">
-                {name}
-              </h1>
-              <p className="font-open text-primary text-base font-semibold text-center">
-                {position}
-              </p>
-            </div>
-          ))}
-        </div>
-      </section> */}
 
       {/* join pink codrs */}
       <section className={styles.paleBlueBg}>
@@ -194,12 +158,10 @@ export default function About() {
               className="border border-slate-700 py-7 px-10 flex items-center justify-center"
             >
               <div className="relative h-[2rem] w-[5rem] md:h-[4rem] md:w-[10rem] ">
-                <Image
+                <img
                   src={img}
-                  objectFit="contain"
                   alt={img}
-                  layout="fill"
-                  className=" brightness-200 grayscale"
+                  className="object-contain absolute w-full h-full brightness-200 grayscale"
                 />
               </div>
             </div>

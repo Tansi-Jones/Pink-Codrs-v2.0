@@ -1,5 +1,4 @@
 import { Meta } from "../components/meta/Meta";
-import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import { Navigation } from "../components/navigation/Navigation";
 import React, { useState, useRef } from "react";
@@ -101,11 +100,11 @@ export default function Home() {
         <section className="grid grid-cols-1 md:grid-cols-2 gap-10 my-20 container">
           <div className="max-w-sm">
             <div className="relative w-[60px] h-[60px] rounded-full bg-primary flex items-center justify-center">
-              <Image
+              <img
                 src="/assets/svg/dev.svg"
                 width={30}
                 height={30}
-                objectFit="fill"
+                className="object-fill"
                 alt="pink codrs africa software deve icon"
               />
             </div>
@@ -120,11 +119,11 @@ export default function Home() {
           </div>
           <div className="max-w-sm justify-self-start lg:justify-self-end">
             <div className="relative w-[60px] h-[60px] rounded-full bg-primary flex items-center justify-center">
-              <Image
+              <img
                 src="/assets/svg/db.svg"
                 width={30}
                 height={30}
-                objectFit="fill"
+                className="object-fill"
                 alt="pink codrs africa data science icon"
               />
             </div>
@@ -139,11 +138,11 @@ export default function Home() {
           </div>
           <div className="max-w-sm">
             <div className="relative w-[60px] h-[60px] rounded-full bg-primary flex items-center justify-center">
-              <Image
+              <img
                 src="/assets/svg/ml.svg"
                 width={30}
                 height={30}
-                objectFit="fill"
+                className="object-fill"
                 alt="pink codrs africa machine learning icon"
               />
             </div>
@@ -158,11 +157,11 @@ export default function Home() {
           </div>
           <div className="max-w-sm justify-self-start lg:justify-self-end">
             <div className="relative w-[60px] h-[60px] rounded-full bg-primary flex items-center justify-center">
-              <Image
+              <img
                 src="/assets/svg/cloud.svg"
                 width={30}
                 height={30}
-                objectFit="fill"
+                className="object-fill"
                 alt="pink codrs africa cloud computing icon"
               />
             </div>
@@ -188,11 +187,11 @@ export default function Home() {
               <div className="space-y-5">
                 <div className="flex space-x-2">
                   <div className="relative mt-1">
-                    <Image
+                    <img
                       src="/assets/svg/green.svg"
                       width={20}
                       height={20}
-                      objectFit="fill"
+                      className="object-fill"
                       alt="pink codrs africa data science icon"
                     />
                   </div>
@@ -209,11 +208,11 @@ export default function Home() {
               <div className="space-y-5">
                 <div className="flex space-x-2">
                   <div className="relative mt-1">
-                    <Image
+                    <img
                       src="/assets/svg/pink.svg"
                       width={20}
                       height={20}
-                      objectFit="fill"
+                      className="object-fill"
                       alt="pink codrs africa data science icon"
                     />
                   </div>
@@ -230,11 +229,11 @@ export default function Home() {
               <div className="space-y-5">
                 <div className="flex space-x-2">
                   <div className="relative mt-1">
-                    <Image
+                    <img
                       src="/assets/svg/yellow.svg"
                       width={20}
                       height={20}
-                      objectFit="fill"
+                      className="object-fill"
                       alt="pink codrs africa data science icon"
                     />
                   </div>
@@ -250,17 +249,17 @@ export default function Home() {
                 </p>
               </div>
             </div>
-            <div className="mt-20">
-              <div className="-mt-52 lg:-mt-52 relative w-[22rem] md:w-[32rem] h-[45rem] lg:w-[35rem]">
-                <Image
+            <div className="mt-20 -z-10">
+              <div className="-mt-52 lg:-mt-52 relative w-[25rem] md:w-[32rem] h-[45rem] lg:w-[35rem]">
+                <img
                   src="/assets/img/work.png"
-                  layout="fill"
-                  objectFit="contain"
+                  className="object-fill absolute inset-0 w-full h-full"
                   alt="pink codrs africa logo"
                 />
               </div>
             </div>
           </div>
+          n
         </section>
 
         {/* Our events */}
@@ -277,21 +276,19 @@ export default function Home() {
                 className={`${styles.card} relative min-w-[325px] max-w-[325px] h-[23rem] space-y-3 text-gray-700  justify-self-center`}
               >
                 <div className="relative w-full h-full z-50 rounded-sm overflow-auto">
-                  <Image
+                  <img
                     src={event.img}
-                    layout="fill"
-                    objectFit="cover"
                     alt="pink codrs africa logo"
-                    className="transition-transform duration-500 ease-in-out hover:scale-105"
+                    className="transition-transform object-cover absolute inset-0 w-full h-full duration-500 ease-in-out hover:scale-105"
                   />
                 </div>
 
                 <div className=" w-16 h-16 absolute -top-12 left-[40px] z-50 flex items-center justify-center rounded-full">
-                  <Image
+                  <img
                     src={event.img_fig}
                     width={30}
                     height={30}
-                    objectFit="contain"
+                    className="object-contain"
                     alt="pink codrs africa logo"
                   />
                 </div>
@@ -415,14 +412,6 @@ export default function Home() {
                   className="max-w-xl shadow-xl bg-white p-6 space-y-3"
                 >
                   <div className="relative flex items-center space-x-3">
-                    {/* <div className="relative h-[50px] w-[50px] rounded-full overflow-auto border bg-pink-400">
-                      <Image
-                        src={img}
-                        layout="fill"
-                        objectFit="cover"
-                        alt={name}
-                      />
-                    </div> */}
                     <div className="absolute -top-2 left-5">
                       <RiDoubleQuotesL className="text-primary text-3xl" />
                     </div>

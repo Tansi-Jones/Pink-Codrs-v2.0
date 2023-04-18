@@ -7,21 +7,19 @@ import styles from "../styles/Home.module.css";
 import { ChevronUpIcon } from "@heroicons/react/solid";
 import { Disclosure } from "@headlessui/react";
 
-import Image from "next/image";
-
 export default function ForCompanies() {
   return (
     <>
       <Meta title="For Companies" />
 
-      <header className={`bg-secondary h-[100vh] relative`}>
-        <Image
-          src="/assets/img/img-13.jpg"
-          layout="fill"
-          alt=""
-          className="object-cover object-center opacity-10"
-          priority
-        />
+      <header className={`bg-secondary w-full h-[100vh] relative`}>
+        <picture>
+          <img
+            src="/assets/img/img-13.jpg"
+            alt="hero "
+            className="object-cover absolute w-full h-full object-center opacity-10"
+          />
+        </picture>
         <nav className="z-50 sticky">
           <Navigation textColor="text-slate-400" logoSrc="/pink-codrs.svg" />
         </nav>
@@ -58,12 +56,13 @@ export default function ForCompanies() {
 
           <div className="lg:flex items-start justify-between lg:space-x-10 mb-10 lg:mb-20">
             <div className="mt-10 lg:mt-0 relative w-[22rem] h-[23rem] lg:w-[26rem] lg:h-[26rem]">
-              <Image
-                src="/assets/img/img-16.png"
-                layout="fill"
-                alt=""
-                priority
-              />
+              <picture>
+                <img
+                  src="/assets/img/img-16.png"
+                  alt=""
+                  className="absolute w-full h-full"
+                />
+              </picture>
             </div>
             <div className="md:w-[30rem] px-4 pt-1">
               <div className="w-full rounded-2xl bg-white p-2 space-y-2">

@@ -1,5 +1,4 @@
 import { Meta } from "../components/meta/Meta";
-import Image from "next/image";
 import {
   IoTrophyOutline,
   IoSchoolOutline,
@@ -7,6 +6,7 @@ import {
 } from "react-icons/io5";
 import Link from "next/link";
 import styles from "../styles/Others.module.css";
+import Router from "next/router";
 import { useState } from "react";
 import axios from "axios";
 import toast, { Toaster } from "react-hot-toast";
@@ -63,9 +63,9 @@ export default function WorkWithUs() {
         category: category[isSelectedValue],
       });
 
-      toast(data);
+      toast.success(data.message);
       setIsLoading(false);
-      // console.log(data);
+      Router.push("/");
     } catch (error) {
       setIsLoading(true);
       // console.log(error.response.data);
@@ -86,11 +86,11 @@ export default function WorkWithUs() {
             <Link href="/">
               <a>
                 <div className="relative">
-                  <Image
+                  <img
                     src="/pink-codrs-2.svg"
                     width={50}
                     height={50}
-                    objectFit="fill"
+                    className="object-fill"
                     alt="pink codrs africa logo"
                   />
                 </div>

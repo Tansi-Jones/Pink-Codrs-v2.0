@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 import React, { useState, useRef } from "react";
 import styles from "./Navigation.module.css";
@@ -17,11 +16,10 @@ export const Navigation = ({ textColor, logoSrc, menuBarColor }) => {
           <Link href="/">
             <a>
               <div className="relative">
-                <Image
+                <img
                   src={`${logoSrc}`}
                   width={60}
                   height={60}
-                  objectFit="fill"
                   alt="pink codrs africa logo"
                 />
               </div>
