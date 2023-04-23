@@ -6,11 +6,12 @@ sgMail.setApiKey(apiKey);
 export default function handler(req, res) {
   const { email, organization, representative } = req.body;
 
-  const msg = {
-    to: ["apinkcodrsafrica@gmail.com"],
-    from: "info@pinkcodrs.africa",
-    subject: req.body.category,
-    html: `
+  Email.send({
+    SecureToken: "b4ccc35f-b96c-45e0-a5b7-0965a03ee495",
+    To: "creativemedia533@gmail.com",
+    From: "creativemedia533@gmail.com",
+    Subject: req.body.category,
+    Body: `
     <body
     style="
       font-family: sans-serif;
@@ -39,15 +40,5 @@ export default function handler(req, res) {
       >
     </a>
   </body>`,
-  };
-  sgMail
-    .send(msg)
-    .then(() => {
-      ("SendGrid Mail has been sent");
-    })
-    .catch((error) => {
-      console.error("Mail not been sent", error.message);
-    });
-
-  res.status(200).json({ message: "Mail sent successfully" });
+  }).then(res.status(200).json({ message: "Mail sent successfully" }));
 }

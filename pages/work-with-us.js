@@ -31,6 +31,7 @@ export default function WorkWithUs() {
     email: "",
     organization: "",
     representative: "",
+    country: "",
   });
 
   const filterCountries = Countries.filter((country) => {
@@ -53,24 +54,69 @@ export default function WorkWithUs() {
 
   const handleSubmit = async (event) => {
     event.preventDefault();
-    const { email, organization, representative } = workForm;
-    try {
-      setIsLoading(true);
-      const { data } = await axios.post("/api/work-with-us", {
-        email,
-        organization,
-        representative,
-        category: category[isSelectedValue],
-      });
+    const { email, organization, representative, country } = workForm;
+    console.log(category[isSelectedValue - 1]);
+    // try {
+    //   setIsLoading(true);
+    //   const { data } = await axios.post("/api/work-with-us", {
+    //     email,
+    //     organization,
+    //     representative,
+    //     category: category[isSelectedValue],
+    //   });
 
-      toast.success(data.message);
-      setIsLoading(false);
-      Router.push("/");
-    } catch (error) {
-      setIsLoading(true);
-      // console.log(error.response.data);
-      toast.error(error.response.data);
-    }
+    //   toast.success(data.message);
+    //   setIsLoading(false);
+    //   Router.push("/");
+    // } catch (error) {
+    //   setIsLoading(true);
+    //   // console.log(error.response.data);
+    //   toast.error(error.response.data);
+    // }
+
+    window.Email.send({
+      SecureToken: "e81cdbb6-35b0-4af8-b543-9aa71f6af38f",
+      To: "apinkcodrsafrica@gmail.com",
+      From: "info@pinkcodrs.africa",
+      Subject: "Work with us",
+      Body: `
+      <body
+      style="
+        font-family: sans-serif;
+        width: 70%;
+        margin: 0 auto;
+      ">
+    <h1>${representative} just applied to work with us</h1>
+      
+      <p style="color: #324054; font-size: 20px">
+        <span>Category: </span>
+        <code style="color: #e81a6b">${category[isSelectedValue - 1]}</code>
+      </p>
+      <p style="color: #324054; font-size: 20px">
+        <span>Email: </span>
+        <code style="color: #e81a6b">${email}</code>
+      </p>
+      <p style="color: #324054; font-size: 20px">
+        <span>Organization: </span>
+        <code style="color: #e81a6b">${organization}</code>
+      </p>
+      <p style="color: #324054; font-size: 20px">
+        <span>Representative: </span>
+        <code style="color: #e81a6b">${representative}</code>
+      </p>
+      <p style="color: #324054; font-size: 20px">
+        <span>Country: </span>
+        <code style="color: #e81a6b">${country}</code>
+      </p>
+  
+     
+      <a href="/" style="text-decoration: none">
+        <code style="color: #e81a6b; font-size: 15px"
+          >Sent from Pink Codrs Website</code
+        >
+      </a>
+    </body>`,
+    }).then((message) => toast.success("Message sent successfully!"));
   };
 
   return (

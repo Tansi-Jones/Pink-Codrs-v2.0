@@ -34,25 +34,67 @@ export default function JoinUs() {
   const handleSubmit = async (event) => {
     event.preventDefault();
     const { name, email, country, occupation, ageGroup, gender } = joinForm;
-    try {
-      setIsLoading(true);
-      const { data } = await axios.post("/api/join-us", {
-        name,
-        email,
-        occupation,
-        ageGroup,
-        gender,
-        country,
-      });
+    // try {
+    //   setIsLoading(true);
+    //   const { data } = await axios.post("/api/join-us", {
+    //     name,
+    //     email,
+    //     occupation,
+    //     ageGroup,
+    //     gender,
+    //     country,
+    //   });
 
-      toast.success(data.message);
-      setIsLoading(false);
-      Router.push("/");
-    } catch (error) {
-      setIsLoading(true);
-      // console.log(error.response.data);
-      toast.error(error.response.data);
-    }
+    //   toast.success(data.message);
+    //   setIsLoading(false);
+    //   Router.push("/");
+    // } catch (error) {
+    //   setIsLoading(true);
+    //   // console.log(error.response.data);
+    //   toast.error(error.response.data);
+    // }
+    window.Email.send({
+      SecureToken: "e81cdbb6-35b0-4af8-b543-9aa71f6af38f",
+      To: "apinkcodrsafrica@gmail.com",
+      From: "info@pinkcodrs.africa",
+      Subject: "Join Pink Codrs",
+      Body: `
+      <body
+      style="
+        font-family: sans-serif;
+        width: 70%;
+        margin: 0 auto;
+      "
+    >
+    <h1>${name} just registered</h1>
+      
+      <p style="color: #324054; font-size: 20px">
+        <span>email: </span>
+        <code style="color: #e81a6b">${email}</code>
+      </p>
+      <p style="color: #324054; font-size: 20px">
+        <span>Country: </span>
+        <code style="color: #e81a6b">${country}</code>
+      </p>
+      <p style="color: #324054; font-size: 20px">
+        <span>Age Group: </span>
+        <code style="color: #e81a6b">${ageGroup}</code>
+      </p>
+      <p style="color: #324054; font-size: 20px">
+        <span>Age Group: </span>
+        <code style="color: #e81a6b">${occupation}</code>
+      </p>
+      <p style="color: #324054; font-size: 20px">
+        <span>Age Group: </span>
+        <code style="color: #e81a6b">${gender}</code>
+      </p>
+      <a href="/" style="text-decoration: none">
+        <code style="color: #e81a6b; font-size: 15px"
+          >Sent from Pink Codrs Website</code
+        >
+      </a>
+    </body>`,
+    }).then((message) => toast.success("Message sent successfully!"));
   };
   return (
     <>

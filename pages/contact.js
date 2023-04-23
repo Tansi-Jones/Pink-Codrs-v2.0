@@ -31,23 +31,66 @@ export default function Contact() {
   const handleSubmit = async (event) => {
     event.preventDefault();
     const { name, email, subject, occupation, message } = contactInput;
-    try {
-      setIsLoading(true);
-      const { data } = await axios.post("/api/contact", {
-        name,
-        email,
-        subject,
-        occupation,
-        message,
-      });
-      toast.success(data.message);
-      setIsLoading(false);
-      Router.push("/");
-    } catch (error) {
-      setIsLoading(false);
-      // console.log(error.response.data);
-      toast.error(error.response.data);
-    }
+    // try {
+    //   setIsLoading(true);
+    //   // const { data } = await axios.post("/api/contact", {
+    //   //   name,
+    //   //   email,
+    //   //   subject,
+    //   //   occupation,
+    //   //   message,
+    //   // });
+    //   // toast.success(data.message);
+    //   // setIsLoading(false);
+    //   // Router.push("/");
+
+    // } catch (error) {
+    //   console.log(error);
+    //   setIsLoading(false);
+    //   // console.log(error.response.data);
+    //   toast.error(error.response.data);
+    // }
+
+    window.Email.send({
+      SecureToken: "e81cdbb6-35b0-4af8-b543-9aa71f6af38f",
+      To: "apinkcodrsafrica@gmail.com",
+      From: "info@pinkcodrs.africa",
+      Subject: subject,
+      Body: `
+      <body
+      style="
+        font-family: sans-serif;
+        width: 70%;
+        margin: 0 auto;
+      "
+    >
+      <p style="color: #324054; font-size: 20px">
+        <span>Name: </span>
+        <code style="color: #e81a6b">${name}</code>
+      </p>
+      <p style="color: #324054; font-size: 20px">
+        <span>Occupation: </span>
+        <code style="color: #e81a6b">${occupation}</code>
+      </p>
+      <p style="color: #324054; font-size: 20px">
+        <span>Subject: </span>
+        <code style="color: #e81a6b">${subject}</code>
+      </p>
+  
+      <p style="color: #324054; font-size: 20px; margin-top: 50px">
+      ${message}
+      </p>
+  
+      <p style="color: #324054; font-size: 20px; margin-top: 50px">
+        Best Regards.
+      </p>
+      <a href="/" style="text-decoration: none">
+        <code style="color: #e81a6b; font-size: 15px"
+          >Sent from Pink Codrs Website</code
+        >
+      </a>
+    </body>`,
+    }).then((message) => toast.success("Message sent successfully!"));
   };
 
   return (
