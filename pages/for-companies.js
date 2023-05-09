@@ -15,7 +15,7 @@ export default function ForCompanies() {
       <header className={`bg-secondary w-full h-[100vh] relative`}>
         <picture>
           <img
-            src="/assets/img/img-13.jpg"
+            src="https://res.cloudinary.com/dqw0lwkil/image/upload/v1683626726/Pink%20Codrs/Img/img-13_mj7xvq.jpg"
             alt="hero "
             className="object-cover absolute w-full h-full object-center opacity-10"
           />
@@ -58,7 +58,7 @@ export default function ForCompanies() {
             <div className="mt-10 lg:mt-0 relative w-[22rem] h-[23rem] lg:w-[26rem] lg:h-[26rem]">
               <picture>
                 <img
-                  src="/assets/img/img-16.png"
+                  src="https://res.cloudinary.com/dqw0lwkil/image/upload/v1683626774/Pink%20Codrs/Img/img-16_evcw0q.png"
                   alt=""
                   className="absolute w-full h-full"
                 />

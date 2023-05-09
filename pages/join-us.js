@@ -234,7 +234,7 @@ export default function JoinUs() {
         </section>
         <section className="relative h-screen w-full bg-secondary hidden lg:flex flex-col items-center justify-center">
           <img
-            src="/assets/img/img-1.jpg"
+            src="https://res.cloudinary.com/dqw0lwkil/image/upload/v1683626742/Pink%20Codrs/Img/img-1_p3un1r.jpg"
             alt="header"
             className="opacity-10 grayscale object-cover object-center absolute w-full h-full"
           />

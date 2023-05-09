@@ -14,7 +14,7 @@ export default function ForEngineers() {
 
       <header className={`bg-secondary w-full h-[100vh] relative`}>
         <img
-          src="/assets/img/img-12.jpg"
+          src="https://res.cloudinary.com/dqw0lwkil/image/upload/v1683626731/Pink%20Codrs/Img/img-12_qhwpkf.jpg"
           alt=""
           className="object-cover absolute w-full h-full object-center opacity-10"
         />
@@ -53,7 +53,7 @@ export default function ForEngineers() {
           <div className="lg:flex items-start justify-between lg:space-x-10 mb-10 lg:mb-20">
             <div className="mt-10 lg:mt-0 relative w-[22rem] h-[18rem] lg:w-[22rem] lg:h-[18rem]">
               <img
-                src="/assets/img/img-15.png"
+                src="https://res.cloudinary.com/dqw0lwkil/image/upload/v1683626750/Pink%20Codrs/Img/img-15_xflgsi.png"
                 alt=""
                 className="absolute w-full h-full"
               />
@@ -240,7 +240,7 @@ export default function ForEngineers() {
             </div>
             <div className="mt-10 lg:mt-0 relative w-[22rem] h-[18rem] lg:w-[40rem] lg:h-[18rem]">
               <img
-                src="/assets/img/img-14.png"
+                src="https://res.cloudinary.com/dqw0lwkil/image/upload/v1683626775/Pink%20Codrs/Img/img-14_do1evb.png"
                 className="absolute inset-0 w-full h-full "
                 alt=""
               />

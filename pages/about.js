@@ -12,7 +12,7 @@ export default function About() {
 
       <header className="relative h-[50vh] w-full bg-secondary">
         <img
-          src="/assets/img/img-1.jpg"
+          src="https://res.cloudinary.com/dqw0lwkil/image/upload/v1683626742/Pink%20Codrs/Img/img-1_p3un1r.jpg"
           alt="header img"
           className="opacity-10 grayscale object-cover object-bottom absolute w-full h-full"
         />
@@ -31,7 +31,7 @@ export default function About() {
       <section className="container transform -translate-y-24 lg:-translate-y-16 2xl:-translate-y-28">
         <div className="relative w-ful h-[20rem] md:h-[38rem]  shadow-lg">
           <img
-            src="/assets/img/img-10.jpg"
+            src="https://res.cloudinary.com/dqw0lwkil/image/upload/v1683626840/Pink%20Codrs/Img/img-10_dsmrq0.jpg"
             className="object-cover object-center"
             alt="about img"
           />
@@ -101,7 +101,7 @@ export default function About() {
       </section>
 
       {/* galery */}
-      <section className="space-y-10">
+      <section className="space-y-10 overflow-x-hidden">
         <div className="container">
           <hr className="mb-10" />
           <h1 className="font-noto text-3xl md:text-5xl font-bold capitalize text-secondary text-center lg:w-[75%] mx-auto pb-5">
@@ -112,7 +112,7 @@ export default function About() {
           <div className="h-[10rem] md:h-[15rem] lg:h-[20rem] xl:h-[27rem] w-full">
             <div className="relative h-full w-full">
               <img
-                src="/assets/img/img-4.jpg"
+                src="https://res.cloudinary.com/dqw0lwkil/image/upload/v1683626701/Pink%20Codrs/Img/img-4_soznkz.jpg"
                 alt="event img-1"
                 className="transition-transform absolute h-full w-full duration-500 object-cover ease-in-out hover:scale-105"
               />
@@ -121,7 +121,7 @@ export default function About() {
           <div className="h-[10rem] md:h-[15rem] lg:h-[20rem] xl:h-[27rem] w-full">
             <div className="relative h-full w-full">
               <img
-                src="/assets/img/img.jpg"
+                src="https://res.cloudinary.com/dqw0lwkil/image/upload/v1683626733/Pink%20Codrs/Img/img_hsk5xi.jpg"
                 alt="event img-1"
                 className="transition-transform absolute h-full w-full object-cover duration-500 ease-in-out hover:scale-105"
               />
@@ -130,7 +130,7 @@ export default function About() {
           <div className="h-[10rem] md:h-[15rem] lg:h-[20rem] xl:h-[27rem] w-full">
             <div className="relative h-full w-full">
               <img
-                src="/assets/img/img-1.jpg"
+                src="https://res.cloudinary.com/dqw0lwkil/image/upload/v1683626742/Pink%20Codrs/Img/img-1_p3un1r.jpg"
                 alt="event img-1"
                 className="transition-transform absolute h-full w-full object-cover duration-500 ease-in-out hover:scale-105"
               />
@@ -235,42 +235,42 @@ export const teamMembers = [
 export const ourPartners = [
   {
     id: 1,
-    img: "/assets/img/microsoft.png",
+    img: "https://res.cloudinary.com/dqw0lwkil/image/upload/v1683626707/Pink%20Codrs/Img/Microsoft_kni48m.png",
   },
   {
     id: 2,
-    img: "/assets/img/kaizer-chiefs.png",
+    img: "https://res.cloudinary.com/dqw0lwkil/image/upload/v1683626708/Pink%20Codrs/Img/kaizer-chiefs_iifill.png",
   },
   {
     id: 3,
-    img: "/assets/img/orange-corners.png",
+    img: "https://res.cloudinary.com/dqw0lwkil/image/upload/v1683626701/Pink%20Codrs/Img/orange-corners_fqb3g8.png",
   },
   {
     id: 4,
-    img: "/assets/img/sap.png",
+    img: "https://res.cloudinary.com/dqw0lwkil/image/upload/v1683626706/Pink%20Codrs/Img/sap_gtie91.png",
   },
   {
     id: 5,
-    img: "/assets/img/dotmodus.png",
+    img: "https://res.cloudinary.com/dqw0lwkil/image/upload/v1683626701/Pink%20Codrs/Img/dotmodus_zlbzew.png",
   },
   {
     id: 6,
-    img: "/assets/img/liquid-telecom.png",
+    img: "https://res.cloudinary.com/dqw0lwkil/image/upload/v1683626703/Pink%20Codrs/Img/liquid-telecom_ax3ghh.png",
   },
   {
     id: 7,
-    img: "/assets/img/22onsloane-2.png",
+    img: "https://res.cloudinary.com/dqw0lwkil/image/upload/v1683626698/Pink%20Codrs/Img/22OnSloane-2_ojdisc.png",
   },
   {
     id: 8,
-    img: "/assets/img/adrica-talking.png",
+    img: "https://res.cloudinary.com/dqw0lwkil/image/upload/v1683626696/Pink%20Codrs/Img/adrica-talking_mcwr9b.png",
   },
   {
     id: 9,
-    img: "/assets/img/innovate-durban.png",
+    img: "https://res.cloudinary.com/dqw0lwkil/image/upload/v1683626703/Pink%20Codrs/Img/innovate-durban_w7oulz.png",
   },
   {
     id: 10,
-    img: "/assets/img/jozihub.png",
+    img: "https://res.cloudinary.com/dqw0lwkil/image/upload/v1683626702/Pink%20Codrs/Img/jozihub_ytwf6t.png",
   },
 ];

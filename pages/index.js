@@ -252,7 +252,7 @@ export default function Home() {
             <div className="mt-20 -z-10">
               <div className="-mt-52 lg:-mt-52 relative w-[25rem] md:w-[32rem] h-[45rem] lg:w-[35rem]">
                 <img
-                  src="/assets/img/work.png"
+                  src="https://res.cloudinary.com/dqw0lwkil/image/upload/v1683626774/Pink%20Codrs/Img/work_neqrm0.png"
                   className="object-fill absolute inset-0 w-full h-full"
                   alt="pink codrs africa logo"
                 />
@@ -486,7 +486,7 @@ export const events = [
   {
     id: 1,
     title: "Meetups",
-    img: "/assets/img/img-4.jpg",
+    img: "https://res.cloudinary.com/dqw0lwkil/image/upload/v1683626701/Pink%20Codrs/Img/img-4_soznkz.jpg",
     img_fig: "/assets/svg/1.svg",
     details:
       "Our meet-ups are monthly networking events for women in tech to connect, learn, and tackle industry challenges. A platform for women to meet like-minded thinkers and be themselves.",
@@ -494,7 +494,7 @@ export const events = [
   {
     id: 2,
     title: "Workshops",
-    img: "/assets/img/img-3.jpg",
+    img: "https://res.cloudinary.com/dqw0lwkil/image/upload/v1683626783/Pink%20Codrs/Img/img-3_thmw6o.jpg",
     img_fig: "/assets/svg/2.svg",
     details:
       "The 2-day intense workshops are introductory sessions facilitated by industry experts covering Software development, Cloud, Machine Learning and Data Science.",
@@ -502,7 +502,7 @@ export const events = [
   {
     id: 3,
     title: "Bootcamps",
-    img: "/assets/img/img-2.jpg",
+    img: "https://res.cloudinary.com/dqw0lwkil/image/upload/v1683626774/Pink%20Codrs/Img/img-2_bab0wk.jpg",
     img_fig: "/assets/svg/3.svg",
     details:
       "Our zero-to-hero boot camps are the best place for individuals interested to get into tech to learn everything they need to know to kick-start their career in tech with just 6 weeks of theory and practical learning.",
